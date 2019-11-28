@@ -11,7 +11,7 @@
 
   - [AWTRIX PRO](de-de/hardware_awtrix_pro/partslist)
 
-    - [Teileliste](de-de/hardware_awtrix_pro/partlist)
+    * [Teileliste](de-de/hardware_awtrix_pro/partlist)
     - [Elektronik](de-de/hardware_awtrix_pro/electronics_pro)
     - [Gehäuse](de-de/hardware_awtrix_pro/housing_pro)
 
