@@ -5,9 +5,9 @@
 
   - AWTRIX
 
-    * [Teileliste](de-de/partslist)
-    * [Elektronik](de-de/electronics)
-    * [Gehäuse](de-de/housing)
+    - [Teileliste](de-de/partslist)
+    - [Elektronik](de-de/electronics)
+    - [Gehäuse](de-de/housing)
 
   - AWTRIX PRO
 
