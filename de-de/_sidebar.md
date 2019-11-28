@@ -3,15 +3,15 @@
 
 - Hardware
 
-  - [AWTRIX](de-de/partslist)
+  - [AWTRIX](de-de/hardware_awtrix/description)
 
-    - [Teileliste](de-de/partslist)
-    - [Elektronik](de-de/electronics)
-    - [Gehäuse](de-de/housing)
+    - [Teileliste](de-de/hardware_awtrix/partslist)
+    - [Elektronik](de-de/hardware_awtrix/electronics)
+    - [Gehäuse](de-de/hardware_awtrix/housing)
 
-  - [AWTRIX PRO](de-de/hardware_awtrix_pro/partslist)
+  - [AWTRIX PRO](de-de/hardware_awtrix_pro/description_pro)
 
-    - [Teileliste](de-de/hardware_awtrix_pro/partlist)
+    - [Teileliste](de-de/hardware_awtrix_pro/partlist_pro)
     - [Elektronik](de-de/hardware_awtrix_pro/electronics_pro)
     - [Gehäuse](de-de/hardware_awtrix_pro/housing_pro)
 

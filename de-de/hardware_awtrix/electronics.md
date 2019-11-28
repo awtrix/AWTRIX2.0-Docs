@@ -1,22 +1,20 @@
 # **Elektronik**
 
-## AWTRIX Old
-
 Die Elektronik kann entweder auf eine Lochrasterplatine gelötet, "frei verdrahtet" sein oder die fertige Platine [aus meinem Shop](https://blueforcer.de/shop/)
 
 Das direkte Löten an die Matrix kann fatale Folgen haben, da die flexible Leiterplatte und insbesondere die LEDs sehr hitzeempfindlich sind. Lassen Sie das Kabel am Eingang (DI,5V,GND) und trennen Sie nur den Stecker. Wenn deine Matrix einen Ausgang (DO) hat, kannst du sie komplett entfernen. Bevor die DC-Buchse für die Stromversorgung angelötet wird, schrauben Sie ihn mit 2 gelöteten Drähten an das Gehäuse.
 
-### Basis Setupa
+## Basis Setup
 
 **_Basis Setup:_**
 ![Basissetup](assets/AWTRIX_Core_Steckplatine.jpg)
 
-### Optionale Helligkeitsregelung per LDR
+## Optionale Helligkeitsregelung per LDR
 
 **_Optionale Helligkeitsregelung per LDR:_**  
 ![ldr](assets/AWTRIX_LDR_Steckplatine.jpg)
 
-### Optionaler DFPlayer Mini als Soundausgabe
+## Optionaler DFPlayer Mini als Soundausgabe
 
 **_Optionaler DFPlayer Mini als Soundausgabe:_**  
 ![image alt text](assets/AWTRIX_DFMini_Steckplatine.jpg)
@@ -28,7 +26,7 @@ Das direkte Löten an die Matrix kann fatale Folgen haben, da die flexible Leite
 | D7    | TX            | Transmit |
 | D8    | RX            | Receive  |
 
-### Serielle Verbindung zur Matrix
+## Serielle Verbindung zur Matrix
 
 **_Alternative of CORE Setup:_**  
 Wenn Sie Probleme haben, mit der WifiConnection stottern, oder einfach nur kein Wifi vom Server zur Matrix verwenden wollen, können Sie die serielle Verbindung nutzen, um die Daten an die Matrix zu übertragen.

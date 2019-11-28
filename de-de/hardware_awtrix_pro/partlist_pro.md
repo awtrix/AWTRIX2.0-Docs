@@ -1,12 +1,11 @@
-<center><H1>Teileliste</H1></center>
-<br>
-<br>
+# **Teileliste**
+
 
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
 
 - [Wemos D1 Mini (ESP-12E)](https://goo.gl/TVk7h7)
 
-- [8x32 WS2812B flexible Matrix](https://goo.gl/Cjq4FA)
+- [Premium Matrix](https://blueforcer.de/shop/)
 
 - [power supply (>3A)](https://goo.gl/QLydM3)
 
