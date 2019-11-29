@@ -12,7 +12,7 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### **_Zwingend benötigte Bauteile_**
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |s
+| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
 | 2  | Matrix Pro               | [click here](https://blueforcer.de/shop/) |
 | 3  | Awtrix Pro Gehäuse       | [click here](https://blueforcer.de/shop/) |
 | 4  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
@@ -37,15 +37,16 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes s
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
-| 2  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
-| 3  | Matrix Pro               | [click here](https://blueforcer.de/shop/) |
-| 4  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
-| 5  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
-| 6  | Widerstände (3x 1k)      | [click here](https://google.de) |
-| 7  | Shottkydioden (2x 1N4004)| [click here](https://google.de) |
-| 8  | Stiftleiste              | [click here](https://google.de) |
-| 9  | Jumper                   | [click here](https://google.de) |
-| 10 | 1000uF 10V Kondensator   | [click here](https://google.de) |
+| 2  | Awtrix PRO | [click here](https://google.de) |
+| 3  | Matrix PRO Gehäuse             | [click here](https://blueforcer.de/shop/) |
+| 4  |  Wemos D1 mini             | [click here](https://goo.gl/TVk7h7) |
+| 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
+| 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
+| 7 | Widerstände (3x 1k)      | [click here](https://google.de) |
+| 8  | Shottkydioden (2x 1N4004)| [click here](https://google.de) |
+| 9  | Stiftleiste              | [click here](https://google.de) |
+| 10  | Jumper                   | [click here](https://google.de) |
+| 11 | 1000uF 10V Kondensator   | [click here](https://google.de) |
 
 ### **_Optionale Bauteile_**
 | Nr | Name                     | Link                            |
@@ -56,3 +57,7 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes s
 | 3.2| BME280                   | [click here](https://google.de) |
 | 4  | Touch Taster (3x)        | [click here](https://google.de) |
 | 5  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+
+## **_Aufbau ohne Leiterplatte_**
+
+Der Aufbau ohne Leiterplatte bei Verwendung von vielen optionalen Teilen wird ausdrücklich nicht empfohlen. Alternativ kann eine Lochrasterplatine benutzt werden. Die hierfür benötigten Teile sind die gleichen wie in der Teileliste "Leiterplatte ohne Bausatz".
