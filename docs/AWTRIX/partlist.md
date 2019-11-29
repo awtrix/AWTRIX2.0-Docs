@@ -1,5 +1,5 @@
 ---
-id: partlistPro
+id: partlist
 title: Teileliste
 ---
 

@@ -1,9 +1,9 @@
 ---
-id: descriptionPro
+id: description
 title: Beschreibung
 ---
 
-![image alt text](..\assets\awtrix_pro.jpg)
+![image alt text](..\assets\awtrix.jpeg)
 
 ## **_Awtrix PRO_**
 Awtrix PRO ist eine Weiterentwicklung bisherigen großen Awtrix. Software ist bei beiden Geräten gleich, weshalb hierbei nicht weiter unterschieden werden muss. Die Hardware hingegen ist deutlich kleiner geworden. Die Matrix die hier zum Einsatz kommt ist eine komplette Eigenentwicklung, da diese so in der Form noch nicht auf dem Markt ist. 
