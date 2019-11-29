@@ -39,7 +39,6 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 ## Touch-Taster zur Bedienung (optinal)
 
-
 ![image alt text](assets/AWTRIX_Touch_Steckplatine.jpg)
 
 | Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis  |
@@ -50,7 +49,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 | D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
 | D5    | -  | -  | I/O            | Tastsignal  |  |
 
-Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt.
+Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
 ## Gestensensor zur Bedienung (optinal)
 Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
