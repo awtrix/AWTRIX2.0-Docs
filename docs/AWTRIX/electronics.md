@@ -9,12 +9,12 @@ Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdraht
 
 ![Basissetup](..\assets\pro\AWTRIX_Core_Steckplatine.jpg)
 
-## Lichtsensor zur Helligkeitsregelung (optinal)
+## Lichtsensor zur Helligkeitsregelung (optional)
 Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet . Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
 
 ![ldr](..\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
 
-## DFPlayer Mini zur Soundausgabe (optinal)
+## DFPlayer Mini zur Soundausgabe (optional)
 Der DFPlayer dient zur Ausgabe von Sounds und ist optinal verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. Das hinzufügen von mp3 Dateien kann leider nur über die SD Karte am PC erfolgen. Ein hochladen vom Server oder ähnliches ist technisch leider nicht möglich.
 
 ![image alt text](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
@@ -26,7 +26,7 @@ Der DFPlayer dient zur Ausgabe von Sounds und ist optinal verwendbar. Es werden 
 | D7    | TX            | Transmit (senden) |          |
 | D5    | RX            | Receive (empfangen)  | früher D8 |
 
-## Temperatur- und Luftfeuchtigkeitssensor (optinal)
+## Temperatur- und Luftfeuchtigkeitssensor (optional)
 Optinal kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei kann frei gewählt werden ob der BME280 oder der Htu21d zum Einsatz kommen soll. Die gemessenen Werte werden dem Server geschickt und können zum Einen mittels App direkt auf der Matrix angezeigt werden und zum Anderen von einem Hausautomationsserver (ioBroker, FHEM, ...) mittels API vom Awtrix Server abgerufen werden.
 
 ![image alt text](..\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
@@ -40,7 +40,7 @@ Optinal kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei k
 
 Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (I2C Bus).
 
-## Touch-Taster zur Bedienung (optinal)
+## Touch-Taster zur Bedienung (optional)
 
 ![image alt text](..\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
 
@@ -54,7 +54,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
-## Gestensensor zur Bedienung (optinal)
+## Gestensensor zur Bedienung (optional)
 Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
 
 ![image alt text](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)

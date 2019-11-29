@@ -150,10 +150,10 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'Linux, Windows and MacOS',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'new smaler awtrix',
+            image: `img/awtrix_pro.jpg`,
             imageAlign: 'top',
-            title: 'Platform independent',
+            title: 'AWTRIX PRO',
           },
           {
             content: 'from integrated Appstore',
