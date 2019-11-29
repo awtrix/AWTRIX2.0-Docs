@@ -1,0 +1,24 @@
+{
+  "docs": {
+    "Hardware": [
+      {
+        "type": "subcategory",
+        "label": "AWTRIX",
+        "ids": [
+          "AWTRIX/partlist",
+          "AWTRIX/electronics",
+          "AWTRIX/case"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "AWTRIX PRO",
+        "ids": [
+          "AWTRIXpro/partlistPro",
+          "AWTRIXpro/electronicPro",
+          "AWTRIXpro/casePro"
+        ]
+      }
+    ]
+  }
+}
