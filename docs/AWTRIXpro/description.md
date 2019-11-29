@@ -5,7 +5,7 @@ title: Beschreibung
 
 ![image alt text](..\assets\pro\label.jpg)
 
-## **_Allgemein Awtrix PRO?_**
+## **_Awtrix PRO_**
 Awtrix PRO ist eine Weiterentwicklung bisherigen großen Awtrix. Software ist bei beiden Geräten gleich, weshalb hierbei nicht weiter unterschieden werden muss. Die Hardware hingegen ist deutlich kleiner geworden. Die Matrix die hier zum Einsatz kommt ist eine komplette Eigenentwicklung, da diese so in der Form noch nicht auf dem Markt ist. 
 
 ## **_Warum Awtrix PRO?_**
@@ -18,7 +18,3 @@ Du möchtest dein bisheriges Awtrix-Erlebnis nochmal auf ein ganz anderes Level 
 - Raspberry Pi (Pi 3, Zero W) optional im Gehäuse integrierbar
 - neues Mainboard im Gehäuse integriert
 - Lautsprecher im Gehäuse integriert
-
-## **_Aufbau ohne Leiterplatte_**
-
-Der Aufbau ohne Leiterplatte kann Verwendung von vielen optionalen Teilen nicht empfohlen werden. Alternativ kann eine Lochrasterplatine benutzt werden. Die hierfür benötigten Teile sind die gleichen wie in der Teileliste "Leiterplatte ohne Bausatz" zu finden sind.
