@@ -12,7 +12,7 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### **_Zwingend benötigte Bauteile_**
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
+| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |s
 | 2  | Matrix Pro               | [click here](https://blueforcer.de/shop/) |
 | 3  | Awtrix Pro Gehäuse       | [click here](https://blueforcer.de/shop/) |
 | 4  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
@@ -28,6 +28,8 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | 3.1| Htui21d                  | [click here](https://google.de) |
 | 3.2| BME280                   | [click here](https://google.de) |
 | 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+
+Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes sind und daher nicht gekauft werden müssen.
 
 
 ## **_Aufbau mit Leiterplatte ohne Bausatz_**

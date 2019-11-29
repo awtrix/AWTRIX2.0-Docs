@@ -14,6 +14,7 @@
         "type": "subcategory",
         "label": "AWTRIX PRO",
         "ids": [
+          "AWTRIXpro/description",
           "AWTRIXpro/partlistPro",
           "AWTRIXpro/electronicPro",
           "AWTRIXpro/casePro"
