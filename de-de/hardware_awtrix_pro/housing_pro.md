@@ -1,7 +1,15 @@
 # **Gehäuse**
 
+Das Gehäuse der Matrix Pro ist mit einer **Größe** von **195mm x 80mm x 50mm (B/T/H)** deutlich kleiner als die "alte" große Matrix. 
+
+Durch optinale Teile kann das Gehäuse stark variieren. Die hier verlinkten 3D-Objekte sind mit allen optinonalen Teilen (außer Gestensensor) verwendbar. Das bedeutet aber auch, dass jemand der beispielsweise keinen Lautsprecher verwenden möchte entweder mit einem Loch auf der Gehäuserückseite leben muss oder die von uns bereitgestellten Daten verändern kann. Wird die Datei verändert, so wäre es toll, wenn die Veränderung ebenfalls für die Community zur Verfügung gestellt wird (Thingiverse).
+
 ## **3D Druck**
 
+### **Professioneller Drucken**
+Im Awtrix Shop habt ihr die Möglichkeit ein professionelles Gehäuse käuflich zu erwerben. Das Gehäuse wird mittels SLA Drucker gedruckt und hat damit eine deutlich höhere Qualität als mit einem FDM Drucker. Alle Details zu dem Produkt findet ihr [hier](https://www.blueforcer.de/shop/)
+
+### **Selber Drucken**
 Das Gehäuse kann mit einem 3D-Drucker erstellt werden. Die notwendigen Dateien können von [Thingiverse](https://www.thingiverse.com/thing:2791276) heruntergeladen werden.
 
 Die 3D-Objekte sind bereits so ausgerichtet, das möglichst wenig Hilfsmaterial benötigt wird. Das LED-Raster sollte in **Schwarz** gedruckt werden, da sonst die "Pixel" nicht klar getrennt sind, und durch das Material leuchten.
