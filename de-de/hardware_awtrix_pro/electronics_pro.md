@@ -6,11 +6,13 @@ Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdraht
 
 ![Basissetup](assets/AWTRIX_Core_Steckplatine.jpg)
 
-## Optionaler Lichtsensor zur Helligkeitsregelung
+## Lichtsensor zur Helligkeitsregelung (optinal)
+Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet . Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
 
 ![ldr](assets/AWTRIX_LDR_Steckplatine.jpg)
 
-## Optionaler DFPlayer Mini als Soundausgabe
+## DFPlayer Mini zur Soundausgabe (optinal)
+Der DFPlayer dient zur Ausgabe von Sounds und ist optinal verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. Das hinzufügen von mp3 Dateien kann leider nur über die SD Karte am PC erfolgen. Ein hochladen vom Server oder ähnliches ist technisch leider nicht möglich.
 
 ![image alt text](assets/AWTRIX_DFMini_Steckplatine.jpg)
 
@@ -18,10 +20,11 @@ Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdraht
 | ----- | ------------- | -------- | -------- |
 | 5V    | VCC           | Spannungsversorgung (+)    |          |
 | G     | GND           | Spannungsversorgung (-)   |          |
-| D7    | TX            | Transmit |          |
-| D5    | RX            | Receive  | früher D8 |
+| D7    | TX            | Transmit (senden) |          |
+| D5    | RX            | Receive (empfangen)  | früher D8 |
 
-## Optionaler Temperatursensor
+## Temperatur- und Luftfeuchtigkeitssensor (optinal)
+Optinal kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei kann frei gewählt werden ob der BME280 oder der Htu21d zum Einsatz kommen soll. Die gemessenen Werte werden dem Server geschickt und können zum Einen mittels App direkt auf der Matrix angezeigt werden und zum Anderen von einem Hausautomationsserver (ioBroker, FHEM, ...) mittels API vom Awtrix Server abgerufen werden.
 
 ![image alt text](assets/AWTRIX_Temp_Steckplatine.jpg)
 
@@ -29,12 +32,26 @@ Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdraht
 | --- | --- | --- | --- |--- |
 | 3.3V | VCC |  VCC |Spannungsversorgung (+) | nicht 5V kompatibel! |
 | GND | GND | GND |Spannungsversorgung (-) | |
-| D3 | SDA | SDA |I2C Data | |
-| D1 | SCL | SCL |I2C Clock | |
+| D3 | SDA | SDA |I2C Daten | |
+| D1 | SCL | SCL |I2C Takt | |
 
-Bei Verwendung von Temperatursensor und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
+Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (I2C Bus).
 
-## Optionaler Gestensensor für Bedienung
+## Touch-Taster zur Bedienung (optinal)
+
+
+![image alt text](assets/AWTRIX_Touch_Steckplatine.jpg)
+
+| Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis  |
+| ----- | ------------- | ------------- | ------------- | -------- | -------- |
+| 3,3V    | VCC  | VCC           | VCC                    | Spannungsversorgung (+)    |          |
+| G     | GND       | GND   | GND       | Spannungsversorgung (-)   |          |
+| D0    | I/O   |  -  |     -        | Tastsignal |          |
+| D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
+| D5    | -  | -  | I/O            | Tastsignal  |  |
+
+## Gestensensor zur Bedienung (optinal)
+Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
 
 ![image alt text](assets/AWTRIX_Gesture_Steckplatine.jpg)
 
@@ -42,12 +59,11 @@ Bei Verwendung von Temperatursensor und Gestensensor werden die Pins D1 & D3 des
 | --- | --- | --- | --- |
 | 3.3V | VCC | Spannungsversorgung (+) | nicht 5V kompatibel! |
 | GND | GND | Spannungsversorgung (-) | |
-| D3 | SDA | I2C Data | |
-| D1 | SCL | I2C Clock | |
+| D3 | SDA | I2C Daten | |
+| D1 | SCL | I2C Takt | |
 | D6 | INT | Interrupt |  |
 
-Bei Verwendung von Temperatursensor und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
-
+Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
@@ -66,8 +82,8 @@ Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
 | ----- | ---------------- | -------- |
 | 5V    | 04 - 5V          | Spannungsversorgung (+) |
 | GND   | 06 - GND         | Spannungsversorgung (-)   |
-| RX    | 08 - TXD         | Transmit |
-| TX    | 10 - RXD         | Receive  |
+| RX    | 08 - TXD         | Transmit (senden) |
+| TX    | 10 - RXD         | Receive (empfangen)  |
 
 **Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
 
