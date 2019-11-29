@@ -10,10 +10,12 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
-| 2  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
-| 3  | Matrix Pro               | [click here](https://blueforcer.de/shop/) |
-| 4  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
-| 5  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
+| 2  | Matrix Pro               | [click here](https://blueforcer.de/shop/) |
+| 3  | Awtrix Pro Gehäuse       | [click here](https://blueforcer.de/shop/) |
+| 4  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
+| 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
+| 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
+
 
 ### **_Optionale Bauteile_**
 | Nr | Name                     | Link                            |
@@ -22,6 +24,7 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | 2  | DF Mini Player           | [click here](https://www.banggood.com/Geekcreit-DFPlayer-Mini-MP3-Player-Module-MP3-Voice-Audio-Decoder-Board-For-Arduino-Supporting-TF-Card-U-Disk-IOSerial-PortAD-p-969191.html?akmClientCountry=DE&&cur_warehouse=UK) |
 | 3.1| Htui21d                  | [click here](https://google.de) |
 | 3.2| BME280                   | [click here](https://google.de) |
+| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
 
 
 ## **_Aufbau mit Leiterplatte ohne Bausatz_**
@@ -46,3 +49,5 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | 2  | DF Mini Player           | [click here](https://www.banggood.com/Geekcreit-DFPlayer-Mini-MP3-Player-Module-MP3-Voice-Audio-Decoder-Board-For-Arduino-Supporting-TF-Card-U-Disk-IOSerial-PortAD-p-969191.html?akmClientCountry=DE&&cur_warehouse=UK) |
 | 3.1| Htui21d                  | [click here](https://google.de) |
 | 3.2| BME280                   | [click here](https://google.de) |
+| 4  | Touch Taster (3x)        | [click here](https://google.de) |
+| 5  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |

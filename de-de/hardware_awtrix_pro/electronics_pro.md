@@ -1,53 +1,75 @@
 # **Elektronik**
 
+Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Leiterplatte. Die genauen Details zu den benötigten Bauteilen bitte der [Teileliste](/de-de/hardware_awtrix_pro/partlist_pro) entnehmen.
 
-Die Elektronik kann entweder auf eine Lochrasterplatine gelötet, "frei verdrahtet" sein oder die fertige Platine [aus meinem Shop](https://blueforcer.de/shop/)
+## Basis Variante
 
-Das direkte Löten an die Matrix kann fatale Folgen haben, da die flexible Leiterplatte und insbesondere die LEDs sehr hitzeempfindlich sind. Lassen Sie das Kabel am Eingang (DI,5V,GND) und trennen Sie nur den Stecker. Wenn deine Matrix einen Ausgang (DO) hat, kannst du sie komplett entfernen. Bevor die DC-Buchse für die Stromversorgung angelötet wird, schrauben Sie ihn mit 2 gelöteten Drähten an das Gehäuse.
-
-## Basis Setuap
-
-**_Basis Setup:_**
 ![Basissetup](assets/AWTRIX_Core_Steckplatine.jpg)
 
-## Optionale Helligkeitsregelung per LDR
+## Optionaler Lichtsensor zur Helligkeitsregelung
 
-**_Optionale Helligkeitsregelung per LDR:_**  
 ![ldr](assets/AWTRIX_LDR_Steckplatine.jpg)
 
 ## Optionaler DFPlayer Mini als Soundausgabe
 
-**_Optionaler DFPlayer Mini als Soundausgabe:_**  
 ![image alt text](assets/AWTRIX_DFMini_Steckplatine.jpg)
 
-| Wemos | DFPlayer Mini | Function |
-| ----- | ------------- | -------- |
-| 5V    | VCC           | Power    |
-| G     | GND           | Ground   |
-| D7    | TX            | Transmit |
-| D8    | RX            | Receive  |
+| Wemos | DFPlayer Mini | Funktion | Hinweis  |
+| ----- | ------------- | -------- | -------- |
+| 5V    | VCC           | Spannungsversorgung (+)    |          |
+| G     | GND           | Spannungsversorgung (-)   |          |
+| D7    | TX            | Transmit |          |
+| D5    | RX            | Receive  | früher D8 |
 
-#
+## Optionaler Temperatursensor
 
-## Serielle Verbindung zur Matrix
+![image alt text](assets/AWTRIX_Temp_Steckplatine.jpg)
 
-**_Alternative of CORE Setup:_**  
-Wenn Sie Probleme haben, mit der WifiConnection stottern, oder einfach nur kein Wifi vom Server zur Matrix verwenden wollen, können Sie die serielle Verbindung nutzen, um die Daten an die Matrix zu übertragen.
+| Wemos | BME280 | Htu21d | Funktion | Hinweis  |
+| --- | --- | --- | --- |--- |
+| 3.3V | VCC |  VCC |Spannungsversorgung (+) | nicht 5V kompatibel! |
+| GND | GND | GND |Spannungsversorgung (-) | |
+| D3 | SDA | SDA |I2C Data | |
+| D1 | SCL | SCL |I2C Clock | |
 
-Zuerst müssen Sie die serielle Kommunikation in der AWTRIXController Firmware durch uncomment aktivieren //#define USB_CONNECTION
+Bei Verwendung von Temperatursensor und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
 
-Es kann auch der **USB-Port** des Pi verwendet werden (auch für jede andere Serverplattform). Dazu muss man einfach den Server per microUSB-Kabel an den Wemos D1 anschließen.
+## Optionaler Gestensensor für Bedienung
 
-Sie können auch die **GPIO's** verwenden, um den Pi mit den Wemos zu verbinden:
+![image alt text](assets/AWTRIX_Gesture_Steckplatine.jpg)
+
+| Wemos | APDS-9960 | Funktion | Hinweis  |
+| --- | --- | --- | --- |
+| 3.3V | VCC | Spannungsversorgung (+) | nicht 5V kompatibel! |
+| GND | GND | Spannungsversorgung (-) | |
+| D3 | SDA | I2C Data | |
+| D1 | SCL | I2C Clock | |
+| D6 | INT | Interrupt |  |
+
+Bei Verwendung von Temperatursensor und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
+
+
+## Serielle Verbindung oder USB-Verbindung zur Matrix
+
+Wenn es probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
+
+Auf Controller-Seite muss hierfür im Hotspot Menü der Haken bei Serial gesetzt werden. Außerdem braucht der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk. Ansonsten öffnet er immer wieder den Hotspot und zeigt damit auch nichts anderes an.
+Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können.
+
+Es kann auch der **USB-Port** des Pi's verwendet werden (auch für jede andere Serverplattform). Dazu muss man einfach den Server per microUSB-Kabel an den Wemos D1 anschließen.
+
+Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
 
 ![image alt text](assets/AWTRIX_raspi_V2_Steckplatine.jpg)
 
-| Wemos | Raspberry Pin-No | Function |
+| Wemos | Raspberry Pin-No | Funktion |
 | ----- | ---------------- | -------- |
-| 5V    | 04 - 5V          | 5V Power |
-| GND   | 06 - GND         | Ground   |
+| 5V    | 04 - 5V          | Spannungsversorgung (+) |
+| GND   | 06 - GND         | Spannungsversorgung (-)   |
 | RX    | 08 - TXD         | Transmit |
 | TX    | 10 - RXD         | Receive  |
+
+**Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
 
 Standartmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden, dazu folgende Zeile in der /boot/config.txt eingetragen werden  
 `enable_uart=1`
