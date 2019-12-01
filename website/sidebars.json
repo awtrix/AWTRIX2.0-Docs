@@ -21,6 +21,28 @@
           "AWTRIXpro/casePro"
         ]
       }
+    ],
+    "Software": [
+      {
+        "type": "subcategory",
+        "label": "Controller",
+        "ids": [
+          "AWTRIX/description",
+          "AWTRIX/partlist",
+          "AWTRIX/electronic",
+          "AWTRIX/case"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Server",
+        "ids": [
+          "AWTRIXpro/descriptionPro",
+          "AWTRIXpro/partlistPro",
+          "AWTRIXpro/electronicPro",
+          "AWTRIXpro/casePro"
+        ]
+      }
     ]
   }
 }
