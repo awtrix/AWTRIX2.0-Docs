@@ -1,5 +1,6 @@
 {
   "docs": {
+    "Übersicht": ["introduce","functions"],
     "Hardware": [
       {
         "type": "subcategory",
@@ -20,16 +21,8 @@
           "AWTRIXpro/electronicPro",
           "AWTRIXpro/casePro"
         ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Software",
-        "ids": [
-          "Software/descriptionSoft",
-          "Software/serverSoft",
-          "Software/controllerSoft"
-        ]
       }
-    ]
+    ],
+    "Software": ["Software/descriptionSoft", "Software/hostSoft", "Software/controllerSoft"]
   }
 }
