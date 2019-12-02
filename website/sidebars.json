@@ -6,23 +6,23 @@
         "type": "subcategory",
         "label": "AWTRIX",
         "ids": [
-          "AWTRIX/description",
-          "AWTRIX/partlist",
-          "AWTRIX/electronic",
-          "AWTRIX/case"
+          "description",
+          "partlist",
+          "electronic",
+          "case"
         ]
       },
       {
         "type": "subcategory",
         "label": "AWTRIX PRO",
         "ids": [
-          "AWTRIXpro/descriptionPro",
-          "AWTRIXpro/partlistPro",
-          "AWTRIXpro/electronicPro",
-          "AWTRIXpro/casePro"
+          "descriptionPro",
+          "partlistPro",
+          "electronicPro",
+          "casePro"
         ]
       }
     ],
-    "Software": ["Software/descriptionSoft", "Software/hostSoft", "Software/controllerSoft"]
+    "Software": ["descriptionSoft", "hostSoft", "controllerSoft"]
   }
 }
