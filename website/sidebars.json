@@ -23,6 +23,7 @@
         ]
       }
     ],
-    "Software": ["descriptionSoft", "hostSoft", "controllerSoft"]
+    "Software": ["descriptionSoft", "hostSoft", "controllerSoft"],
+    "Verwendung": ["firststart", "appstore", "myapps","settings","cloud"]
   }
 }
