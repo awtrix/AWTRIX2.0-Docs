@@ -75,8 +75,6 @@ ___
 
 Zeigt eine zufällige Animation, die aus der AWTRIX-Cloud heruntergeladen wird.
 
-#### **Parameter** 
-- showAnimation
 
 ``` JSON
 {"showAnimation":"random"}
@@ -96,7 +94,7 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigene
 - soundfile: Nummer der gewünschten MP3 
 
 ``` JSON
-{"soundfile": 1}
+{"soundfile": 101}
 ```
 
 ___
