@@ -1,6 +1,6 @@
-# Einführung
+![AWTRIX Pro](\assets\awtrix_pro.jpg)
 
-Die AWsome maTRIX (Awtrix) ist eine Vollfarb-Dot-Matrix, die Anwendungen von der simplen Darstellung der Uhrzeit bis zu Statistiken des Fortnite-Accounts anzeigt.
+AWTRIX (AWsome maTRIX) ist eine Vollfarb-Dot-Matrix, die Anwendungen von der simplen Darstellung der Uhrzeit bis zu Statistiken des Fortnite-Accounts anzeigt.
 
 Die Technik dahinter basiert auf wenigen Komponenten, sodass sie auch von Anwendern mit weniger technischem Geschick leicht nachgebaut werden kann. Das Projekt basiert auf einer Matrix mit 32 × 8 WS2812B-LEDs. Angetrieben wird die Matrix von dem WLAN-Mikrocontroller ESP8266, der mit einen Java-basiertem Host kommuniziert. Als Server kann nahezu jedes bestehendes System auf Windows-, MacOS- oder Linux-Basis dienen.
 

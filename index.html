@@ -40,6 +40,8 @@
             name       : 'AWTRIX 2',
             repo       : 'https://github.com/jhildenbiddle/docsify-themeable',
             coverpage  : 'coverpage.md',
+            loadNavbar: 'navbar.md',
+            mergeNavbar: false,
             homepage   : 'introduction.md',
             loadSidebar: 'sidebar.md',
 
@@ -47,6 +49,7 @@
             // -----------------------------------------------------------------
             alias: {
                 '.*?/changelog': 'https://cdn.jsdelivr.net/npm/docsify-themeable@0/CHANGELOG.md',
+                '/.*/_navbar.md': '/navbar.md',
             },
             auto2top   : true,
             maxLevel   : 3,
