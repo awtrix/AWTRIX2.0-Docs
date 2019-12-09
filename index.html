@@ -13,9 +13,19 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      alias: {
+        '.*?/awesome': 'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
+        '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
+        '/.*/_navbar.md': '/_navbar.md',
+        '/de-de/(.*)': 'de-de/$1',
+        '/en-en/(.*)': 'en-en/$1'
+      },
       loadSidebar: true,
       loadNavbar: true,
       coverpage: true,
+      mergeNavbar: true,
+      maxLevel: 2,
+      subMaxLevel: 2,
       name: 'AWTRIX',
       repo: '',
       // Localization

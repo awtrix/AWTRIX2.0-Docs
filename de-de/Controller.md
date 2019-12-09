@@ -11,7 +11,7 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 ## **_Flashen_**
 
 ### **_Flashen unter Windwos_**
-![image alt text](..\assets\firmware\flashingTool.PNG)
+![image alt text](\assets\firmware\flashingTool.PNG)
 
 1. Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7_1.zip) herunter.
 2. Entpacke das heruntergeladene Programm und starte es.
@@ -27,20 +27,20 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 ### **_Flashen unter MacOS_**
 
 ## **_Erster Start_**
-![image alt text](..\assets\firmware\wifiSearch.gif)
+![image alt text](\assets\firmware\wifiSearch.gif)
 
 Für ein paar Sekunden such der Controller nun nach einem bekannten WiFi Netzwerk. Da der Controller jedoch neu/gelöscht wurde, sind ihm keine Netzwerke bekannt.
 <br>
 <br>
 
-![image alt text](..\assets\firmware\hotspot.gif)
+![image alt text](\assets\firmware\hotspot.gif)
 
 Nach erfolgloser Suche nach einem Netzwerk kommt nun der Text "Hotspot" auf der Matrix. Wie der Name schon sagt, macht der Controller nun einen WLAN Hotspot auf. Mit einem beliebigen WLAN gerät kann der Controller nun über den Hotspot konfiguriert werden.
 1. Verbinde dich mit dem WLAN mit der SSID "**AWTRIX Controller**".
 2. Das WLAN Passwort lautet "**awtrixxx**"
 3. Unter der IP "**172.217.28.1** kann über einen belibiegen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
 
-<center><table><tr><td>![image alt text](..\assets\firmware\hotspotConfig1.jpg)</td><td>![image alt text](..\assets\firmware\hotspotConfig2.jpg)</td></tr></table>
+<center><table><tr><td>![image alt text](\assets\firmware\hotspotConfig1.jpg)</td><td>![image alt text](\assets\firmware\hotspotConfig2.jpg)</td></tr></table>
 </center>
 
 4. Durch klicken auf "Conigure WiFi" (linkes Bild) gelangt man auf die eingentliche Einstellungsseite (rechtes Bild).
