@@ -136,7 +136,7 @@ ___
 
 ### AppList
 
-Mit dieser API kannst du deine AppLoop anpassen.
+Mit dieser API kannst du die Reihenfolge der Apps (AppLoop) anpassen.
 
 #### **Parameter** 
 - AppList: eine Liste der benutzerdefinierten Apploop (Array of String)
