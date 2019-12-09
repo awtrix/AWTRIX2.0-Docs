@@ -235,7 +235,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - moveIcon (optional)
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
 - duration (optional)
-  - Definiert wie lange (Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl)
+  - Definiert wie lange (Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
 - count (optional)
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - soundfile (optional) (Nummer der gewünschten MP3)
