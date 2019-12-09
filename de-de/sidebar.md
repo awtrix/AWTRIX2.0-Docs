@@ -1,12 +1,18 @@
-[Home](de-de/)
-
-Hardware
+[**Home**](de-de/)
+- **Hardware**
 - [AWTRIX Standard](de-de/hardware.md)
 - [AWTRIX Pro](de-de/hardware_pro.md)
-
-Software
+- **Software**
 - [Controller](de-de/controller.md)
 - [Host](de-de/host.md)
+- **Benutzung**
+- [Erster Start](de-de/fiststart.md)
+- [Appstore](de-de/appstore.md)
+- [MyApps](de-de/myapps.md)
+- [Einstellungen](de-de/settings.md)
+- **Extras**
+- [Icon Creator](de-de/creator.md)
+- [Status](de-de/status.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/awtrix)
 - [![Forum](https://icongram.jgog.in/devicon/bootstrap-plain.svg?color=808080&size=16)Forum](https://forum.blueforcer.de)
