@@ -2,7 +2,7 @@ AWTRIX bietet eine breite palette an Befehlen um von extern gesteuert werden zu 
 
 # MQTT
 Für MQTT können Sie AWTRIX mit einen bestehenden MQTT Broker verbinden.
-Das Basis-Topic ist hierbei standardmäßig **awtrix**.
+Das Basis-Topic (Prefix) ist hierbei standardmäßig **awtrix**.
 
 # REST
 Für die REST-API ist der Basis-Endpunkt  
@@ -265,7 +265,7 @@ Zeigt eine idividuelle Benachrichtigung an
 ```
   
 Eine Benachrichtigung kann aus der Warteschlange entfernt werden
-```Example
+```JSON
 {"remove":"test"}
 ```
 
