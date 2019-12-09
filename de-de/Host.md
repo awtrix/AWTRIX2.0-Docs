@@ -1,31 +1,26 @@
----
-id: hostSoft
-title: Host Software
----
-
-!> Die Serversoftware ist geschlossen Quelle!
+!> Die Serversoftware ist noch closed source!
 
 Bitte beachten Sie, dass Java nicht sehr ressourcenschonend ist.
-Wenn Sie eine Himbeere verwenden möchten, empfehle ich mindestens eine Himbeere 3+ oder vergleichbar. Es läuft mit einem ZeroW, aber etwas langsamer. 
+Wenn Du einen Raspberry verwenden möchtes, empfehle ich mindestens einen Raspberry 3+ oder vergleichbar. AWTRIX läuft zwar mit einem ZeroW, aber etwas langsamer. 
 
 
-AWTRIX 2.0 kann auf jeder Plattform (Windows, MacOS, Linux) laufen, die einzige Voraussetzung ist die Unterstützung von Java8. Es handelt sich um eine Nicht-GUI-Anwendung, so dass Sie keine Desktop-Umgebung benötigen.   
+AWTRIX 2.0 kann auf jeder Plattform (Windows, MacOS, Linux) laufen, die einzige Voraussetzung ist die Unterstützung von Java 8 (1.8_232). Es handelt sich um eine Nicht-GUI-Anwendung, sodass keine Desktop-Umgebung benötigt wird.   
 Dieses Tutorial beschreibt die Installation auf einem Linux-Rechner.  
 
 
-## Schnellstart**
+## Schnellstart
 Dieses kurze Beispiel zeigt, wie man die Java-Anwendung startet.
 Gehen Sie zum nächsten Punkt für die Installation auf einer Linux-Maschine.
 
-Die aktuelle Java-Datei herunterladen
-[AWTRIX Java-Anwendung](https://blueforcer.de/downloads/awtrix.jar)
+Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/beta/awtrix.jar)
+ herunterladen
 
  und starten Sie es über die Kommandozeile oder das Terminal. 
 
- Linux & MacOS:**Linux & MacOS:**  
- ```` sudo java -jar awtrix.jar ``````    
- **Windows:**  
- ```` java -jar awtrix.jar ``````  
+**Linux & MacOS:**    
+ ``` sudo java -jar awtrix.jar ```      
+ **Windows:**    
+ ``` java -jar awtrix.jar ```
 
    
 !> **sudo** wird nicht immer benötigt. Es hängt davon ab, in welchem Ordner Sie die Anwendung starten möchten. AWTRIX muss neue Ordner und Dateien erstellen, so dass AWTRIX in wenigen Fällen keine Schreibrechte hat.
@@ -35,7 +30,7 @@ Kurz nach dem Start kann das Webinterface über http://awtrix_ip:7000 aufgerufen
 
 
 
-## Installation auf einem Linux-Rechner mit Autostart**
+## Installation auf einem Linux-Rechner mit Autostart
 
 
 Überprüfen Sie zunächst, ob Java installiert ist.  
@@ -46,94 +41,85 @@ Andernfalls installieren Sie die neueste Java8:
 
 Stellen Sie Ihre Zeitzone ein: z.B.  
 ```` sudo timedatectl set timezone Europe/Berlin```````  
-### Java auf Version 1.8.0_201 aktualisieren (für Raspberry)
 
-- Laden Sie das Paket von https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html herunter (hier benötigen Sie "Linux ARM 32 Hard Float ABI").
-- Paket nach Himbeere nach /home/pi verschieben (mit FileZilla oder WinSCP)
-- Paket auspacken
-  - ```sudo tar zxvf jdk-8u201-linux-arm32-vfp-hflt.tar.gz -C /opt```````
-- Java aktivieren und Pakete löschen
-  - ```sudo update-alternativen --installieren /usr/bin/javac javac /opt/jdk1.8.0_201/bin/javac 1``````
-  - ```sudo update-alternativen --install /usr/bin/java java /opt/jdk1.8.0_201/bin/java 1``````
-  - ```rm jdk-8u201-linux-arm32-vfp-hflt.tar.tar.gz``````
-  - ```sudo update-alternatives --config javac```` **Hier mit Auswahl 1 Version 1.8.0_201** auswählen
-  - ```sudo update-alternatives --config java```` **Hier mit Auswahl 1 Version 1.8.0_201** auswählen
-  - Testen Sie, ob es mit ``` Java -version```` funktioniert.
 
 ### AWTRIX Server herunterladen**
 
-```sudo mkdir /usr/local/awtrix``````sudo mkdir /usr/local/awtrix````  
-````cd /usr/local/awtrix`````cd /usr/local/awtrix````.    
-"Sudo wget https://blueforcer.de/downloads/awtrix.jar
+```sudo mkdir /usr/local/awtrix```  
+```cd /usr/local/awtrix```    
+```sudo wget https://blueforcer.de/downloads/awtrix.jar```  
 
 
-*### **Autostart**
+### Autostart
 
-Erstellen Sie eine Datei unter **/etc/systemd/system/** mit nano oder vi. z.B.  
-```sudo nano /etc/systemd/system/system/awtrix.service```````  
+Create a file under  **/etc/systemd/system/** with nano or vi. eg.  
+```sudo nano /etc/systemd/system/awtrix.service```  
   
 Fügen Sie den untenstehenden Code in diese neue Datei ein:
+
 ```
-(Einheit)
-Beschreibung = AWTRIX Service
-Nach network.target = awtrix.service
+[Unit]
+Description = AWTRIX Service
+After network.target = awtrix.service
 
 [Service]
-Typ = Gabelung
-Arbeitsverzeichnis =/usr/local/awtrix
+Type = forking
+WorkingDirectory =/usr/local/awtrix
 ExecStart = /usr/local/bin/awtrix.sh start
 ExecStop = /usr/local/bin/awtrix.sh stop
-ExecReload = /usr/local/bin/awtrix.sh neu laden
+ExecReload = /usr/local/bin/awtrix.sh reload
 
-[Installieren]
+[Install]
 WantedBy=multi-user.target
 ```
 
 
+
 Erstellen Sie eine neue Datei unter ***/usr/local/bin/*** eg.   
-```sudo nano /usr/local/bin/awtrix.sh````  
+```sudo nano /usr/local/bin/awtrix.sh```  
   
 Und fügen Sie diesen Code ein
+
 ```
 #!/bin/sh
 SERVICE_NAME=awtrix
-PATH_TO_JAR=/usr/local/awtrix/awtrix/awtrix.jar
+PATH_TO_JAR=/usr/local/awtrix/awtrix.jar
 PID_PATH_NAME=/tmp/awtrix-pid
-Fall $1 in
-    Start)
-        echo "Starten von $SERVICE_NAME...."
-        wenn [ ! -f $PID_PATH_NAME ]; dann
+case $1 in
+    start)
+        echo "Starting $SERVICE_NAME ..."
+        if [ ! -f $PID_PATH_NAME ]; then
             sudo nohup java -jar $PATH_TO_JAR /tmp 2>> /dev/null >> /dev/null &
                         echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME gestartet...."
-        sonst
-            echo "$SERVICE_NAME läuft bereits...."
+            echo "$SERVICE_NAME started ..."
+        else
+            echo "$SERVICE_NAME is already running ..."
         fi
     ;;
     stop)
-        wenn [ -f $PID_PATH_NAME ]; dann
+        if [ -f $PID_PATH_NAME ]; then
             PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME stoping ...."
+            echo "$SERVICE_NAME stoping ..."
             kill $PID;
-            echo "$SERVICE_NAME gestoppt...."
-            rm $PID_PATH_NAME_NAME
-        sonst
-            echo "$SERVICE_NAME läuft nicht...."
+            echo "$SERVICE_NAME stopped ..."
+            rm $PID_PATH_NAME
+        else
+            echo "$SERVICE_NAME is not running ..."
         fi
     ;;
-    Neustart)
-        wenn [ -f $PID_PATH_NAME ]; dann
+    restart)
+        if [ -f $PID_PATH_NAME ]; then
             PID=$(cat $PID_PATH_NAME);
-            echo "$SERVICE_NAME stoppt....";
+            echo "$SERVICE_NAME stopping ...";
             kill $PID;
-            echo "$SERVICE_NAME gestoppt....";
-            rm $PID_PATH_NAME_NAME
-            echo "$SERVICE_NAME starting ...."
+            echo "$SERVICE_NAME stopped ...";
+            rm $PID_PATH_NAME
+            echo "$SERVICE_NAME starting ..."
             sudo nohup java -jar $PATH_TO_JAR /tmp 2>> /dev/null >> /dev/null &
                         echo $! > $PID_PATH_NAME
-            echo "$SERVICE_NAME gestartet...."
-        sonst
-            echo "$SERVICE_NAME läuft nicht...."
+            echo "$SERVICE_NAME started ..."
+        else
+            echo "$SERVICE_NAME is not running ..."
         fi
     ;;
 esac
@@ -141,19 +127,18 @@ esac
 
 Speichern der Datei und Erteilen von Ausführungsrechten
 
-```` sudo chmod +x /usr/local/bin/awtrix.sh`````` 
-
+``` sudo chmod +x /usr/local/bin/awtrix.sh``` 
 
 Testen Sie, ob es damit läuft:  
-```sudo /usr/local/bin/./awtrix.sh start``````     
+```sudo /usr/local/bin/./awtrix.sh start```     
 Testen Sie, ob es mit stoppt:   
-```sudo /usr/local/bin/./awtrix.sh stop````     
+```sudo /usr/local/bin/./awtrix.sh stop```     
 Testen Sie, ob der Neustart mit:  
-```sudo /usr/local/bin/./awtrix.sh Neustart `````     
+```sudo /usr/local/bin/./awtrix.sh restart```     
 
 Wenn alles funktioniert, aktivieren Sie den Dienst mit dem Befehl
 
-````sudo systemctl enable awtrix```````  
+```sudo systemctl enable awtrix``` 
 
 
 

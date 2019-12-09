@@ -1,16 +1,11 @@
----
-id: controllerSoft
-title: Controller Firmware
----
 
-## **_Hinweis_**
-**Bei der aktuellen Controller Firmware ist es nicht notwendig eine Config Datei zu verändern** um anschließend den Code zu kompilieren. Die WLAN Einstellungen und die Einstellung ob die Matrix per WiFi oder per Kabel verbunden ist können nun ganz bequem per Hotspot eingestellt werden.
 
+!> **Bei der aktuellen Controller Firmware ist es nicht notwendig eine Config Datei zu verändern**. Alle Einstellungen können nun ganz bequem per Hotspot eingestellt werden.
 Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ESP8266 geflasht werden kann. Das Kompilieren des Quellcodes (wie früher notwendig) wird hier nicht weiter beschrieben.
 
-## **_Flashen_**
+## Flashen
 
-### **_Flashen unter Windwos_**
+### Flashen unter Windwos
 ![image alt text](\assets\firmware\flashingTool.PNG)
 
 1. Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7_1.zip) herunter.
@@ -22,11 +17,11 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 7. Firmware flashen durch betätigen des START Buttons.
 8. Resette deinen Controller.
 
-### **_Flashen unter Linux_**
+### Flashen unter Linux
 
-### **_Flashen unter MacOS_**
+### Flashen unter MacOS
 
-## **_Erster Start_**
+## Erster Start
 ![image alt text](\assets\firmware\wifiSearch.gif)
 
 Für ein paar Sekunden such der Controller nun nach einem bekannten WiFi Netzwerk. Da der Controller jedoch neu/gelöscht wurde, sind ihm keine Netzwerke bekannt.
@@ -38,10 +33,11 @@ Für ein paar Sekunden such der Controller nun nach einem bekannten WiFi Netzwer
 Nach erfolgloser Suche nach einem Netzwerk kommt nun der Text "Hotspot" auf der Matrix. Wie der Name schon sagt, macht der Controller nun einen WLAN Hotspot auf. Mit einem beliebigen WLAN gerät kann der Controller nun über den Hotspot konfiguriert werden.
 1. Verbinde dich mit dem WLAN mit der SSID "**AWTRIX Controller**".
 2. Das WLAN Passwort lautet "**awtrixxx**"
-3. Unter der IP "**172.217.28.1** kann über einen belibiegen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
+3. Wenn sich nicht automatisch eine Webseite öffnet, kann unter der IP "**172.217.28.1**  über einen belibiegen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
 
-<center><table><tr><td>![image alt text](\assets\firmware\hotspotConfig1.jpg)</td><td>![image alt text](\assets\firmware\hotspotConfig2.jpg)</td></tr></table>
-</center>
+![image alt text](\assets\firmware\hotspotConfig1.jpg)
+![image alt text](\assets\firmware\hotspotConfig2.jpg)
+
 
 4. Durch klicken auf "Conigure WiFi" (linkes Bild) gelangt man auf die eingentliche Einstellungsseite (rechtes Bild).
 5. **SSID** und **Passwort** eures WLANs muss in die dafür vorgeshenen felder eingetragen werden. **Der Controller braucht zwingend ein WLAN - ansonsten startet er nicht**
