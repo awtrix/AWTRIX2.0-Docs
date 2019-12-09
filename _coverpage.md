@@ -1,4 +1,4 @@
-![logo](/assets/dinotec_logo_2.png)
+![logo](coverpic.jpg)
 
 # AWTRIX <small>2</small>
 </br></br></br>
