@@ -1,10 +1,10 @@
 AWTRIX bietet eine breite palette an Befehlen um von extern gesteuert werden zu können.
 
-# MQTT
+### MQTT
 Für MQTT können Sie AWTRIX mit einen bestehenden MQTT Broker verbinden.
 Das Basis-Topic (Prefix) ist hierbei standardmäßig **awtrix**.
 
-# REST
+### REST
 Für die REST-API ist der Basis-Endpunkt  
 **http://[AWTRIX-SERVER_IP]:7000/api/v3**  
 
@@ -37,8 +37,7 @@ ___
 ### switchTo
 
 Wechsel zu einer definierten App
-**Parameter**  
-- switchTo: Appname
+
 
 ``` JSON
 {"switchTo":"Facebook"}
@@ -48,12 +47,11 @@ ___
 ### Appstate
 
 Deaktiviert oder aktiviert eine App
-**Parameter**  
-- enable: Appname
-- disable: Appname
+
 
 ``` JSON
 {"disable":"facebook"}
+{"enable":"facebook"}
 ```
 ___
 
@@ -61,7 +59,7 @@ ___
 
 Steuert die Apploop
 
-**Parameter**  
+#### **Parameter**  
 - app
   - "next" : nächste App
   - "back" : vorherige App
@@ -77,7 +75,7 @@ ___
 
 Zeigt eine zufällige Animation, die aus der AWTRIX-Cloud heruntergeladen wird.
 
-**Parameter** 
+#### **Parameter** 
 - showAnimation
 
 ``` JSON
@@ -94,7 +92,7 @@ Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Test
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigenen mp3s bei 0101.  
 [Standartsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
 
-**Parameter** 
+#### **Parameter** 
 - soundfile: Nummer der gewünschten MP3 
 
 ``` JSON
@@ -107,7 +105,7 @@ ___
 
 Startet einen Timer für die angegebene Zeitspanne und zeigt einen Alarm an, wenn die Zeit abgelaufen ist.
 
-**Parameter** 
+#### **Parameter** 
 - timer: Zeitspanne in ```"stunden:minuten:sekunden"``` 
 - color: Array von Ganzzahlen [R,G,B] (optional)
 - count: Wie oft soll der Timer blinken? (optional)
@@ -126,7 +124,7 @@ ___
 Startet eine Stoppuhr mit vordefiniertem Icon. Während der Ausführung ist AWTRIX blockiert.
 Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 
-**Parameter** 
+#### **Parameter** 
 - stopwatch: Starten/Stoppen der Stoppuhr
 - icon: IconID
 
@@ -142,7 +140,7 @@ ___
 
 Mit dieser API kannst du deine AppLoop anpassen.
 
-**Parameter** 
+#### **Parameter** 
 - AppList: eine Liste der benutzerdefinierten Apploop (Array of String)
 - icon: iconID
 
@@ -163,7 +161,7 @@ ___
 > awtrix/basics
 > MQTT anwortet auf dem Topic "[prefix]/response"
 
-**Parameter** 
+#### **Parameter** 
 - get
 
 #### Mögliche Informationen
@@ -224,10 +222,10 @@ ___
 
 Zeigt eine idividuelle Benachrichtigung an 
 
-**Parameter**  
-- force
-  - Ob die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
-  wenn auf false gesetzt, wird die  Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht deise anschließend. Somit können mehrere Benachrichtigungen auf einemal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder seine nativen Apps anzeigen.
+### **Parameter**  
+- **force (optional)**
+  - Legt fest, bb die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
+  Wenn auf false gesetzt, wird die  Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht deise anschließend. Somit können mehrere Benachrichtigungen auf einemal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder seine nativen Apps anzeigen.
 - **name (optional)**
   - Kennung der Benachrichtigung
 - **text**
