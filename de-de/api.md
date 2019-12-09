@@ -10,7 +10,7 @@ Für die REST-API ist der Basis-Endpunkt
 
 z.B. für einen einfachen Test unter Linux kann curl kann verwendet werden, um eine http-Anfrage zu stellen:  
 ``` BASH
-curl -X POST --header 'Content-Type: application/json' -d '{"force":true,"text":"Awesome","icon":1,"color":[0,255,255],"count":2}' 'http://[AWTRIX-SERVER_IP]:7000/api/v3/notify'
+curl -X POST --header 'Content-Type: application/json' -d '{"force":true,"text":"Awesome","icon":1,"color":[0,255,255],"count":2}' 'http://[HOST_IP]:7000/api/v3/notify'
 ```
 
 
