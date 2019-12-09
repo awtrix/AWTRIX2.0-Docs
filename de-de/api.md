@@ -1,4 +1,4 @@
-AWTRIX bietet eine breite palette an Befehlen um von extern gesteuert werden zu können.
+AWTRIX bietet eine breite Palette an Befehlen um von extern gesteuert werden zu können.
 
 ### MQTT
 Für MQTT können Sie AWTRIX mit einen bestehenden MQTT Broker verbinden.
