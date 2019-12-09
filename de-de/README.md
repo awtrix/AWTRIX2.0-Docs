@@ -1,7 +1,4 @@
----
-id: introduce
-title: Einführung
----
+# Einführung
 
 Die AWsome maTRIX (Awtrix) ist eine Vollfarb-Dot-Matrix, die Anwendungen von der simplen Darstellung der Uhrzeit bis zu Statistiken des Fortnite-Accounts anzeigt.
 
