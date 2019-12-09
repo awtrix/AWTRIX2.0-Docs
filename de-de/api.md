@@ -8,8 +8,8 @@ Das Basis-Topic ist hierbei standardmäßig **awtrix**.
 Für die REST-API ist der Basis-Endpunkt  
 **http://[AWTRIX-SERVER_IP]:7000/api/v3**  
 
-z.B. für einen einfachen Test auf Raspberry Pi kann curl kann verwendet werden, um eine http-Anfrage zu stellen:  
-```
+z.B. für einen einfachen Test unter Linux kann curl kann verwendet werden, um eine http-Anfrage zu stellen:  
+``` BASH
 curl -X POST --header 'Content-Type: application/json' -d '{"force":true,"text":"Awesome","icon":1,"color":[0,255,255],"count":2}' 'http://[AWTRIX-SERVER_IP]:7000/api/v3/notify'
 ```
 
@@ -115,8 +115,10 @@ Startet einen Timer für die angegebene Zeitspanne und zeigt einen Alarm an, wen
 
 ``` JSON
 {"timer":"00:00:10","color":[255,0,0],"count":10,"text":"AWTRIX"}
+```
 
-{"timer":"stop"} löscht den Timer wieder
+``` JSON
+{"timer":"stop"} //löscht den Timer wieder
 ```
 ___
 ### stopwatch
@@ -130,8 +132,9 @@ Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 
 ``` JSON
 {"stopwatch":true, "icon":423}
-
-{"stopwatch":false} 
+```
+``` JSON
+{"stopwatch":false} // Stoppt den Timer
 ```
 ___
 
@@ -145,9 +148,10 @@ Mit dieser API kannst du deine AppLoop anpassen.
 
 ``` JSON
 {"AppList":["Time","Facebook","Time","Instragram"]}
+```
 
-Um Ihre benutzerdefinierte Apploop zurückzusetzen, sende Folgendes
-{"AppList":"reset"} 
+``` JSON
+{"AppList":"reset"} //setzt die Apploop zurück
 ```
 ___
 
@@ -163,21 +167,21 @@ ___
 - get
 
 #### Mögliche Informationen
-- installedApps:  
+- **installedApps**
   - gibt alle installierten Apps zurück
-- AppList:  
+- **AppList**  
   - gibt die komplette App-Loop zurück
-- settings:       
+- **settings**     
   - gibt alle Einstellungen zurück
-- version:        
+- **version**       
   - gibt die AWTRIX-Version zurück
-- uptime:         
+- **uptime**         
   - gibt die Betriebszeit von AWTRIX zurück
-- powerState:
+- **powerState**
   - gibt an ob AWTRIX an (true) oder ausgeschaltet (false) ist zurück
-- log
+- **log**
   - gibt das Protokoll zurück
-- matrixInfo:     
+- **matrixInfo**     
   - gibt alle Informationen der verbundenen Matrix zurück.
 
 ``` JSON
@@ -224,26 +228,40 @@ Zeigt eine idividuelle Benachrichtigung an
 - force
   - Ob die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
   wenn auf false gesetzt, wird die  Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht deise anschließend. Somit können mehrere Benachrichtigungen auf einemal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder seine nativen Apps anzeigen.
-- name (optional)
+- **name (optional)**
   - Kennung der Benachrichtigung
-- text
+- **text**
   - Anzuzeigender Text (Zeichenkette)
-- icon (optional)
+- **icon (optional)**
   - iconID aus der Online Datenbank
-- color (optional)
+- **color (optional)**
   - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
-- moveIcon (optional)
+- **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
-- duration (optional)
+- **duration (optional)**
   - Definiert wie lange (Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
-- count (optional)
+- **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
-- soundfile (optional) (Nummer der gewünschten MP3)
+- **soundfile (optional) (Nummer der gewünschten MP3)**
   - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
 
   
-```Example
-{"name":"test","force":false,"icon":6,"text":"Awtrix","color":[255,0,0]}
+```JSON
+{
+   "name":"TestNotification",
+   "force":true,
+   "icon":6,
+   "moveIcon":true, 
+   "repeat":2,
+   "soundfile":1,
+   "text":"Totally Awesome",
+   "color":[
+      0,
+      255,
+      0
+   ]
+}
+	
 ```
   
 Eine Benachrichtigung kann aus der Warteschlange entfernt werden
@@ -262,8 +280,8 @@ ___
 > awtrix/draw
 ___
 
-Du kannst verschiedene Zeichenbefehle an AWTRIX senden, um einen individuelle Bildschirm zu erstellen. Dazu können Sie in einem JSON-String mehrere Befehle definieren, die AWTRIX dann nacheinander verarbeitet. Dadurch sind  kleinere Animationen möglich.
- Alle Methoden sind statisch, ein automatisches Scrollen des Textes ist nicht möglich.
+Du kannst verschiedene Zeichenbefehle an AWTRIX senden, um einen individuelle Bildschirm zu erstellen. Dazu können in einem JSON-String mehrere Befehle definiert werden, die AWTRIX dann nacheinander verarbeitet. Dadurch sind  kleinere Animationen möglich.
+Alle Methoden sind statisch, ein automatisches scrollen des Textes ist nicht möglich.
 Der Zeichenmodus beginnt mit dem ersten Befehl.
 
 Jeder Befehl füllt nur den Framebuffer. Du musst **show** ausführen, um schließlich die Daten auf der Matrix anzuzeigen. 
@@ -286,7 +304,7 @@ Das folgende Beispiel ist wie folgt aufgebaut:
 
 !> **Bitte beachten Sie:** Du musst **exit** aufrufen, um den Zeichenmodus zu verlassen und in den Normalzustand zurückzukehren. Wenn du Wiederholung einstellst, wird der Exit-Befehl ignoriert und beendet automatisch den Zeichenmodus, wenn alle Wiederholungen abgeschlossen sind.  
 
-```Example
+``` JSON
 {
   "repeat":2,
   "draw": [
@@ -396,5 +414,5 @@ Das folgende Beispiel ist wie folgt aufgebaut:
   - ms
     - Integer ms
 - **<span style="color:blue">show</span>**  Zeigt alle vorherigen Befehle an.
-- **<span style="color:blue">clear</span>** Löscht den Inhalt der AMtrix.
+- **<span style="color:blue">clear</span>** Löscht den Inhalt der Matrix.
 - **<span style="color:blue">exit</span>**  Den Zeichenmodus verlassen und zum Normalzustand zurückkehren.
