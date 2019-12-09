@@ -1,20 +1,18 @@
-[**Home**](de-de/)
+[**Home**](en-en/)
 - **Hardware**
-- [AWTRIX Standard](de-de/hardware.md)
-- [AWTRIX Pro](de-de/hardware_pro.md)
+- [AWTRIX Default](en-en/hardware.md)
+- [AWTRIX Pro](en-en/hardware_pro.md)
 - **Software**
-- [Controller](de-de/controller.md)
-- [Host](de-de/host.md)
-- **Benutzung**
-- [Erster Start](de-de/fiststart.md)
+- [Controller](en-en/controller.md)
+- [Host](en-en/host.md)
+- **Use**
+- [First Start](en-en/fiststart.md)
 - [Appstore](de-de/appstore.md)
-- [MyApps](de-de/myapps.md)
-- [Einstellungen](de-de/settings.md)
-- **API**
-- [MQTT/REST](de-de/api.md)
+- [MyApps](den-en/myapps.md)
+- [Settings](en-en/settings.md)
 - **Extras**
-- [Icon Creator](de-de/creator.md)
-- [Status](de-de/status.md)
+- [Icon Creator](en-en/creator.md)
+- [Status](en-en/status.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/awtrix)
 - [![Forum](https://icongram.jgog.in/devicon/bootstrap-plain.svg?color=808080&size=16)Forum](https://forum.blueforcer.de)
