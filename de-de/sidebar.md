@@ -15,6 +15,9 @@
 - **Extras**
 - [Icon Creator](de-de/creator.md)
 - [Status](de-de/status.md)
+- **App Entwicklung**
+- [Programmierung](de-de/appcoding.md)
+- [Veröffentlichung](de-de/appreview.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/awtrix)
 - [![Forum](https://icongram.jgog.in/devicon/bootstrap-plain.svg?color=808080&size=16)Forum](https://forum.blueforcer.de)
