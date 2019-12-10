@@ -57,8 +57,7 @@ Der Ersteller der App. Damit jeder weiß wer hier Blut, Schweiß und Tränen inv
 Das Icon deiner App. Hierzu wird eine IconID aus der Datenbank benötigt. Du kannst dein eigenes Icon im Icon Creator erstellen und hochladen
 
 **App.settings**    
-Die möglichen Einstellungen der App. Hierzu wird eine Map generiert die aus Keys und Values besteht. z.B ```CreateMap("Key":"Value")```
-Du kannst entweder standard Werte eintragen, sodass deine App direkt loslaufen kann oder du lässt den Wert leer ("") damit AWTRIX den Benutzer erst darauf hinweist das es noch was zum Einstellen gibt.
+Die möglichen Einstellungen der App. Hierzu wird eine Map generiert die aus Keys und Values besteht. z.B ```CreateMap("Key":"Value")``` Du kannst entweder standard Werte eintragen, sodass deine App direkt loslaufen kann oder du lässt den Wert leer ("") damit AWTRIX den Benutzer erst darauf hinweist das es noch was zum Einstellen gibt.
 AWTRIX wird die App nicht laden, solange nicht alle Einstellungen gesetzt sind! 
 
 **App.setupDescription**    
@@ -130,36 +129,12 @@ button definiert die ButtonID des Controllers, dir ist true, wenn er gedrückt w
 **App_controllerAxis**
 Wenn du ein Spiel erstellst, verwenden diese Sub, um die Analogwerte des angeschlossenen Controllers zu erhalten.
 
-## Zeichenbefehle
 
-**drawBMP**
-Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
-
-**drawText**
-Zeichnet einen Text.
-
-**drawCircle**
-Zeichnet einen Kreis.
-
-**fillCircle**
-Zeichnet einen ausgefüllten Kreis
-
-**drawPixel**
-Zeichnet einen einzelnen Pixel
-
-**drawRect**
-Zeichnet ein Viereck
-
-**drawLine**
-Zeichnet eine Linie
-
-**fill**
-Füllt die Matrix mit einer Farbe
 
 # Daten herunterladen
 Um eine App zu entwickeln die Daten aus dem Internet anzeigt, bietet AWTRIX fast alle Möglichkeiten. 
 Wenn AWTRIX bootet wird bei jeder App der Download angestoßen, es können aber auch mehrere gestartet werden. Wieviele "Downloadhandler bzw JobNr" von AWTRIX bereit gestellt werden soll gibt man in der Konfiguration **App.downloads** an. 
-Sobald AWTRIX den Download startet wird das Event **App_startDownload** anhand der JobNr aufgerufen. Hier können mehrere Methoden übergeben werden:
+Sobald AWTRIX den Download startet wird das Event **App_startDownload** anhand der JobNr aufgerufen. Zu jeder Jobnummer wird nach erfolgreichem Download die Sub "App_evalJobResponse" aufgerufen und die angeforderten Daten wieder zurückgegeben. Dieses Prozedere wird mit jedem einzelnen Download abgearbeitet.
 
 **App.Download**  
 Sendet einen einfache HTTP GET-Anfrage.
@@ -200,3 +175,35 @@ Setzt den Header für die Anfrage als Map.
 **App.ContentType**  
 Setzt den MIME-Header der Anfrage.
 Diese Methode sollte nur bei Requests mit einer Payload verwendet werden.
+
+# Anzeige erstellen
+Natürlich soll deine App auch was auf der Matrix anzeigen. Dies geschieht in der Sub **App_genFrame**
+Diese wird in dem eingestellten Tick interval aufgerufen. Da dies standartmäßig alle 65ms geschiet vermeide hier rechnenintensive Aufgaben oder Aufgaben die sich ständig widerholen. Dafür kann man z.B die Sub **App_Started** nutzen die nur einmal beim Start der App aufgerufen wird. Natürlich ist diese Vorgabe sehr allgemein gehalten und musss je nach Anwendungsfall ausprobiert oder geändert werden.
+
+AWTRIX erwartet mit jedem Tick eine oder meherere Zeichenbefehle. Diese werden pro Tick gesammelt, danach angezeigt und wieder aus dem Speicher gelöscht.
+
+### Mögliche Zeichenbefehle
+
+**drawBMP**
+Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
+
+**drawText**
+Zeichnet einen Text.
+
+**drawCircle**
+Zeichnet einen Kreis.
+
+**fillCircle**
+Zeichnet einen ausgefüllten Kreis
+
+**drawPixel**
+Zeichnet einen einzelnen Pixel
+
+**drawRect**
+Zeichnet ein Viereck
+
+**drawLine**
+Zeichnet eine Linie
+
+**fill**
+Füllt die Matrix mit einer Farbe
