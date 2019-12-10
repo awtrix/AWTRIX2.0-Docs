@@ -1,4 +1,4 @@
-!> Die Serversoftware ist noch closed source!
+!> Die Hostsoftware ist auf nicht absehbarer Zeit closed source!
 
 Bitte beachten Sie, dass Java nicht sehr ressourcenschonend ist.
 Wenn Du einen Raspberry verwenden möchtes, empfehle ich mindestens einen Raspberry 3+ oder vergleichbar. AWTRIX läuft zwar mit einem ZeroW, aber etwas langsamer. 
@@ -149,4 +149,3 @@ So stoppen Sie awtrix
 ```sudo systemctl stop awtrix.service```   
 So starten Sie awtrix neu 
 
-Übersetzt mit www.DeepL.com/Translator (kostenlose Version)

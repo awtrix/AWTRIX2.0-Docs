@@ -28,7 +28,7 @@ Vorraussetzungen der Namensgebung:
 - Keine Umlaute
 - Keine Leerzeichen
 - Keine Sonderzeichen
-- Dieser Name ist noch nicht von einer anderen App vergeben
+- Der Name ist noch nicht von einer anderen App vergeben
 
 Der Appname muss als erstes an **4 Punkten** eingetragen werden:
 - In der Main-klasse ```#LibraryName:Template```
