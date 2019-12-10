@@ -181,7 +181,7 @@ ___
   - gibt alle Informationen der verbundenen Matrix zurück.
 
 ``` JSON
-{"get":"activeApps"}
+{"get":"installedApps"}
 ``` 
 
 
