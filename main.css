@@ -47,7 +47,7 @@
   
   .cover-main .buttons a:hover {
     color: white;
-    box-shadow: 0 5px 16px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 5px 16px rgba(9, 123, 229, 0.3);
   }
   
   .cover-main .buttons a:hover:after {
