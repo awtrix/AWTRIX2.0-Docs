@@ -36,7 +36,7 @@ Der Appname muss als erstes an **4 Punkten** eingetragen werden:
 - Gehe auf Projekt-Modul umbennenen und gib dieser Klasse deinen Appnamen
 - Speichere das Projekt an einem neuen Ort mit dem selben Appnamen ab
 
-## App Konfiguration
+# App Konfiguration
 Nun geht es an die **Konfiguration** deiner App. Dies geschiet alles in der Initialize() Funktion. Hier gibt es mehrere parameter die gesetzt werden können bzw müssen.
 
 ### Notwendig
@@ -130,3 +130,31 @@ button definiert die ButtonID des Controllers, dir ist true, wenn er gedrückt w
 
 **App_controllerAxis**
 Wenn du ein Spiel erstellst, verwenden diese Sub, um die Analogwerte des angeschlossenen Controllers zu erhalten.
+
+### Zeichenbefehle
+
+**drawBMP**
+Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array überegben werden oder heruntergeladene icon mit ```App.getIcon(6)```
+
+**drawText**
+Zeichnet einen Text.
+
+**drawCircle**
+Zeichnet einen Kreis.
+
+**fillCircle**
+Zeichnet einen ausgefüllten Kreis
+
+**drawPixel**
+Zeichnet einen einzelnen Pixel
+
+**drawRect**
+Zeichnet ein Viereck
+
+**drawLine**
+Zeichnet eine Linie
+
+**fill**
+Füllt die Matrix mit einer Farbe
+
+# Daten herunterladen
