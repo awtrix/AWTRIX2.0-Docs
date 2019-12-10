@@ -1,25 +1,14 @@
 ![image alt text](\assets\awtrix.jpeg)
 
-## **_Awtrix PRO_**
-Awtrix PRO ist eine Weiterentwicklung bisherigen großen Awtrix. Software ist bei beiden Geräten gleich, weshalb hierbei nicht weiter unterschieden werden muss. Die Hardware hingegen ist deutlich kleiner geworden. Die Matrix die hier zum Einsatz kommt ist eine komplette Eigenentwicklung, da diese so in der Form noch nicht auf dem Markt ist. 
-
-## **_Warum Awtrix PRO?_**
-Du möchtest dein bisheriges Awtrix-Erlebnis nochmal auf ein ganz anderes Level bringen? Dann ist die Awtrix Pro genau das richtige. Neben der integrierten Soundausgabe kannst du deine Matrix nun auch per Touchsensoren auf der Gehäuseoberseite steuern. Die deutlich kompaktere Bauform und die Verwendung eines professionellen SLA-Drucks lässt die Matrix um ein vielfaches edler aussehen.
-## **_Was ist neu?_**
-- drei Taster auf der Gehäuseoberseite
-- Helligkeitssensor im Gehäuse integriert
-- Raspberry Pi (Pi 3, Zero W) optional im Gehäuse integrierbar
-- neues Mainboard im Gehäuse integriert
-- Lautsprecher im Gehäuse integriert
 
 # Teileliste
-## **_Allgemeiner Hinweis_**
+## Allgemeiner Hinweis
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
 
 In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt ihr uns bei der Weiterentwicklung von Awtrix & Awtrix Pro.
 
-## **_Aufbau mit Leiterplatte als Bausatz_**
-### **_Zwingend benötigte Bauteile_**
+## Aufbau mit Leiterplatte als Bausatz
+### Zwingend benötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
@@ -30,7 +19,7 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
 
 
-### **_Optionale Bauteile_**
+### Optionale Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | LDR GL5528               | [click here](https://www.amazon.de/Qualit%C3%A4t-GL5516-Lichtabh%C3%A4ngige-Widerstand-Fotowiderstand/dp/B00NXW9WZ6/) |
@@ -42,8 +31,8 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes sind und daher nicht gekauft werden müssen.
 
 
-## **_Aufbau mit Leiterplatte ohne Bausatz_**
-### **_Zwingend benötigte Bauteile_**
+## Aufbau mit Leiterplatte ohne Bausatz
+### Zwingend benötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
@@ -57,7 +46,7 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes s
 | 9  | Jumper                   | [click here](https://google.de) |
 | 10 | 1000uF 10V Kondensator   | [click here](https://google.de) |
 
-### **_Optionale Bauteile_**
+### Optionale Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | LDR GL5528               | [click here](https://www.amazon.de/Qualit%C3%A4t-GL5516-Lichtabh%C3%A4ngige-Widerstand-Fotowiderstand/dp/B00NXW9WZ6/) |
@@ -163,13 +152,13 @@ Standartmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet we
 
 # Gehäuse
 
-## **3D Druck**
+## 3D Druck
 
 Das Gehäuse kann mit einem 3D-Drucker erstellt werden. Die notwendigen Dateien können von [Thingiverse](https://www.thingiverse.com/thing:2791276) heruntergeladen werden.
 
 Die 3D-Objekte sind bereits so ausgerichtet, das möglichst wenig Hilfsmaterial benötigt wird. Das LED-Raster sollte in **Schwarz** gedruckt werden, da sonst die "Pixel" nicht klar getrennt sind, und durch das Material leuchten.
 
-**Empfohlene Druckeinstellungen:**
+**Empfohlene Druckeinstellungen**
 
 - 0.2 mm Layerhöhe
 
@@ -179,7 +168,7 @@ Die 3D-Objekte sind bereits so ausgerichtet, das möglichst wenig Hilfsmaterial 
 
 - 45-55 mm/s
 
-## **Zusammenbau**
+## Zusammenbau
 
 Kleben Sie zunächst die beiden Teile für das LED-Gitter auf der Innenseite zusammen.
 Als Diffusor habe ich hochwertiges und dickeres Papier verwendet - es ist wichtig, dass man die Fasern nicht sieht, wenn man sie gegen helles Licht hält wie normales Druckerpapier.

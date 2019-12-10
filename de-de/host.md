@@ -27,6 +27,23 @@ Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/beta/awtrix.ja
 
 Kurz nach dem Start kann das Webinterface über http://awtrix_ip:7000 aufgerufen werden.
 
+## Beta
+I highly recommend the current Beta Server!  
+[All about Beta Server](https://forum.blueforcer.de/d/295)  
+
+You can use the installer by adding the beta parameter:  
+ ```wget -N https://blueforcer.de/awtrix/AWTRIX.sh ; sudo sh AWTRIX.sh beta```  
+Or via manual download: [AWTRIX BETA application](https://blueforcer.de/beta/awtrix.jar)  
+
+
+
+## Raspberry Installer
+Enter following command into your terminal for automatic installation  
+ ```wget -N https://blueforcer.de/awtrix/AWTRIX.sh ; sudo sh AWTRIX.sh```
+
+?> Shortly after the start the web interface can be called via http://awtrix_ip:7000.  
+You can also use this command to update your AWTRIX.  
+
 
 
 
