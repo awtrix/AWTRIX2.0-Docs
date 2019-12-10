@@ -36,7 +36,7 @@ Der Appname muss als erstes an **4 Punkten** eingetragen werden:
 - Gehe auf Projekt-Modul umbennenen und gib dieser Klasse deinen Appnamen
 - Speichere das Projekt an einem neuen Ort mit dem selben Appnamen ab
 
-# App Konfiguration
+## App Konfiguration
 Nun geht es an die **Konfiguration** deiner App. Dies geschiet alles in der Initialize() Funktion. Hier gibt es mehrere parameter die gesetzt werden können bzw müssen.
 
 ### Notwendig
@@ -57,8 +57,7 @@ Der Ersteller der App. Damit jeder weiß wer hier Blut, Schweiß und Tränen inv
 Das Icon deiner App. Hierzu wird eine IconID aus der Datenbank benötigt. Du kannst dein eigenes Icon im Icon Creator erstellen und hochladen
 
 **App.settings**    
-Die möglichen Einstellungen der App. Hierzu wird eine Map generiert die aus Keys und Values besteht. z.B
-```CreateMap("Key":"Value")```
+Die möglichen Einstellungen der App. Hierzu wird eine Map generiert die aus Keys und Values besteht. z.B ```CreateMap("Key":"Value")```
 Du kannst entweder standard Werte eintragen, sodass deine App direkt loslaufen kann oder du lässt den Wert leer ("") damit AWTRIX den Benutzer erst darauf hinweist das es noch was zum Einstellen gibt.
 AWTRIX wird die App nicht laden, solange nicht alle Einstellungen gesetzt sind! 
 
@@ -131,10 +130,10 @@ button definiert die ButtonID des Controllers, dir ist true, wenn er gedrückt w
 **App_controllerAxis**
 Wenn du ein Spiel erstellst, verwenden diese Sub, um die Analogwerte des angeschlossenen Controllers zu erhalten.
 
-### Zeichenbefehle
+## Zeichenbefehle
 
 **drawBMP**
-Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array überegben werden oder heruntergeladene icon mit ```App.getIcon(6)```
+Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
 
 **drawText**
 Zeichnet einen Text.
@@ -158,3 +157,46 @@ Zeichnet eine Linie
 Füllt die Matrix mit einer Farbe
 
 # Daten herunterladen
+Um eine App zu entwickeln die Daten aus dem Internet anzeigt, bietet AWTRIX fast alle Möglichkeiten. 
+Wenn AWTRIX bootet wird bei jeder App der Download angestoßen, es können aber auch mehrere gestartet werden. Wieviele "Downloadhandler bzw JobNr" von AWTRIX bereit gestellt werden soll gibt man in der Konfiguration **App.downloads** an. 
+Sobald AWTRIX den Download startet wird das Event **App_startDownload** anhand der JobNr aufgerufen. Hier können mehrere Methoden übergeben werden:
+
+**App.Download**  
+Sendet einen einfache HTTP GET-Anfrage.
+
+**App.Download2**  
+Sendet einen HTTP GET-Request mit Parameter.
+
+**App.PostString**  
+Sendet eine POST-Anfrage mit dem angegebenen String.
+
+**App.PostBytes**  
+Sendet eine POST-Anfrage mit den angegebenen Daten.
+
+**App.PutString**  
+Sendet eine PUT-Anfrage mit dem angegebenen String.
+
+**App.PutBytes**  
+Sendet eine PUT-Anfrage mit den angegebenen Daten.
+
+**App.PatchString**  
+Sendet eine PATCH-Anfrage mit der angegebenen Zeichenkette als Request-Payload.
+
+**App.PatchBytes**  
+Sendet eine PATCH-Anfrage mit dernangegebenen Daten als Request-Payload.
+
+**App.Head**  
+Sendet eine HEAD-Anfrage.
+
+**App.PostMultipart**  
+Sendet eine mehrteilige POST-Anfrage.
+
+**App.PostFile**  
+Sendet eine POST-Anfrage mit der angegebenen Datei.
+
+**App.Header**  
+Setzt den Header für die Anfrage als Map.
+
+**App.ContentType**  
+Setzt den MIME-Header der Anfrage.
+Diese Methode sollte nur bei Requests mit einer Payload verwendet werden.
