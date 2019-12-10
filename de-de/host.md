@@ -148,4 +148,3 @@ So führen Sie awtrix aus
 So stoppen Sie awtrix   
 ```sudo systemctl stop awtrix.service```   
 So starten Sie awtrix neu 
-
