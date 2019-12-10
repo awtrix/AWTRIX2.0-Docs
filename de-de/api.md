@@ -298,7 +298,7 @@ Das folgende Beispiel ist wie folgt aufgebaut:
  - Alles zweimal wiederholen
  - Verlasse des Zeichenmodus
 
-!> **Bitte beachten Sie:** Du musst **exit** aufrufen, um den Zeichenmodus zu verlassen und in den Normalzustand zurückzukehren. Wenn du Wiederholung einstellst, wird der Exit-Befehl ignoriert und beendet automatisch den Zeichenmodus, wenn alle Wiederholungen abgeschlossen sind.  
+!> **Bitte beachte:** Du musst **exit** aufrufen, um den Zeichenmodus zu verlassen und in den Normalzustand zurückzukehren. Wenn du Wiederholung einstellst, wird der Exit-Befehl ignoriert und beendet automatisch den Zeichenmodus, wenn alle Wiederholungen abgeschlossen sind.  
 
 ``` JSON
 {
