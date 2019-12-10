@@ -136,15 +136,13 @@ Testen Sie, ob es mit stoppt:
 Testen Sie, ob der Neustart mit:  
 ```sudo /usr/local/bin/./awtrix.sh restart```     
 
-Wenn alles funktioniert, aktivieren Sie den Dienst mit dem Befehl
-
+Wenn alles funktioniert, aktiviere den Dienst mit 
 ```sudo systemctl enable awtrix``` 
 
 
-
-
-So führen Sie awtrix aus  
-```sudo systemctl start awtrix.service ``````   
-So stoppen Sie awtrix   
+AWTRIX Starten  
+```sudo systemctl start awtrix.service ```  
+AWTRIX Stoppen 
 ```sudo systemctl stop awtrix.service```   
-So starten Sie awtrix neu 
+AWTRIX Neustarten
+```sudo systemctl restart awtrix.service``` 
