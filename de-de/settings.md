@@ -74,4 +74,16 @@ Du kannst die Matrix entweder über WiFi oder USB betreiben. Wenn du ein schwach
 Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diesen erhälst du bei mir im Shop.
 Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezhalen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
 
-**AWTRIX Cloud**
+**AWTRIX Cloud**  
+Aktiviert die Anbindung an die AWTRIX Cloud. Weitere Informationen dazu findest du [hier](/de-de/cloud.md).  
+Nach der Aktivierung erhälst du einen Token den du für die externe Ansteuerung benötigst. Mit "Revoke Token" kannst du dir jederzeit einen neuen erstellen lassen.
+
+**Fritz!Box Call Monitor**  
+Wer eine FritzBox der Firma AVM sein eigen nennt, kann mit dieser Funktion  die FritzBox in AWTRIX einbinden, so dass beispielsweise über einen eingehenden Anruf oder die Rufnummer des Anrufenden informiert wird.
+Gib hierzu die IP Adresse der Fritzbox an und richte, wenn gewünscht, noch das Telefonbuch ein. Wenn ein Telefonbuch hinterlegt ist, zeigt AWTRIX bei einem Anruf den passenden Namen an, ansonsten die Telefonnummer.   Du kannst entweder ein Telefonbuch aus der FritzBox exportieren und [in eine JSON umwandeln](http://www.utilities-online.info/xmltojson/) oder in das Editor Fenster einfügen oder, wenn das nicht klappt, dein Telefonbuch manuell erstellen. Dazu musst du nur für jede Nummer eine neue Zeile verwenden. Der Aufbau ist sehr einfach:
+``` BASH
+01514875965=Blueforcer
+01603262987=Günther
+06185772637=Herbert
+usw..
+```

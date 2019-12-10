@@ -15,6 +15,7 @@
 - **Extras**
 - [Icon Creator](de-de/creator.md)
 - [Status](de-de/status.md)
+- [Cloud](de-de/cloud.md)
 - **App Entwicklung**
 - [Programmierung](de-de/appcoding.md)
 - [Veröffentlichung](de-de/appreview.md)
