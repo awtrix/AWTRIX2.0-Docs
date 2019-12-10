@@ -6,7 +6,7 @@
 - [Controller](de-de/controller.md)
 - [Host](de-de/host.md)
 - **Benutzung**
-- [Erster Start](de-de/fiststart.md)
+- [Erster Start](de-de/firststart.md)
 - [Appstore](de-de/appstore.md)
 - [MyApps](de-de/myapps.md)
 - [Einstellungen](de-de/settings.md)

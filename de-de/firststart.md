@@ -1,6 +1,1 @@
----
-id: firststart
-title: Erster Start
----
-
-jep
+![image alt text](\assets\home.jpg)
