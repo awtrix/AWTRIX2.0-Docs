@@ -1,7 +1,7 @@
 AWTRIX bietet eine breite Palette an Befehlen um von extern gesteuert werden zu können.
 
 ### MQTT
-Für MQTT können Sie AWTRIX mit einen bestehenden MQTT Broker verbinden.
+Für MQTT kannst du AWTRIX mit einen bestehenden MQTT Broker verbinden.
 Das Basis-Topic (Prefix) ist hierbei standardmäßig **awtrix**.
 
 ### REST
@@ -50,8 +50,8 @@ Deaktiviert oder aktiviert eine App
 
 
 ``` JSON
-{"disable":"facebook"}
-{"enable":"facebook"}
+{"disable":"Facebook"}
+{"enable":"Facebook"}
 ```
 ___
 
@@ -143,7 +143,7 @@ Mit dieser API kannst du die Reihenfolge der Apps (AppLoop) anpassen.
 - icon: iconID
 
 ``` JSON
-{"AppList":["Time","Facebook","Time","Instragram"]}
+{"AppList":["Time","Facebook","Time","Instagram"]}
 ```
 
 ``` JSON
@@ -190,9 +190,9 @@ ___
 
 ## Einstellungen ändern
 
-Hiermit können alle einstellungen geändert werden
+Hiermit können alle Einstellungen geändert werden
 Die passenden Keys der Einstellungen sind in der Datei "datastore" im order "config" zu finden.
-Außerdem können die Einstellungen im sleben format ausgelesen werden [Siehe hier](http://localhost:3000/#/de-de/api?id=grundlegende-informationen-erhalten)
+Außerdem können die Einstellungen im selben format ausgelesen werden [Siehe hier](http://localhost:3000/#/de-de/api?id=grundlegende-informationen-erhalten)
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
 > /api/v3/settings  
 
@@ -223,11 +223,11 @@ Zeigt eine idividuelle Benachrichtigung an
 ### **Parameter**  
 - **force (optional)**
   - Legt fest, bb die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
-  Wenn auf false gesetzt, wird die  Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht deise anschließend. Somit können mehrere Benachrichtigungen auf einemal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder seine nativen Apps anzeigen.
+  Wenn auf false gesetzt, wird die Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht diese anschließend. Somit können mehrere Benachrichtigungen auf einmal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder native Apps anzeigen.
 - **name (optional)**
   - Kennung der Benachrichtigung
 - **text**
-  - Anzuzeigender Text (Zeichenkette)
+  - Anzuzeigender Text (String)
 - **icon (optional)**
   - iconID aus der Online Datenbank
 - **color (optional)**
@@ -235,7 +235,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
 - **duration (optional)**
-  - Definiert wie lange (Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
+  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **soundfile (optional) (Nummer der gewünschten MP3)**
@@ -262,7 +262,7 @@ Zeigt eine idividuelle Benachrichtigung an
   
 Eine Benachrichtigung kann aus der Warteschlange entfernt werden
 ```JSON
-{"remove":"test"}
+{"remove":"TestNotification"}
 ```
 
 ___
