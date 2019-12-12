@@ -12,7 +12,7 @@ Es Begrüßt dich AWTRIX mit einer modernen und leicht verständlichen Oberfläc
 ![image alt text](\assets\home.jpg)
 
 
-Auf der Hauptseite findest du ein paar wichtige Informationen wie vorhandene App Updates und Ob deine Matrix mit dem Host verbunden ist.
+Auf der Hauptseite findest du ein paar wichtige Informationen wie vorhandene App Updates und ob deine Matrix mit dem Host verbunden ist.
 
 Weiter hast du die Möglichkeit dich beim API Tester so richtig auszutoben und die große [API Dokumentation](/de-de/api) kennen zu lernen und zu testen.
 
