@@ -267,6 +267,66 @@ Eine Benachrichtigung kann aus der Warteschlange entfernt werden
 
 ___
 
+
+## Temoräre App
+
+> [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
+> /api/v3/customapp  
+
+> [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
+> awtrix/customapp
+ 
+
+Mit dieser API kanns du eine temporäre App erstellen, die sich  mit einer bestimmten "Loop Lifetime" in die AppLoop integriert.
+Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert sich mit jedem Anruf um 1. Wenn die Lebensdauer auf 0 sinkt, wird die temporäre App aus der AppLoop entfernt.
+Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit dem gleichen Namen erneut sendest.
+Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter "name" und "lifetime" pflicht sind
+
+### **Parameter**  
+- **name** 
+  - Kennung der temporären App
+- **lifetime** 
+  - Anzahl der AppLoops in dem die temporäre App angezeigt werden soll
+- **text**
+  - Anzuzeigender Text (String)
+- **icon (optional)**
+  - iconID aus der Online Datenbank
+- **color (optional)**
+  - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
+- **moveIcon (optional)**
+  - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
+- **duration (optional)**
+  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
+- **repeat (optional)**
+  - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+
+
+  
+```JSON
+{
+   "name":"TestApp",
+   "lifetime":5,
+   "icon":6,
+   "moveIcon":true, 
+   "repeat":2,
+   "soundfile":1,
+   "text":"Totally Awesome",
+   "color":[
+      0,
+      255,
+      0
+   ]
+}
+	
+```
+  
+Eine temporäre App kann entfernt werden
+```JSON
+{"remove":"TestApp"}
+```
+
+___
+
 ## Zeichnung
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
