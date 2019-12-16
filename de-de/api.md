@@ -235,7 +235,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
 - **duration (optional)**
-  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
+  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **soundfile (optional) (Nummer der gewünschten MP3)**
@@ -268,7 +268,7 @@ Eine Benachrichtigung kann aus der Warteschlange entfernt werden
 ___
 
 
-## Temoräre App
+## Temporäre App
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
 > /api/v3/customapp  
@@ -296,7 +296,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter "
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
 - **duration (optional)**
-  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **count** überschrieben)
+  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 
@@ -307,12 +307,9 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter "
    "name":"TestApp",
    "lifetime":5,
    "icon":6,
-   "moveIcon":true, 
-   "repeat":2,
-   "soundfile":1,
    "text":"Totally Awesome",
    "color":[
-      0,
+      60,
       255,
       0
    ]
