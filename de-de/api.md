@@ -233,9 +233,9 @@ Zeigt eine idividuelle Benachrichtigung an
 - **color (optional)**
   - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
-  - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
+  - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **duration (optional)**
-  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
+  - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **soundfile (optional) (Nummer der gewünschten MP3)**
@@ -294,9 +294,9 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **color (optional)**
   - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
-  - Verschiebt das Icon mit dem Text aus dem Bildschirm (wahr/falsch).
+  - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **duration (optional)**
-  - Definiert wie lange (in Sekunden) die Benachrichtiung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
+  - Definiert wie lange (in Sekunden) die temporäre App angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 
