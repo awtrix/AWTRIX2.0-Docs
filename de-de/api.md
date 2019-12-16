@@ -277,16 +277,16 @@ ___
 > awtrix/customapp
  
 
-Mit dieser API kanns du eine temporäre App erstellen, die sich  mit einer bestimmten "Loop Lifetime" in die AppLoop integriert.
+Mit dieser API kannst du eine temporäre App erstellen, die sich mit einer bestimmten **"Loop Lifetime"** in die AppLoop integriert.
 Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert sich mit jedem Anruf um 1. Wenn die Lebensdauer auf 0 sinkt, wird die temporäre App aus der AppLoop entfernt.
 Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit dem gleichen Namen erneut sendest.
-Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter "name" und "lifetime" pflicht sind
+Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
 
 #### **Parameter**  
 - **name** 
   - Kennung der temporären App
 - **lifetime** 
-  - Anzahl der AppLoops in dem die temporäre App angezeigt werden soll
+  - Anzahl der AppLoops in der die temporäre App angezeigt werden soll
 - **text**
   - Anzuzeigender Text (String)
 - **icon (optional)**
