@@ -220,7 +220,7 @@ ___
 
 Zeigt eine idividuelle Benachrichtigung an 
 
-### **Parameter**  
+#### **Parameter**  
 - **force (optional)**
   - Legt fest, bb die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
   Wenn auf false gesetzt, wird die Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht diese anschließend. Somit können mehrere Benachrichtigungen auf einmal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder native Apps anzeigen.
@@ -282,7 +282,7 @@ Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert si
 Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit dem gleichen Namen erneut sendest.
 Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter "name" und "lifetime" pflicht sind
 
-### **Parameter**  
+#### **Parameter**  
 - **name** 
   - Kennung der temporären App
 - **lifetime** 
