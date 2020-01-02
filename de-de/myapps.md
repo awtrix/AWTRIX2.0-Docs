@@ -1,1 +1,3 @@
-Test
+Unter **My Apps**werden alle installierten Apps aufgelistet. Einge der Apps für die Anzeige konfiguriert werden. Dazu kLickt man die Card der App an, unter dem Menü Setup finden sich dann alle möglichen Einstellungen. Bei allen Apps besteht die Möglichkeit das Zeitfenster der Anzeige einzustellen, also von bis welcher Uhrzeit die App angezeigt wird. Die Aktualisierungsrate der externen Daten wird unter **UpdateInterval** eingestellt, bechtet bitte die zulässige Abfragerate der externen Dienste.
+
+Unter dem Punkt **Sort Apps** kann die Abfolge der Apps geändert werden. Falls eine App mehrfach im Look angezeigt werden soll wird das ebenfalls hier konfiguriert.

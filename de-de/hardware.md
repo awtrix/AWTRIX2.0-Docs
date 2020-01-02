@@ -65,7 +65,7 @@ Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdraht
 ![Basissetup](\assets\pro\AWTRIX_Core_Steckplatine.jpg)
 
 ## Lichtsensor zur Helligkeitsregelung (optional)
-Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet . Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
+Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet. Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
 
 ![ldr](\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
 
@@ -126,7 +126,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
-Wenn es probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
+Wenn es Probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
 
 Auf Controller-Seite muss hierfür im Hotspot Menü der Haken bei Serial gesetzt werden. Außerdem braucht der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk. Ansonsten öffnet er immer wieder den Hotspot und zeigt damit auch nichts anderes an.
 Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können.

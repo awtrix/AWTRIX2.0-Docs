@@ -141,7 +141,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
-Wenn es probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
+Wenn es Probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
 
 Auf Controller-Seite muss hierfür im Hotspot Menü der Haken bei Serial gesetzt werden. Außerdem braucht der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk. Ansonsten öffnet er immer wieder den Hotspot und zeigt damit auch nichts anderes an.
 Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können.
@@ -168,7 +168,7 @@ Standartmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet we
 # Gehäuse
 Das Gehäuse der Matrix Pro ist mit einer **Größe** von **195mm x 80mm x 50mm (B/T/H)** deutlich kleiner als die "alte" große Matrix. 
 
-Durch optinale Teile kann das Gehäuse stark variieren. Die hier verlinkten 3D-Objekte sind mit allen optinonalen Teilen (außer Gestensensor) verwendbar. Das bedeutet aber auch, dass jemand der beispielsweise keinen Lautsprecher verwenden möchte entweder mit einem Loch auf der Gehäuserückseite leben muss oder die von uns bereitgestellten Daten verändern kann. Wird die Datei verändert, so wäre es toll, wenn die Veränderung ebenfalls für die Community zur Verfügung gestellt wird (Thingiverse).
+Durch optinale Teile kann das Gehäuse stark variieren. Die hier verlinkten 3D-Objekte sind mit allen optinonalen Teilen (außer Gestensensor) verwendbar. Das bedeutet aber auch, dass jemand der beispielsweise keinen Lautsprecher verwenden möchte entweder mit einem Loch auf der Gehäuserückseite kleben muss oder die von uns bereitgestellten Daten verändern kann. Wird die Datei verändert, so wäre es toll, wenn die Veränderung ebenfalls für die Community zur Verfügung gestellt wird (Thingiverse).
 
 ## 3D Druck
 

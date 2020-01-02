@@ -54,23 +54,23 @@ Wenn es nach ein paar Sekunden nicht ankommt.... hast möglicherweise ein Proble
 ## Erster Start
 ![image alt text](\assets\firmware\wifiSearch.gif)
 
-Für ein paar Sekunden such der Controller nun nach einem bekannten WiFi Netzwerk. Da der Controller jedoch neu/gelöscht wurde, sind ihm keine Netzwerke bekannt.
+Für ein paar Sekunden sucht der Controller nun nach einem bekannten WiFi Netzwerk. 
 <br>
 <br>
 
 ![image alt text](\assets\firmware\hotspot.gif)
 
-Nach erfolgloser Suche nach einem Netzwerk kommt nun der Text "Hotspot" auf der Matrix. Wie der Name schon sagt, macht der Controller nun einen WLAN Hotspot auf. Mit einem beliebigen WLAN gerät kann der Controller nun über den Hotspot konfiguriert werden.
+Wenn noch keine Wifi.Verbindung konfiguriert ist kommt nun der Text "Hotspot" auf der Matrix. Wie der Name schon sagt, macht der Controller nun einen WLAN Hotspot auf. Mit einem beliebigen WLAN Gerät kann der Controller nun über den Hotspot konfiguriert werden.
 1. Verbinde dich mit dem WLAN mit der SSID "**AWTRIX Controller**".
 2. Das WLAN Passwort lautet "**awtrixxx**"
-3. Wenn sich nicht automatisch eine Webseite öffnet, kann unter der IP "**172.217.28.1**  über einen belibiegen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
+3. Wenn sich nicht automatisch eine Webseite öffnet, kann unter der IP "**172.217.28.1**  über einen beliebigen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
 
 ![image alt text](\assets\firmware\hotspotConfig1.jpg)
 ![image alt text](\assets\firmware\hotspotConfig2.jpg)
 
 
 4. Durch klicken auf "Conigure WiFi" (linkes Bild) gelangt man auf die eingentliche Einstellungsseite (rechtes Bild).
-5. **SSID** und **Passwort** eures WLANs muss in die dafür vorgeshenen felder eingetragen werden. **Der Controller braucht zwingend ein WLAN - ansonsten startet er nicht**
+5. **SSID** und **Passwort** eures WLANs muss in die dafür vorgeshenen Felder eingetragen werden. **Der Controller braucht zwingend ein WLAN - ansonsten startet er nicht**
 
 <br>
 <br>
