@@ -41,7 +41,7 @@ Diese Einstellungen sind bei allen Apps gleich und sind nicht speziell auf die e
 - **End Time:** Diese Einstellung legt die Uhrzeit fest, ab wann die App nicht mehr angezeigt wird.
 
 #### App Settings 
-Diese Einstellungen sind App spezifisch. Jedes Feld muss ausgefüllt sein, damit AWTRIX diese als fertig konfiguriert ansieht und damit in die AppLoop mit aufnimmt.
+Diese Einstellungen sind App spezifisch. Jedes Feld muss ausgefüllt sein, damit AWTRIX diese als fertig konfiguriert ansieht und damit in die AppLoop aufnimmt.
 
 
 #### Setup Information 
