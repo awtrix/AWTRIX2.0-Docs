@@ -120,7 +120,7 @@ Wird nach jedem angeforderten Download aufgerufen. Hier können die geruntergela
 
 **App_genFrame**
 Diese Sub wird während deine App läuft kontinuierlich aufgerufen. Das Interval setzt du mit App.Tick fest.
-Hier wird AWTRIX die Zeichenroutinen übergeben, die letzendlich auf der Matrix angezeigt wird.
+Hier wird AWTRIX die Zeichenroutinen übergeben, die letzendlich auf der Matrix angezeigt wird. Berechnungen die nur einmal ausgeführt werden müssen sollten nicht hier hinzugefügt werden.
 
 **App_controllerButton**
 Wenn du ein Spiel erstellst, verwende diese Sub, um die Tastendrücke vom Webinterface oder dem Game-Controller zu erhalten.
@@ -185,7 +185,7 @@ AWTRIX erwartet mit jedem Tick eine oder meherere Zeichenbefehle. Diese werden p
 ### Mögliche Zeichenbefehle
 
 **drawBMP**
-Zeichnet ein Bitmap. Hierfür können RGB535 werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
+Zeichnet ein Bitmap. Hierfür können RGB535 Werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
 
 **drawText**
 Zeichnet einen Text.

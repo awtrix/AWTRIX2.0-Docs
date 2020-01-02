@@ -13,3 +13,25 @@ Neben einfachen Funktionen wie Stoppuhr und Timer baut das Projekt hauptsächlic
 Dank der sehr gut dokumentierten API und Schnittstellen für die IoT-Protokolle REST und MQTT lassen sich beliebige Informationen an die Matrix senden. Ob Temperatur, Luftfeuchtigkeit, Stromverbrauch oder einfach nur der Song, der gerade auf Spotify läuft – alles kein Problem. Und wem die lokale Ansteuerung aus dem Netzwerk noch nicht reicht, dem sei die Verbindung zur Awtrix-Cloud empfohlen, mit der unter anderem eine komplett anonyme Anbindung an den Verknüpfungsienst IFTTT und seine unzähligen Receipts möglich ist.
 
 Bei der Erstellung eigener Notifications hilft ein weiteres Feature: der Awtrixer. Mit diesem mächtigen integrierten Tool lassen sich Icons für die Awtrix herstellen und kann alternativ vorhandene Bilder von 8×8 Pixeln automatisch umwandeln lassen. Auch animierte Icons sind kein Problem. Selbsterstellte Icons werden mit der Community geteilt. Awtrixer gibt es im integrierten Webinterface oder als abgespeckte Version auf Android- und iOS aus dem Store. 
+
+Hier versuche ich alle Funktionen von AWTRIX kurz und knapp aufzulisten:
+
+- Platformunabhängig
+- API Schnittstellen für MQTT und REST
+- Anzeige von Notifications aus dem Smarthome
+- Zugriff auf die Icon Datenbank
+- Integrierter Appstore
+- Anpassung der Appschleife
+- Anpassung der Farbkorrektur für die Matrix
+- AWTRIX Arcade für kleinere Spiele auf der Matrix
+- Update des Controllers und Hosts über das Webinterface
+- Stopuhr
+- Timer
+
+Premium Funktionen:
+- Wecker
+- Fritz!Box CallMonitor
+- Access to the AWTRIX Cloud
+- Pushover Client
+- Wecker
+- Schlafmodus
