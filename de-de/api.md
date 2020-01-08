@@ -11,7 +11,7 @@ Für die REST-API ist der Basis-Endpunkt
 z.B. für einen einfachen Test unter Linux kann curl kann verwendet werden, um eine http-Anfrage zu stellen:  
 ``` BASH
 curl -X POST --header 'Content-Type: application/json' -d '{"force":true,"text":"Awesome","icon":1,"color":[0,255,255],"count":2}' 'http://[HOST_IP]:7000/api/v3/notify'
-``` 
+```
 
 
 
@@ -83,15 +83,15 @@ ___
 
 ### Soundfile
 
-Spielt eine Audiodatei ab, die auf die SD-Karte des DF-Players geladen wurde. 
+Spielt eine Audiodatei ab, die auf die SD-Karte des DF-Players geladen wurde.
 
 Du musst einen Ordner "MP3" auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben.
 Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.  
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigenen mp3s bei 0101.  
 [Standartsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
 
-#### **Parameter** 
-- soundfile: Nummer der gewünschten MP3 
+#### **Parameter**
+- soundfile: Nummer der gewünschten MP3
 
 ``` JSON
 {"soundfile": 101}
@@ -103,14 +103,15 @@ ___
 
 Startet einen Timer für die angegebene Zeitspanne und zeigt einen Alarm an, wenn die Zeit abgelaufen ist.
 
-#### **Parameter** 
-- timer: Zeitspanne in ```"stunden:minuten:sekunden"``` 
+#### **Parameter**
+- timer: Zeitspanne in ```"stunden:minuten:sekunden"```
 - color: Array von Ganzzahlen [R,G,B] (optional)
 - count: Wie oft soll der Timer blinken? (optional)
+- soundfile: Spielt beim Ablauf des Timers eine MP3 ab (optional)
 - text: Text, der angezeigt wird (statisch, bis zu 8 Zeichen) (optional)
 
 ``` JSON
-{"timer":"00:00:10","color":[255,0,0],"count":10,"text":"AWTRIX"}
+{"timer":"00:00:10","soundfile":1,"color":[255,0,0],"count":10,"text":"AWTRIX"}
 ```
 
 ``` JSON
@@ -122,7 +123,7 @@ ___
 Startet eine Stoppuhr mit vordefiniertem Icon. Während der Ausführung ist AWTRIX blockiert.
 Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 
-#### **Parameter** 
+#### **Parameter**
 - stopwatch: Starten/Stoppen der Stoppuhr
 - icon: IconID
 
@@ -138,7 +139,7 @@ ___
 
 Mit dieser API kannst du die Reihenfolge der Apps (AppLoop) anpassen.
 
-#### **Parameter** 
+#### **Parameter**
 - AppList: eine Liste der benutzerdefinierten Apploop (Array of String)
 - icon: iconID
 
@@ -159,7 +160,7 @@ ___
 > awtrix/basics
 > MQTT anwortet auf dem Topic "[prefix]/response"
 
-#### **Parameter** 
+#### **Parameter**
 - get
 
 #### Mögliche Informationen
@@ -182,7 +183,7 @@ ___
 
 ``` JSON
 {"get":"installedApps"}
-``` 
+```
 
 
 ___
@@ -216,9 +217,9 @@ ___
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/notify
- 
 
-Zeigt eine idividuelle Benachrichtigung an 
+
+Zeigt eine idividuelle Benachrichtigung an
 
 #### **Parameter**  
 - **force (optional)**
@@ -241,13 +242,13 @@ Zeigt eine idividuelle Benachrichtigung an
 - **soundfile (optional) (Nummer der gewünschten MP3)**
   - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
 
-  
+
 ```JSON
 {
    "name":"TestNotification",
    "force":true,
    "icon":6,
-   "moveIcon":true, 
+   "moveIcon":true,
    "repeat":2,
    "soundfile":1,
    "text":"Totally Awesome",
@@ -257,9 +258,9 @@ Zeigt eine idividuelle Benachrichtigung an
       0
    ]
 }
-	
+
 ```
-  
+
 Eine Benachrichtigung kann aus der Warteschlange entfernt werden
 ```JSON
 {"remove":"TestNotification"}
@@ -275,7 +276,7 @@ ___
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/customapp
- 
+
 
 Mit dieser API kannst du eine temporäre App erstellen, die sich mit einer bestimmten **"Loop Lifetime"** in die AppLoop integriert.
 Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert sich mit jedem Anruf um 1. Wenn die Lebensdauer auf 0 sinkt, wird die temporäre App aus der AppLoop entfernt.
@@ -283,9 +284,9 @@ Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit d
 Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
 
 #### **Parameter**  
-- **name** 
+- **name**
   - Kennung der temporären App
-- **lifetime** 
+- **lifetime**
   - Anzahl der AppLoops in der die temporäre App angezeigt werden soll
 - **text**
   - Anzuzeigender Text (String)
@@ -301,7 +302,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 
 
-  
+
 ```JSON
 {
    "name":"TestApp",
@@ -314,9 +315,9 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
       0
    ]
 }
-	
+
 ```
-  
+
 Eine temporäre App kann entfernt werden
 ```JSON
 {"remove":"TestApp"}
@@ -337,7 +338,7 @@ Du kannst verschiedene Zeichenbefehle an AWTRIX senden, um einen individuelle Bi
 Alle Methoden sind statisch, ein automatisches scrollen des Textes ist nicht möglich.
 Der Zeichenmodus beginnt mit dem ersten Befehl.
 
-Jeder Befehl füllt nur den Framebuffer. Du musst **show** ausführen, um schließlich die Daten auf der Matrix anzuzeigen. 
+Jeder Befehl füllt nur den Framebuffer. Du musst **show** ausführen, um schließlich die Daten auf der Matrix anzuzeigen.
 
 
 Das folgende Beispiel ist wie folgt aufgebaut:
@@ -422,8 +423,8 @@ Das folgende Beispiel ist wie folgt aufgebaut:
 **<span style="color:blue">loop</span>** Wie oft die Zeichenroutinen wiederholt werden sollen (optional)
 
 - **<span style="color:blue">text</span>** Zeichnet einen Text an.
-  - string 
-  - position 
+  - string
+  - position
     - Array of Integer [X,Y]
   - color
     - Array of Integer [R,G,B]
