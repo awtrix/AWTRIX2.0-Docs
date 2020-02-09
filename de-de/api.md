@@ -272,10 +272,10 @@ ___
 ## Temporäre App
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/customapp  
+> /api/v3/temporaryapp  
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
-> awtrix/customapp
+> awtrix/temporaryapp
 
 
 Mit dieser API kannst du eine temporäre App erstellen, die sich mit einer bestimmten **"Loop Lifetime"** in die AppLoop integriert.
