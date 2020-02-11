@@ -73,8 +73,9 @@ ___
 
 ### showAnimation
 
-Zeigt eine zufällige Animation, die aus der AWTRIX-Cloud heruntergeladen wird.
-
+Zeigt eine Animation an, die aus der AWTRIX-Cloud heruntergeladen wird.
+Erwartet einen Animations name (Siehe [cloudAnimations](api?id=rest)).
+"random" spielt eine zufällige Animation ab.
 
 ``` JSON
 {"showAnimation":"random"}
@@ -164,9 +165,11 @@ ___
 - get
 
 #### Mögliche Informationen
+- **cloudAnimations**
+  - gibt alle verfügbaren Cloud Animationen zurück
 - **installedApps**
   - gibt alle installierten Apps zurück
-- **AppList**  
+- **appList**  
   - gibt die komplette App-Loop zurück
 - **settings**     
   - gibt alle Einstellungen zurück
