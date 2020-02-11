@@ -78,7 +78,7 @@ Erwartet einen Animations name (Siehe [cloudAnimations](api?id=rest)).
 "random" spielt eine zufällige Animation ab.
 
 ``` JSON
-{"showAnimation":"Tetris"}
+{"showAnimation":"tetris"}
 {"showAnimation":"random"}
 ```
 ___
