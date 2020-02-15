@@ -74,7 +74,7 @@ ___
 ### showAnimation
 
 Zeigt eine Animation an, die aus der AWTRIX-Cloud heruntergeladen wird.
-Erwartet einen Animations name (Siehe [cloudAnimations](api?id=rest)).
+Erwartet einen Animations name (Siehe [cloudAnimations](api?id=grundlegende-informationen-erhalten)).
 "random" spielt eine zufällige Animation ab.
 
 ``` JSON
