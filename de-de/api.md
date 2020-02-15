@@ -227,7 +227,7 @@ Zeigt eine idividuelle Benachrichtigung an
 
 #### **Parameter**  
 - **force (optional)**
-  - Legt fest, bb die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
+  - Legt fest, ob die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
   Wenn auf false gesetzt, wird die Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht diese anschließend. Somit können mehrere Benachrichtigungen auf einmal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder native Apps anzeigen.
 - **name (optional)**
   - Kennung der Benachrichtigung
