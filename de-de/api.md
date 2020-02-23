@@ -242,7 +242,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **repeatIcon (optional)** 
-  - Wenn **moveIcon** aktiv ist wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
+  - Wenn **moveIcon** aktiv ist, wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
@@ -315,7 +315,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **repeatIcon (optional)** 
-  - Wenn **moveIcon** aktiv ist wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
+  - Wenn **moveIcon** aktiv ist, wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
