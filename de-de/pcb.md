@@ -1,3 +1,6 @@
+Wenn du AWTRIX Pro nutzen möchtest, oder keine Lust auf fliegende Verdrahtung hast, [kannst du eine geeignete Platine in meinem Shop bestellen](https://blueforcer.de/shop/).
+
+
 ![B4J](assets/pcb.jpg)
 
 | Nr | Stück | Name                     | Teilenummer (reichelt.de)                  | Kommentar
