@@ -11,7 +11,7 @@ Nach der Aktivierung erhälst du einen Token den du für die externe Ansteuerung
 
 **Fritz!Box Call Monitor**  
 Wer eine FritzBox der Firma AVM sein eigen nennt, kann mit dieser Funktion die FritzBox in AWTRIX einbinden, so dass beispielsweise über einen eingehenden Anruf oder die Rufnummer des Anrufenden informiert wird.
-Gib hierzu die IP Adresse der Fritzbox an und richte, wenn gewünscht, noch das Telefonbuch ein. Wenn ein Telefonbuch hinterlegt ist, zeigt AWTRIX bei einem Anruf den passenden Namen an, ansonsten die Telefonnummer.   Du kannst entweder ein Telefonbuch aus der FritzBox exportieren und [in eine JSON umwandeln](http://www.utilities-online.info/xmltojson/) oder in das Editor Fenster einfügen oder, wenn das nicht klappt, dein Telefonbuch manuell erstellen. Dazu musst du nur für jede Nummer eine neue Zeile verwenden. Der Aufbau ist sehr einfach:
+Gib hierzu die IP Adresse der Fritzbox an und richte, wenn gewünscht, noch das Telefonbuch ein. Wenn ein Telefonbuch hinterlegt ist, zeigt AWTRIX bei einem Anruf den passenden Namen an, ansonsten die Telefonnummer.   Du kannst entweder ein Telefonbuch aus der FritzBox exportieren und [in eine JSON umwandeln](http://www.utilities-online.info/xmltojson/) oder, wenn das nicht klappt, dein Telefonbuch manuell erstellen. Dazu musst du nur für jede Nummer eine neue Zeile verwenden. Der Aufbau ist sehr einfach:
 ``` BASH
 01514875965=Blueforcer
 01603262987=Günther
