@@ -37,19 +37,19 @@ Hier wird die Helligkeit der Matrix festgelegt. Bitte bedenke: Je heller die Mat
 
 !> Die Matrix kann bei höchster Helligkeitsstufe und komplett weißen Pixeln bis zu 75 Watt beanspruchen!
 
-**App Duration**
+**App Duration**  
 Legt die Zeit fest, wie lange eine App angezeigt wird, bevor zur Nächsten gewechselt wird.
 
-**Scroll speed**
+**Scroll speed**  
 Mit diesem Wert wird angebegen nach wievielen Millisekunden der Text um eine Y-Position verschoben wird. Ein niedriger Wert lässt den Text schneller scrollen, sorgt allerdings auch für eine höhere CPU Auslastung.
 
-**Update interval**
+**Update interval**  
 Dieser wert gibt an, nach wievielen Sekunden alle Apps ihre Daten aktualisieren.
 
-**Volume**
+**Volume**  
 Stellt die Lautstärke des angeschlossenen DFPlayer ein.
 
-**Timezone Offset (UTC)**
+**Timezone Offset (UTC)**  
 Dies stellt die Differenz zur UTC Zeitzone ein.
 
 ### Communication
@@ -70,20 +70,6 @@ Aktiviert den MQTT Client. Weitere Einstellungen sind selbsterklärend.
 ### Matrix connection
 Du kannst die Matrix entweder über WiFi oder USB betreiben. Wenn du ein schwaches oder überlastetes WiFi hast, versuche bitte die Kommunikation der Matrix über USB an, um Ruckeln zu vermeiden. 
 
-### Premium
-Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diesen erhälst du bei mir im Shop.
-Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
+!> Die Auswahl von ttyAMA0 kann beim RaspberryPi 3 und höher zum Abstutz führen da dieser Port vom Bluetooth belegt ist. Nutze stattdessen  ttyS0!
 
-**AWTRIX Cloud**  
-Aktiviert die Anbindung an die AWTRIX Cloud. Weitere Informationen dazu findest du [hier](/de-de/cloud.md).  
-Nach der Aktivierung erhälst du einen Token den du für die externe Ansteuerung benötigst. Mit "Revoke Token" kannst du dir jederzeit einen neuen erstellen lassen.
 
-**Fritz!Box Call Monitor**  
-Wer eine FritzBox der Firma AVM sein eigen nennt, kann mit dieser Funktion die FritzBox in AWTRIX einbinden, so dass beispielsweise über einen eingehenden Anruf oder die Rufnummer des Anrufenden informiert wird.
-Gib hierzu die IP Adresse der Fritzbox an und richte, wenn gewünscht, noch das Telefonbuch ein. Wenn ein Telefonbuch hinterlegt ist, zeigt AWTRIX bei einem Anruf den passenden Namen an, ansonsten die Telefonnummer.   Du kannst entweder ein Telefonbuch aus der FritzBox exportieren und [in eine JSON umwandeln](http://www.utilities-online.info/xmltojson/) oder in das Editor Fenster einfügen oder, wenn das nicht klappt, dein Telefonbuch manuell erstellen. Dazu musst du nur für jede Nummer eine neue Zeile verwenden. Der Aufbau ist sehr einfach:
-``` BASH
-01514875965=Blueforcer
-01603262987=Günther
-06185772637=Herbert
-usw..
-``` 

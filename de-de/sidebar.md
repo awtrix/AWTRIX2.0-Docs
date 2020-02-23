@@ -10,6 +10,7 @@
 - [Appstore](de-de/appstore.md)
 - [MyApps](de-de/myapps.md)
 - [Einstellungen](de-de/settings.md)
+- [Premium](de-de/premium.md)
 - **API**
 - [MQTT/REST](de-de/api.md)
 - **Extras**
