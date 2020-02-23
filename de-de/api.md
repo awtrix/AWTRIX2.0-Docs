@@ -90,7 +90,7 @@ Spielt eine Audiodatei ab, die auf die SD-Karte des DF-Players geladen wurde.
 Du musst einen Ordner "MP3" auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben.
 Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.  
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigenen mp3s bei 0101.  
-[Standartsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
 
 #### **Parameter**
 - soundfile: Nummer der gewünschten MP3
@@ -233,16 +233,28 @@ Zeigt eine idividuelle Benachrichtigung an
   - Kennung der Benachrichtigung
 - **text**
   - Anzuzeigender Text (String)
+- **scrollSpeed**
+  - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
-  - iconID aus der Online Datenbank
+  - iconID aus der Online Datenbank (Ganzzahl)
 - **color (optional)**
   - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
+- **repeatIcon (optional)** 
+  - Wenn **moveIcon** aktiv ist wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+- **rainbow (optional)**
+  - Zeigt den Text in Regenbogenfarben an (true/false).
+- **progress (optional)**
+  - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
+- **progressColor (optional)**
+  - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B]) 
+- **progressBackground (optional)**
+  - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
 - **soundfile (optional) (Nummer der gewünschten MP3)**
   - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
 
@@ -294,16 +306,30 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
   - Anzahl der AppLoops in der die temporäre App angezeigt werden soll
 - **text**
   - Anzuzeigender Text (String)
+- **scrollSpeed**
+  - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
-  - iconID aus der Online Datenbank
+  - iconID aus der Online Datenbank (Ganzzahl)
 - **color (optional)**
   - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
+- **repeatIcon (optional)** 
+  - Wenn **moveIcon** aktiv ist wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
 - **duration (optional)**
-  - Definiert wie lange (in Sekunden) die temporäre App angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
+  - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
   - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+- **rainbow (optional)**
+  - Zeigt den Text in Regenbogenfarben an (true/false).
+- **progress (optional)**
+  - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
+- **progressColor (optional)**
+  - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B]) 
+- **progressBackground (optional)**
+  - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
+- **soundfile (optional) (Nummer der gewünschten MP3)**
+  - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
 
 
 
