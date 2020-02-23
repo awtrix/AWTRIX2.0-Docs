@@ -12,6 +12,8 @@ Die kompilierten Apps können auf Windows-, Mac-, Linux- und ARM-Boards (z.B. Ra
   
 [Download B4J](https://www.b4x.com/b4j.html)
 
+AWTRIX nutzt JDK 8_232, da diese Version von den meisten Platformen problemlos unterstützt wird. Die JDK ist für die entwicklung Apps und die Nutzung der IDE notwendig.
+[Download OpenJDK8](https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-debug-1.8.0.232-2.b09/java-1.8.0-openjdk-debug-1.8.0.232-2.b09.ojdkbuild.windows.x86_64.zip)
 
 ## Apps definition
 AWTRIX Apps sind Java-Bibliotheken, die zur Laufzeit geladen werden können.
