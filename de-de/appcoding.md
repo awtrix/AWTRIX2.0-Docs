@@ -12,14 +12,14 @@ Die kompilierten Apps können auf Windows-, Mac-, Linux- und ARM-Boards (z.B. Ra
   
 [Download B4J](https://www.b4x.com/b4j.html)
   
-AWTRIX nutzt JDK 8_232, da diese Version von den meisten Platformen problemlos unterstützt wird. Die JDK ist für die entwicklung Apps und die Nutzung der IDE notwendig.  
+AWTRIX nutzt JDK 8_232, da diese Version von den meisten Platformen problemlos unterstützt wird. Die JDK ist für die Entwicklung von Apps und die Nutzung der IDE notwendig.  
 [Download OpenJDK8](https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-debug-1.8.0.232-2.b09/java-1.8.0-openjdk-debug-1.8.0.232-2.b09.ojdkbuild.windows.x86_64.zip)
 
 ## Apps definition
 AWTRIX Apps sind Java-Bibliotheken, die zur Laufzeit geladen werden können.
 Definierte Funktionen, die von AWTRIX aufgerufen werden, übertragen die Informationen auf die Matrix.
 
-# Erste Schritte
+## Erste Schritte
 Für die erste App ist es besser, mit dem Template zu beginnen [Download](https://github.com/awtrix/AWTRIX2.0-Apps/tree/master/templateApp)  
 Nachdem du die Template.b4j mit B4J geöffnet hast, sollte das ganze so aussehen:  
   
@@ -133,7 +133,7 @@ Wenn du ein Spiel erstellst, verwenden diese Sub, um die Analogwerte des angesch
 
 
 
-# Daten herunterladen
+## Daten herunterladen
 Um eine App zu entwickeln die Daten aus dem Internet anzeigt, bietet AWTRIX fast alle Möglichkeiten. 
 Wenn AWTRIX bootet wird bei jeder App der Download angestoßen, es können aber auch mehrere gestartet werden. Wieviele "Downloadhandler bzw JobNr" von AWTRIX bereit gestellt werden soll gibt man in der Konfiguration **App.downloads** an. 
 Sobald AWTRIX den Download startet wird das Event **App_startDownload** anhand der JobNr aufgerufen. Zu jeder Jobnummer wird nach erfolgreichem Download die Sub "App_evalJobResponse" aufgerufen und die angeforderten Daten wieder zurückgegeben. Dieses Prozedere wird mit jedem einzelnen Download abgearbeitet.
@@ -178,7 +178,7 @@ Setzt den Header für die Anfrage als Map.
 Setzt den MIME-Header der Anfrage.
 Diese Methode sollte nur bei Requests mit einer Payload verwendet werden.
 
-# Anzeige erstellen
+## Anzeige generieren
 Natürlich soll deine App auch was auf der Matrix anzeigen. Dies geschieht in der Sub **App_genFrame**
 Diese wird in dem eingestellten Tick interval aufgerufen. Da dies standartmäßig alle 65ms geschiet vermeide hier rechnenintensive Aufgaben oder Aufgaben die sich ständig widerholen. Dafür kann man z.B die Sub **App_Started** nutzen die nur einmal beim Start der App aufgerufen wird. Natürlich ist diese Vorgabe sehr allgemein gehalten und musss je nach Anwendungsfall ausprobiert oder geändert werden.
 
@@ -209,3 +209,15 @@ Zeichnet eine Linie
 
 **fill**
 Füllt die Matrix mit einer Farbe
+
+## App kompilieren & testen
+
+Die App wird als Bibiliothek kompliliert. Dazu in der oberen Menüleiste auf **Projekt**->**Kompilieren in Bibiliothek**. Alternativ geht dies auch mit dem Shortcut **Alt+F5**.
+
+Die Kompilierte .jar kann nun in den Ordner **Apps** kopiert werden. Dieser befindet sich im root der AWTRIX Installation. 
+
+Die apps können zur Laufzeit geladen werden. Dafür kann das Terminal auf der Home-Seite des Awtrix webinterface genutzt werden. Sollte dies nicht funktionieren muss AWTRIX neugestartet werden.
+
+``` bash
+reload apps
+```
