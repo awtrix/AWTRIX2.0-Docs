@@ -248,7 +248,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **repeat (optional)**
   - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
-  - Zeigt den Text in Regenbogenfarben an (true/false).
+  - Zeigt den Text in Regenbogenfarben an. Überschreibt **color** (true/false).
 - **progress (optional)**
   - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
 - **progressColor (optional)**
@@ -321,7 +321,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **repeat (optional)**
   - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
-  - Zeigt den Text in Regenbogenfarben an (true/false).
+  - Zeigt den Text in Regenbogenfarben an. Überschreibt **color** (true/false).
 - **progress (optional)**
   - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
 - **progressColor (optional)**
