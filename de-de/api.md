@@ -226,14 +226,14 @@ ___
 Zeigt eine idividuelle Benachrichtigung an
 
 #### **Parameter**  
+- **text**
+  - Anzuzeigender Text (String)
 - **force (optional)**
   - Legt fest, ob die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
   Wenn auf false gesetzt, wird die Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht diese anschließend. Somit können mehrere Benachrichtigungen auf einmal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder native Apps anzeigen.
 - **name (optional)**
   - Kennung der Benachrichtigung
-- **text**
-  - Anzuzeigender Text (String)
-- **scrollSpeed**
+- **scrollSpeed (optional)**
   - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
   - Icon ID aus der Online Datenbank (Ganzzahl)
@@ -255,8 +255,8 @@ Zeigt eine idividuelle Benachrichtigung an
   - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B]) 
 - **progressBackground (optional)**
   - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
-- **soundfile (optional) (Nummer der gewünschten MP3)**
-  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Ganzzahl)
+- **soundfile (optional)**
+  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
 
 
 ```JSON
@@ -300,13 +300,13 @@ Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit d
 Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
 
 #### **Parameter**  
+- **text**
+  - Anzuzeigender Text (String)
 - **name**
   - Kennung der temporären App
 - **lifetime**
   - Anzahl der AppLoops in der die temporäre App angezeigt werden soll
-- **text**
-  - Anzuzeigender Text (String)
-- **scrollSpeed**
+- **scrollSpeed  (optional)**
   - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
   - Icon ID aus der Online Datenbank (Ganzzahl)
@@ -329,7 +329,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **progressBackground (optional)**
   - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
 - **soundfile (optional) (Nummer der gewünschten MP3)**
-  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
+  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
 
 
 
