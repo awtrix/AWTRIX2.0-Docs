@@ -186,28 +186,28 @@ AWTRIX erwartet mit jedem Tick eine oder meherere Zeichenbefehle. Diese werden p
 
 ### Mögliche Zeichenbefehle
 
-**drawBMP**
+**drawBMP**  
 Zeichnet ein Bitmap. Hierfür können RGB535 Werte in einem Short Array übergeben werden oder heruntergeladene icon mit ```App.getIcon(6)```
 
-**drawText**
+**drawText**  
 Zeichnet einen Text.
 
-**drawCircle**
+**drawCircle**  
 Zeichnet einen Kreis.
 
-**fillCircle**
+**fillCircle**  
 Zeichnet einen ausgefüllten Kreis
 
-**drawPixel**
+**drawPixel**  
 Zeichnet einen einzelnen Pixel
 
-**drawRect**
+**drawRect**  
 Zeichnet ein Viereck
 
-**drawLine**
+**drawLine**  
 Zeichnet eine Linie
 
-**fill**
+**fill**  
 Füllt die Matrix mit einer Farbe
 
 ## App kompilieren & testen
