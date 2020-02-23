@@ -11,8 +11,8 @@ B4J ist ein modernes "VB6-ähnliches" und 100% kostenloses Entwicklungswerkzeug 
 Die kompilierten Apps können auf Windows-, Mac-, Linux- und ARM-Boards (z.B. Raspberry Pi) ausgeführt werden. Die kompilierten Apps sind native Java-Anwendungen.  
   
 [Download B4J](https://www.b4x.com/b4j.html)
-
-AWTRIX nutzt JDK 8_232, da diese Version von den meisten Platformen problemlos unterstützt wird. Die JDK ist für die entwicklung Apps und die Nutzung der IDE notwendig.
+  
+AWTRIX nutzt JDK 8_232, da diese Version von den meisten Platformen problemlos unterstützt wird. Die JDK ist für die entwicklung Apps und die Nutzung der IDE notwendig.  
 [Download OpenJDK8](https://github.com/ojdkbuild/ojdkbuild/releases/download/java-1.8.0-openjdk-debug-1.8.0.232-2.b09/java-1.8.0-openjdk-debug-1.8.0.232-2.b09.ojdkbuild.windows.x86_64.zip)
 
 ## Apps definition
