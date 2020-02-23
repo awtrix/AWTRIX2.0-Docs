@@ -236,9 +236,9 @@ Zeigt eine idividuelle Benachrichtigung an
 - **scrollSpeed**
   - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
-  - iconID aus der Online Datenbank (Ganzzahl)
+  - Icon ID aus der Online Datenbank (Ganzzahl)
 - **color (optional)**
-  - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
+  - Benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **repeatIcon (optional)** 
@@ -246,7 +246,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
-  - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+  - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
   - Zeigt den Text in Regenbogenfarben an (true/false).
 - **progress (optional)**
@@ -256,7 +256,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **progressBackground (optional)**
   - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
 - **soundfile (optional) (Nummer der gewünschten MP3)**
-  - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
+  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Ganzzahl)
 
 
 ```JSON
@@ -309,9 +309,9 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **scrollSpeed**
   - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
 - **icon (optional)**
-  - iconID aus der Online Datenbank (Ganzzahl)
+  - Icon ID aus der Online Datenbank (Ganzzahl)
 - **color (optional)**
-  - benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
+  - Benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
 - **repeatIcon (optional)** 
@@ -319,7 +319,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
-  - wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+  - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
   - Zeigt den Text in Regenbogenfarben an (true/false).
 - **progress (optional)**
@@ -329,7 +329,7 @@ Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter *
 - **progressBackground (optional)**
   - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
 - **soundfile (optional) (Nummer der gewünschten MP3)**
-  - spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
+  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab.
 
 
 
