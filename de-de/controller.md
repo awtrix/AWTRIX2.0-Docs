@@ -1,5 +1,3 @@
-
-
 !> **Bei der aktuellen Controller Firmware ist es nicht notwendig eine Config Datei zu verändern**.  
 Alle Einstellungen können nun ganz bequem per Hotspot eingestellt werden.
 Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ESP8266 geflasht werden kann. Das Kompilieren des Quellcodes (wie früher notwendig) wird hier nicht weiter beschrieben.
@@ -65,8 +63,10 @@ Wenn noch keine Wifi.Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 2. Das WLAN Passwort lautet "**awtrixxx**"
 3. Wenn sich nicht automatisch eine Webseite öffnet, kann unter der IP "**172.217.28.1**  über einen beliebigen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
 
-![](\assets\firmware\hotspotConfig1.jpg)
-![](\assets\firmware\hotspotConfig2.jpg)
+<div align=center>
+<img width="200" src="de-de\assets\firmware\hotspotConfig1.jpg"/>
+<img width="200" src="de-de\assets\firmware\hotspotConfig2.jpg"/>
+</div>
 
 
 4. Durch klicken auf "Conigure WiFi" (linkes Bild) gelangt man auf die eingentliche Einstellungsseite (rechtes Bild).

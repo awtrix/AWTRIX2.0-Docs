@@ -83,7 +83,7 @@ Erwartet einen Animations name (Siehe [cloudAnimations](api?id=grundlegende-info
 ```
 ___
 
-### Soundfile
+### soundfile
 
 Spielt eine Audiodatei ab, die auf die SD-Karte des DF-Players geladen wurde.
 
@@ -101,7 +101,7 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigene
 
 ___
 
-### Timer
+### timer
 
 Startet einen Timer für die angegebene Zeitspanne und zeigt einen Alarm an, wenn die Zeit abgelaufen ist.
 
@@ -137,20 +137,20 @@ Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 ```
 ___
 
-### AppList
+### appList
 
 Mit dieser API kannst du die Reihenfolge der Apps (AppLoop) anpassen.
 
 #### **Parameter**
-- AppList: eine Liste der benutzerdefinierten Apploop (Array of String)
+- appList: eine Liste der benutzerdefinierten Apploop (Array of String)
 - icon: iconID
 
 ``` JSON
-{"AppList":["Time","Facebook","Time","Instagram"]}
+{"appList":["Time","Facebook","Time","Instagram"]}
 ```
 
 ``` JSON
-{"AppList":"reset"} //setzt die Apploop zurück
+{"appList":"reset"} //setzt die Apploop zurück
 ```
 ___
 

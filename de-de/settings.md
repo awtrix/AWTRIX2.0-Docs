@@ -72,4 +72,6 @@ Du kannst die Matrix entweder über WiFi oder USB betreiben. Wenn du ein schwach
 
 !> Die Auswahl von ttyAMA0 kann beim RaspberryPi 3 und höher zum Abstutz führen da dieser Port vom Bluetooth belegt ist. Nutze stattdessen  ttyS0!
 
+### Premium
+[Siehe hier](de-de/premium.md)
 
