@@ -12,12 +12,13 @@
 - [MyApps](de-de/myapps.md)
 - [Einstellungen](de-de/settings.md)
 - [Premium](de-de/premium.md)
+- [Cloud](de-de/cloud.md)
 - **API**
 - [MQTT/REST](de-de/api.md)
 - **Extras**
+- [AWTRIX Map](de-de/map.md)
+- [Icon Database](de-de/icondb.md)
 - [Icon Creator](de-de/creator.md)
-- [Status](de-de/status.md)
-- [Cloud](de-de/cloud.md)
 - **App Entwicklung**
 - [Programmierung](de-de/appcoding.md)
 - [Veröffentlichung](de-de/appreview.md)
