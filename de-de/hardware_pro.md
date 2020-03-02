@@ -117,13 +117,13 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 ![](\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
 
-| Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis  |
-| ----- | ------------- | ------------- | ------------- | -------- | -------- |
-| 3,3V    | VCC  | VCC           | VCC                    | Spannungsversorgung (+)    |          |
-| G     | GND       | GND   | GND       | Spannungsversorgung (-)   |          |
-| D0    | I/O   |  -  |     -        | Tastsignal |          |
-| D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
-| D5    | -  | -  | I/O            | Tastsignal  |  |
+| Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis |
+| ----- | ------------ | ------------ | ------------- | ------- | ------- |
+| 3,3V  | VCC  | VCC   | VCC     | Spannungsversorgung (+)   |          |
+| G     | GND  | GND   | GND     | Spannungsversorgung (-)   |          |
+| D0    | I/O  |  -    | -       | Tastsignal                |          |
+| D4    | -    | I/O   | -       | Tastsignal  | Brücke A zulöten |
+| D5    | -    | -     | I/O     | Tastsignal  |  |
 
 Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
