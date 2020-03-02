@@ -109,21 +109,6 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
-## Gestensensor zur Bedienung (optional)
-Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
-
-![](\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
-
-| Wemos | APDS-9960 | Funktion | Hinweis  |
-| --- | --- | --- | --- |
-| 3.3V | VCC | Spannungsversorgung (+) | nicht 5V kompatibel! |
-| GND | GND | Spannungsversorgung (-) | |
-| D3 | SDA | I2C Daten | |
-| D1 | SCL | I2C Takt | |
-| D6 | INT | Interrupt |  |
-
-Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
-
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
 Wenn es Probleme bei der WiFi-Übertragung zwischen Server und Controller gibt, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.

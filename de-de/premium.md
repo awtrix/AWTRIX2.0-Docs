@@ -1,5 +1,5 @@
 
-Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diesen erhälst du bei mir im Shop.
+Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diesen erhälst du bei mir im [Shop](https://blueforcer.de/shop/).
 Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
 Diese Funktionen werden regelmäßig erweitert.
 

@@ -1,10 +1,11 @@
 !> Die Hostsoftware ist auf nicht absehbarer Zeit closed source!
 
+
+AWTRIX 2.0 kann auf jeder Plattform (Windows, MacOS, Linux) laufen, die einzige Voraussetzung ist die Unterstützung von Java 8 (1.8_232). Es handelt sich um eine Nicht-GUI-Anwendung, sodass keine Desktop-Umgebung benötigt wird.  Es istallerdings ratsam auf eine Desktop Distribution zu verzichten, um Prozessorleistung und Arbeitsspeicher zu sparen. Nutze daher sowas wie Rasbian lite.  
+
 Bitte beachte, dass Java nicht sehr ressourcenschonend ist.
 Wenn Du einen Raspberry verwenden möchtes, empfehle ich mindestens einen Raspberry 3+ oder vergleichbar. AWTRIX läuft zwar mit einem ZeroW, aber  langsamer. 
 
-
-AWTRIX 2.0 kann auf jeder Plattform (Windows, MacOS, Linux) laufen, die einzige Voraussetzung ist die Unterstützung von Java 8 (1.8_232). Es handelt sich um eine Nicht-GUI-Anwendung, sodass keine Desktop-Umgebung benötigt wird.  Es istallerdings ratsam auf eine Desktop Distribution zu verzichten, um Prozessorleistung und Arbeitsspeicher zu sparen. Nutze daher sowas wie Rasbian lite.  
 
 Dieses Tutorial beschreibt die Installation auf einem Linux-Rechner. 
 
@@ -35,7 +36,7 @@ Gebe zur automatischen Installation folgenden Befehl in dein SSH Terminal ein
 
 AWTRIX Starten  
 ```sudo service awtrix start```  
-AWTRIX Stoppen 
+AWTRIX Stoppen  
 ```sudo service awtrix stop```   
-AWTRIX Neustarten
+AWTRIX Neustarten  
 ```sudo service awtrix restart``` 
