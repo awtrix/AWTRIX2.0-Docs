@@ -1,6 +1,5 @@
 ![](\assets\awtrix.jpeg)
 
-
 # Teileliste
 ## Allgemeiner Hinweis
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
@@ -11,10 +10,10 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### Zwingend benötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
-| 2  | 32x8 Matrix              | [click here](https://blueforcer.de/shop/) |
-| 3  | Awtrix Gehäuse       | [click here](https://blueforcer.de/shop/) |
-| 4  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
+| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
+| 2  | 32x8 Matrix              | [click here](https://de.aliexpress.com/item/4000547842744.html) |
+| 3  | Awtrix Gehäuse       | [click here](https://www.thingiverse.com/thing:2791276) |
+| 4  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
 | 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
 | 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
 
@@ -22,10 +21,10 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### Optionale Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://www.amazon.de/Qualit%C3%A4t-GL5516-Lichtabh%C3%A4ngige-Widerstand-Fotowiderstand/dp/B00NXW9WZ6/) |
-| 2  | DF Mini Player           | [click here](https://www.banggood.com/Geekcreit-DFPlayer-Mini-MP3-Player-Module-MP3-Voice-Audio-Decoder-Board-For-Arduino-Supporting-TF-Card-U-Disk-IOSerial-PortAD-p-969191.html?akmClientCountry=DE&&cur_warehouse=UK) |
-| 3.1| Htui21d                  | [click here](https://google.de) |
-| 3.2| BME280                   | [click here](https://google.de) |
+| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
+| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
+| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
+| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
 | 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
 
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes sind und daher nicht gekauft werden müssen.
@@ -35,30 +34,29 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes s
 ### Zwingend benötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://google.de) |
-| 2  | Wemos D1 mini            | [click here](https://goo.gl/TVk7h7) |
-| 3  | 32x8 Matrix               | [click here](https://blueforcer.de/shop/) |
+| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
+| 2  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
+| 3  | 32x8 Matrix               | [click here](https://de.aliexpress.com/item/4000547842744.html) |
 | 4  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
 | 5  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
-| 6  | Widerstände (3x 1k)      | [click here](https://google.de) |
-| 7  | Shottkydioden (2x 1N4004)| [click here](https://google.de) |
-| 8  | Stiftleiste              | [click here](https://google.de) |
-| 9  | Jumper                   | [click here](https://google.de) |
-| 10 | 1000uF 10V Kondensator   | [click here](https://google.de) |
+| 6  | Widerstände (3x 1k)      | [click here](https://www.conrad.de/de/p/yageo-mf0207fte52-1k-metallschicht-widerstand-1-k-axial-bedrahtet-0207-0-6-w-1-1-st-1417606.html) |
+| 7  | Shottkydioden (2x 1N4004)| [click here](https://www.conrad.de/de/p/diotec-si-gleichrichterdiode-1n4001-do-204al-50-v-1-a-162213.html) |
+| 8  | Jumper                   |  |
+| 9 | 1000uF 10V Kondensator   | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
 
 ### Optionale Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://www.amazon.de/Qualit%C3%A4t-GL5516-Lichtabh%C3%A4ngige-Widerstand-Fotowiderstand/dp/B00NXW9WZ6/) |
-| 2  | DF Mini Player           | [click here](https://www.banggood.com/Geekcreit-DFPlayer-Mini-MP3-Player-Module-MP3-Voice-Audio-Decoder-Board-For-Arduino-Supporting-TF-Card-U-Disk-IOSerial-PortAD-p-969191.html?akmClientCountry=DE&&cur_warehouse=UK) |
-| 3.1| Htui21d                  | [click here](https://google.de) |
-| 3.2| BME280                   | [click here](https://google.de) |
-| 4  | Touch Taster (3x)        | [click here](https://google.de) |
-| 5  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
+| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
+| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
+| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
+| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+| 5  | Touch Taster (3x)        | [click here](https://de.aliexpress.com/item/4000032722881.html) |
 
 
 # Elektronik
-Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Leiterplatte. Die genauen Details zu den benötigten Bauteilen bitte der [Teileliste](../AWTRIXpro/partlistPro) entnehmen.
+Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Leiterplatte.
 
 ## Basis Variante
 
@@ -107,7 +105,22 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 | D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
 | D5    | -  | -  | I/O            | Tastsignal  |  |
 
-Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos anssonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
+Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
+
+## Gestensensor zur Bedienung (optional)
+Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
+
+![](\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
+
+| Wemos | APDS-9960 | Funktion | Hinweis  |
+| --- | --- | --- | --- |
+| 3.3V | VCC | Spannungsversorgung (+) | nicht 5V kompatibel! |
+| GND | GND | Spannungsversorgung (-) | |
+| D3 | SDA | I2C Daten | |
+| D1 | SCL | I2C Takt | |
+| D6 | INT | Interrupt |  |
+
+Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (Bus).
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
@@ -131,32 +144,5 @@ Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
 
 **Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
 
-Standartmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden, dazu folgende Zeile in der /boot/config.txt eingetragen werden  
+Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden, dazu folgende Zeile in der /boot/config.txt eingetragen werden  
 `enable_uart=1`
-
-
-# Gehäuse
-
-## 3D Druck
-
-Das Gehäuse kann mit einem 3D-Drucker erstellt werden. Die notwendigen Dateien können von [Thingiverse](https://www.thingiverse.com/thing:2791276) heruntergeladen werden.
-
-Die 3D-Objekte sind bereits so ausgerichtet, das möglichst wenig Hilfsmaterial benötigt wird. Das LED-Raster sollte in **Schwarz** gedruckt werden, da sonst die "Pixel" nicht klar getrennt sind, und durch das Material leuchten.
-
-**Empfohlene Druckeinstellungen**
-
-- 0.2 mm Layerhöhe
-
-- 20% infill
-
-- Support vom Druckbett
-
-- 45-55 mm/s
-
-## Zusammenbau
-
-Kleben Sie zunächst die beiden Teile für das LED-Gitter auf der Innenseite zusammen.
-Als Diffusor habe ich hochwertiges und dickeres Papier verwendet - es ist wichtig, dass man die Fasern nicht sieht, wenn man sie gegen helles Licht hält wie normales Druckerpapier.
-Schmieren Sie dann die flache Seite des LED-Rasters mit Klebestift und kleben Sie das Papier darauf.
-Dies ist am besten dort zu tun, wo Awtrix landen wird. Aufgrund hoher Temperatur- und Feuchtigkeitsschwankungen kann sich das Papier leicht verziehen.
-Dann die beiden Gehäuseteile zusammensetzen und ggf. mit etwas Kleber fixieren. Löten Sie 2 Kabel an die Buchse und schrauben Sie sie an das Gehäuse. Sie können dann direkt mit der restlichen Verkabelung fortfahren. Der LDR kann durch eine der oberen 5mm Lüftungsöffnungen gesteckt werden. Wenn alles fertig ist, legen Sie den Diffusor nach unten und legen Sie die LED-Matrix darauf, die perfekt in die Nut passen sollte, und drücken Sie das Gehäuse auf das LED-Raster. Dann drehen Sie alles auf der Rückseite um und befestigen Sie den Vorderrahmen.
