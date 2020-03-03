@@ -88,12 +88,12 @@ Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet we
 
 # Zusammenbau
 
-Für den Zusammenbau sind lediglich maximal 14 **M3x4** Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
+Für den Zusammenbau sind lediglich maximal 14x **M3x4** Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
 
 - Die Matrix wird mit 6 Schrauben **handfest** in das Grid geschaubt. Hierbei ist unbedingt die Richtung zu beachten, da die Matrix nur in eine Richtung perfekt im Grid liegt (Äußere Kondensatoren müssen in die dementsprechenden Aussparungen)
 
-- Den Lautsprecher kannst du einfach in die Aussparung stecken und muss daher auch nciht weiter fixiert werden.
+- Den Lautsprecher kannst du einfach in die Aussparung stecken und muss daher auch nicht weiter fixiert werden.
 
-- Den LDR steckst du von außen durch das Gehäuse bis er plan mit der Gehäuse Oberseite ist.
+- Den LDR steckst du von Außen durch das Gehäuse bis er plan mit der Gehäuse Oberseite ist.
 
 - Die Touchsensoren passen theoretisch perfekt in die 3 Aufnahmen. Aufgrund von Drucktoleranzen kann es aber eventuell nötig sein, diese mit doppelseitigen Klebeband zu fixieren oder die Platinen leicht mit Schleifpapier an den Seiten zu glätten.
