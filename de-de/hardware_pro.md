@@ -62,14 +62,6 @@ Solltest du Stiftleisten verlötet haben kannst du jetzt schon das Mainboard, La
 Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. 
 
 
-
-# Zusammenbau
-
-Für den Zusammenbau sind lediglich maximal 14 M3x4 Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
-
-Die Matrix wird mit 6 Schrauben **handfest** in das Grid geschaubt. Hierbei ist unbedingt die Richtung zu beachten, da die Matrix nur in eine Richtung perfekt im Grid liegt (Äußere Kondensatoren müssen in die dementsprechenden Aussparungen)
-
-
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
 Da AWTRIX im Gehäuse verbaut wird, bietet es sich an den Raspberry direkt per Serial an das Mainboard anzuschließen.
@@ -95,3 +87,15 @@ Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet we
  sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
  sudo reboot
 ```
+
+# Zusammenbau
+
+Für den Zusammenbau sind lediglich maximal 14 **M3x4** Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
+
+- Die Matrix wird mit 6 Schrauben **handfest** in das Grid geschaubt. Hierbei ist unbedingt die Richtung zu beachten, da die Matrix nur in eine Richtung perfekt im Grid liegt (Äußere Kondensatoren müssen in die dementsprechenden Aussparungen)
+
+- Den Lautsprecher kannst du einfach in die Aussparung stecken und muss daher auch nciht weiter fixiert werden.
+
+- Den LDR steckst du von außen durch das Gehäuse bis er plan mit der Gehäuse Oberseite ist.
+
+- Die Touchsensoren passen theoretisch perfekt in die 3 Aufnahmen. Aufgrund von Drucktoleranzen kann es aber eventuell nötig sein, diese mit doppelseitigen Klebeband zu fixieren oder die Platinen leicht mit Schleifpapier an den Seiten zu glätten.
