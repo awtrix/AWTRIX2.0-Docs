@@ -89,7 +89,7 @@ Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet we
 ## DFPlayer
 
 Der DFPlayer spielt mp3 Files von einer MicroSD Karte ab.
-Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.
+Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.
 [Standardsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
 
