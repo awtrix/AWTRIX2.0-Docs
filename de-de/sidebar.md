@@ -18,7 +18,7 @@
 - **Extras**
 - [AWTRIX Map](de-de/map.md)
 - [Icon Database](de-de/icondb.md)
-- [Icon Creator](de-de/creator.md)
+- [AWTRIXER](de-de/awtrixer.md)
 - **App Entwicklung**
 - [Programmierung](de-de/appcoding.md)
 - [Veröffentlichung](de-de/appreview.md)
