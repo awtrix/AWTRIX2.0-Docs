@@ -26,20 +26,20 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### Bnötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | Pro Matrix               | [click here](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
-| 3  | Awtrix Gehäuse           | [click here](https://www.thingiverse.com/thing:4155357) |
-| 4  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
-| 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
-| 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
+| 1  | Awtrix Mainboard Bausatz | [Klicke hier](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
+| 2  | Pro Matrix               | [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
+| 3  | Awtrix Gehäuse           | [Klicke hier](https://www.thingiverse.com/thing:4155357) |
+| 4  | Wemos D1 mini            | [Klicke hier](https://de.aliexpress.com/item/32651747570.html) |
+| 5  | Netzteil (>3A)           | [Klicke hier](https://goo.gl/QLydM3) |
+| 6  | Strombuchse              | [Klicke hier](https://goo.gl/j4Xov7) |
 
 
 ### Optionale Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
-| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+| 1  | LDR GL5528               | [Klicke hier](https://de.aliexpress.com/item/32515315072.html) |
+| 2  | DF Mini Player           | [Klicke hier](https://de.aliexpress.com/item/32992229288.html) |
+| 4  | Lautsprecher             | [Klicke hier](https://de.aliexpress.com/item/32853811267.html) |
 
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Mainboard Bausatz sind und daher nicht gekauft werden müssen.
 
