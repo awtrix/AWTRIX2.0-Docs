@@ -4,9 +4,7 @@
 Du möchtest dein bisheriges Awtrix-Erlebnis nochmal auf ein ganz anderes Level bringen? Dann ist die Awtrix Pro genau das richtige. Neben der integrierten Soundausgabe kannst du deine Matrix nun auch per Touchsensoren auf der Gehäuseoberseite steuern. Die deutlich kompaktere Bauform und die Verwendung eines professionellen SLA-Drucks lässt die Matrix um ein vielfaches edler aussehen.
 Awtrix PRO ist eine Weiterentwicklung der bisherigen großen Awtrix und unterscheidet sich im wesentlichen nur in der Größe. Vom Funktionsumfang können beide Versionen das gleiche. Lediglich das Gehäuse der Pro ist bereits von uns für sämtliche externe Hardware vorbereitet.
 
-Die Matrix Leiterplatte die hier zum Einsatz kommt ist eine Eigenentwicklung, da in der große leider 
-
-Die Software sowie das neue (weiße Mainboard) ist bei beiden Geräten gleich, weshalb hierbei nicht weiter unterschieden werden muss. Die Matrix die hier zum Einsatz kommt ist eine komplette Eigenentwicklung, da diese so in der Form noch nicht auf dem Markt ist. 
+Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, weshalb hierbei nicht weiter unterschieden werden muss. Die Matrix die hier zum Einsatz kommt ist eine komplette Eigenentwicklung, da diese so in der Form noch nicht auf dem Markt ist. 
 
 
 ## Was ist neu?
