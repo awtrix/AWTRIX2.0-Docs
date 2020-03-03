@@ -12,7 +12,7 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 - Helligkeitssensor im Gehäuse integriert
 - Raspberry Pi (Pi 3, Pi 4) optional im Gehäuse integrierbar
 - neues Mainboard im Gehäuse integriert
-- Lautsprecher im Gehäuse integriert
+- 3W Full-Range Lautsprecher im Gehäuse integriert
 
 ![](\assets\pro\pro_inside.jpg)
 
@@ -51,7 +51,7 @@ Das Mainboard ist bereits beschriftet und die Bauteile können direkt an die Pad
 ![](\assets\pro\front.png)
 
 
-Solltest du Stiftleisten verlötet haben kannst du jetzt schon das Mainboard, Lautsprecher und den Raspberry in das Gehäuse einbauen. Andernfalls solltest du erst alles zusammenlöten bevor du es einbaust. Die DC-Buchse solltest du auf alle Fälle vor dem Verlöten einbauen um die Gegenmutter anbringen zu können.
+Solltest du Stiftleisten verlötet haben, kannst du jetzt schon das Mainboard, Lautsprecher und den Raspberry in das Gehäuse einbauen. Andernfalls solltest du erst alles zusammenlöten bevor du es einbaust. Die DC-Buchse solltest du auf alle Fälle vor dem Verlöten einbauen um die Gegenmutter anbringen zu können.
 
 !> Nutze für die Spannungsversorgung des Mainboards und der Matrix keine dünnen Kabel, da hier relativ hohe Ströme fließen und durch dünne kabel der Spannungsabfall zu hoch sein kann. Das kann zu Problemen führen.
 
@@ -62,7 +62,7 @@ Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
-Da AWTRIX im Gehäuse verbaut wird, bietet es sich an den Raspberry direkt per Serial an das Mainboard anzuschließen.
+Da AWTRIX im Gehäuse verbaut wird, bietet es sich an den Raspberry direkt per Serial an das Mainboard anzuschließen. Hier wird der Raspberry auch vom Mainboard mit Strom versorgt.
 
 > Der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk.
 Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können und als Fallback falls keine Daten per Serial übertragen werden.
