@@ -24,13 +24,13 @@ Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, d
 
 In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt ihr uns bei der Weiterentwicklung von Awtrix & Awtrix Pro.
 
-## Aufbau mit Leiterplatte als Bausatz
-### Zwingend benötigte Bauteile
+
+### Bnötigte Bauteile
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
 | 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | 32x8 Matrix              | [click here](https://de.aliexpress.com/item/4000547842744.html) |
-| 3  | Awtrix Gehäuse       | [click here](https://www.thingiverse.com/thing:2791276) |
+| 2  | Pro Matrix               | [click here](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
+| 3  | Awtrix Gehäuse           | [click here](https://www.thingiverse.com/thing:4155357) |
 | 4  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
 | 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
 | 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
@@ -41,117 +41,57 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | -  |:------------------------:| :------------------------------:|
 | 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
 | 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
-| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
-| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
 | 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
 
-Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes sind und daher nicht gekauft werden müssen.
+Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Mainboard Bausatz sind und daher nicht gekauft werden müssen.
 
-
-## Aufbau mit Leiterplatte ohne Bausatz
-### Zwingend benötigte Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
-| 3  | 32x8 Matrix               | [click here](https://de.aliexpress.com/item/4000547842744.html) |
-| 4  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
-| 5  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
-| 6  | Widerstände (3x 1k)      | [click here](https://www.conrad.de/de/p/yageo-mf0207fte52-1k-metallschicht-widerstand-1-k-axial-bedrahtet-0207-0-6-w-1-1-st-1417606.html) |
-| 7  | Shottkydioden (2x 1N4004)| [click here](https://www.conrad.de/de/p/diotec-si-gleichrichterdiode-1n4001-do-204al-50-v-1-a-162213.html) |
-| 8  | Jumper                   |  |
-| 9 | 1000uF 10V Kondensator   | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
-
-### Optionale Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
-| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
-| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
-| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
-| 5  | Touch Taster (3x)        | [click here](https://de.aliexpress.com/item/4000032722881.html) |
-
-## Aufbau ohne Leiterplatte
-
-Der Aufbau ohne Leiterplatte bei Verwendung von vielen optionalen Teilen wird ausdrücklich nicht empfohlen. Alternativ kann eine Lochrasterplatine benutzt werden. Die hierfür benötigten Teile sind die gleichen wie in der Teileliste "Leiterplatte ohne Bausatz".
 
 # Elektronik
 
-Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Leiterplatte. Die genauen Details zu den benötigten Bauteilen bitte der [Teileliste](#aufbau-mit-leiterplatte-als-bausatz) entnehmen.
+Das Mainboard ist bereits beschriftet und die Bauteile können direkt an die Pads gelötet oder per Stiftleisten verbunden/gesteckt werden.
 
-## Basis Variante
+![](\assets\pro\front.png)
 
-![Basissetup](\assets\pro\AWTRIX_Core_Steckplatine.jpg)
 
-## Lichtsensor zur Helligkeitsregelung (optional)
-Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet . Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
+Solltest du Stiftleisten verlötet haben kannst du jetzt schon das Mainboard, Lautsprecher und den Raspberry in das Gehäuse einbauen. Andernfalls solltest du erst alles zusammenlöten bevor du es einbaust. Die DC-Buchse solltest du auf alle Fälle vor dem Verlöten einbauen um die Gegenmutter anbringen zu können.
 
-![ldr](\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
+!> Nutze für die Spannungsversorgung des Mainboards und der Matrix keine dünnen Kabel, da hier relativ hohe Ströme fließen und durch dünne kabel der Spannungsabfall zu hoch sein kann. Das kann zu Problemen führen.
 
-## DFPlayer Mini zur Soundausgabe (optional)
-Der DFPlayer dient zur Ausgabe von Sounds und ist optinal verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. Das hinzufügen von mp3 Dateien kann leider nur über die SD Karte am PC erfolgen. Ein hochladen vom Server oder ähnliches ist technisch leider nicht möglich.
+## Touch-Taster 
 
-![](\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
+Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. 
 
-| Wemos | DFPlayer Mini | Funktion | Hinweis  |
-| ----- | ------------- | -------- | -------- |
-| 5V    | VCC           | Spannungsversorgung (+)    |          |
-| G     | GND           | Spannungsversorgung (-)   |          |
-| D7    | TX            | Transmit (senden) |          |
-| D5    | RX            | Receive (empfangen)  | früher D8 |
 
-## Temperatur- und Luftfeuchtigkeitssensor (optional)
-Optinal kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei kann frei gewählt werden ob der BME280 oder der Htu21d zum Einsatz kommen soll. Die gemessenen Werte werden dem Server geschickt und können zum Einen mittels App direkt auf der Matrix angezeigt werden und zum Anderen von einem Hausautomationsserver (ioBroker, FHEM, ...) mittels API vom Awtrix Server abgerufen werden.
 
-![](\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
+# Zusammenbau
 
-| Wemos | BME280 | Htu21d | Funktion | Hinweis  |
-| --- | --- | --- | --- |--- |
-| 3.3V | VCC |  VCC |Spannungsversorgung (+) | nicht 5V kompatibel! |
-| GND | GND | GND |Spannungsversorgung (-) | |
-| D3 | SDA | SDA |I2C Daten | |
-| D1 | SCL | SCL |I2C Takt | |
+Für den Zusammenbau sind lediglich maximal 14 M3x4 Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
 
-Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemos D1 mini doppelt verwendet (I2C Bus).
+Die Matrix wird mit 6 Schrauben **handfest** in das Grid geschaubt. Hierbei ist unbedingt die Richtung zu beachten, da die Matrix nur in eine Richtung perfekt im Grid liegt (Äußere Kondensatoren müssen in die dementsprechenden Aussparungen)
 
-## Touch-Taster zur Bedienung (optional)
-
-![](\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
-
-| Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis  |
-| ----- | ------------- | ------------- | ------------- | -------- | -------- |
-| 3,3V    | VCC  | VCC           | VCC                    | Spannungsversorgung (+)    |          |
-| G     | GND       | GND   | GND       | Spannungsversorgung (-)   |          |
-| D0    | I/O   |  -  |     -        | Tastsignal |          |
-| D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
-| D5    | -  | -  | I/O            | Tastsignal  |  |
-
-Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 
-Wenn es Probleme bei der WiFi-Übertragung zwischen Server und Controller gibt oder der Server mit im Awtrix Gehäuse verbaut wird, gibt es die Möglichkeit den Server direkt per Serial an den Controller (Wemos D1 Mini) anzuschließen.
+Da AWTRIX im Gehäuse verbaut wird, bietet es sich an den Raspberry direkt per Serial an das Mainboard anzuschließen.
 
-Auf Controller-Seite muss hierfür im Hotspot Menü der Haken bei Serial gesetzt werden. Außerdem braucht der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk. Ansonsten öffnet er immer wieder den Hotspot und zeigt damit auch nichts anderes an.
-Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können.
+> Der Wemos weiterhin zwingend eine Verbindung zu einem Netzwerk.
+Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu können und als Fallback falls keine Daten per Serial übertragen werden.
 
-Es kann auch der **USB-Port** des Pi's verwendet werden (auch für jede andere Serverplattform). Dazu muss man einfach den Server per microUSB-Kabel an den Wemos D1 anschließen.
-
-Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
-
-![](\assets\pro\AWTRIX_raspi_V2_Steckplatine.jpg)
-
-| Wemos | Raspberry Pin-No | Funktion |
-| ----- | ---------------- | -------- |
-| 5V    | 04 - 5V          | Spannungsversorgung (+) |
-| GND   | 06 - GND         | Spannungsversorgung (-)   |
-| RX    | 08 - TXD         | Transmit (senden) |
-| TX    | 10 - RXD         | Receive (empfangen)  |
-
-**Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
-
-Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden, dazu folgende Zeile in der /boot/config.txt eingetragen werden  
-`enable_uart=1`
+Dazu wird der Pi wie folgt mit dem Mainboard verbunden:
 
 
+| Raspberry Pin-No | Mainboard (Raspberry Serial header) |
+| ---------------- | -------- |
+| 04 - 5V          | +5V) |
+| 06 - GND         | GND   |
+| 08 - TXD         | Rx |
+| 10 - RXD         | Tx  |
+
+!> **Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
+
+Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden. Beim Raspberry 3 kann man das über folgende Befehle machen:
+```
+ sudo raspi-config nonint do_serial 1
+ sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
+ sudo reboot
+```
