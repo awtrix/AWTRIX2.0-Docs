@@ -68,7 +68,10 @@ Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass b
 ![ldr](\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
 
 ## DFPlayer Mini zur Soundausgabe (optional)
-Der DFPlayer dient zur Ausgabe von Sounds und ist optinal verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. Das hinzufügen von mp3 Dateien kann leider nur über die SD Karte am PC erfolgen. Ein hochladen vom Server oder ähnliches ist technisch leider nicht möglich.
+Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. ## DFPlayer
+Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.
+AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
 
 ![](\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
 
@@ -102,10 +105,10 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 | 3,3V    | VCC  | VCC           | VCC                    | Spannungsversorgung (+)    |          |
 | G     | GND       | GND   | GND       | Spannungsversorgung (-)   |          |
 | D0    | I/O   |  -  |     -        | Tastsignal |          |
-| D4    | -  | I/O  | -            | Tastsignal  | Brücke A zulöten |
+| D4    | -  | I/O  | -            | Tastsignal  | **Brücke A zulöten** |
 | D5    | -  | -  | I/O            | Tastsignal  |  |
 
-Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
+!> Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
 
 ## Gestensensor zur Bedienung (optional)
 Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
