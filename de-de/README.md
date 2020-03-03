@@ -35,7 +35,6 @@ Bei der Erstellung eigener Notifications hilft ein weiteres Feature: der Awtrixe
 - Timer
 
 **Premium Funktionen**
-- Wecker
 - Fritz!Box CallMonitor
 - Steuerung deiner AWTRIX über die AWTRIX Cloud
 - Pushover Client
