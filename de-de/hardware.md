@@ -68,10 +68,12 @@ Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass b
 ![ldr](\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
 
 ## DFPlayer Mini zur Soundausgabe (optional)
-Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht. ## DFPlayer
-Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.
+Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht oder Töne bei Benachrichtigungen abspielt.  
+
+Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.  
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.
-[Standardsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/beta/Soundfiles.zip)  
+  
 
 ![](\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
 
