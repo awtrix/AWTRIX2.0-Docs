@@ -1,8 +1,8 @@
 [**Home**](de-de/)
 - **Hardware**
-- [AWTRIX Platine](de-de/pcb.md)
 - [AWTRIX Standard](de-de/hardware.md)
 - [AWTRIX Pro](de-de/hardware_pro.md)
+- [AWTRIX Platine](de-de/pcb.md)
 - **Software**
 - [Controller](de-de/controller.md)
 - [Host](de-de/host.md)
