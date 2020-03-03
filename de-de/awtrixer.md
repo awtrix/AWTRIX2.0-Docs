@@ -17,4 +17,4 @@ AWTRIXER behinhaltet massig funktionen die fast schon an Photoshop erinnern.
     - Resize lässt dich deine Leinwand von 8x8 auf 32x8 ändern. Andere Größen sind hier nicht möglich.
     - Mit Save kannst du dein Werk umbennenen, für spätere sessions abseichern oder in die Cloud hochladen.
     - Export, exportiert dein Icon als Bilddatei auf den PC. Diese können von AWTRIX aber nicht verwendet werden.
-    - Mit Import kannst du vorhandene Grafiken oder Animationen importieren. Bitte beachte auch hier das AWTRIX nur 8x8 oder 32x8 arbeiten kann. Nutze ggf die Resize funktion während des importiertvorgangs.
+    - Mit Import kannst du vorhandene Grafiken oder Animationen importieren. Bitte beachte auch hier das AWTRIX nur 8x8 oder 32x8 arbeiten kann. Nutze ggf. die Resize Funktion während des importiertvorgangs.
