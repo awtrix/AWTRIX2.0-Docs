@@ -1,6 +1,6 @@
 ![AWTRIX Pro](\assets\awtrix_pro.jpg)
   <small><div align="center">
-(Figure: AWTRIX Pro)
+(Picture: AWTRIX Pro)
 </div></small>
 
 
