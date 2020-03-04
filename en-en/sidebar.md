@@ -1,0 +1,30 @@
+[**Home**](en-en/)
+- **Hardware**
+- [AWTRIX Standard](en-en/hardware.md)
+- [AWTRIX Pro](en-en/hardware_pro.md)
+- [AWTRIX Platine](en-en/pcb.md)
+- **Software**
+- [Controller](en-en/controller.md)
+- [Host](en-en/host.md)
+- **Usage**
+- [First Start](en-en/firststart.md)
+- [Appstore](en-en/appstore.md)
+- [MyApps](en-en/myapps.md)
+- [Settings](en-en/settings.md)
+- [Premium](en-en/premium.md)
+- [Cloud](en-en/cloud.md)
+- **API**
+- [MQTT/REST](en-en/api.md)
+- **Extras**
+- [AWTRIX Map](en-en/map.md)
+- [Icon Database](en-en/icondb.md)
+- [AWTRIXER](en-en/awtrixer.md)
+- **App Development**
+- [Programming](en-en/appcoding.md)
+- [Publishing](en-en/appreview.md)
+- **Links**
+- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/awtrix)
+- [![Forum](https://icongram.jgog.in/devicon/bootstrap-plain.svg?color=808080&size=16)Forum](https://forum.blueforcer.de)
+- [![Instagram](https://icongram.jgog.in/feather/instagram.svg?colored&size=16)Instagram](https://instagram.com/awtrix2.0)
+- [![Facebook](https://icongram.jgog.in/simple/facebook.svg?color=808080&size=16)Facebook](https://www.facebook.com/groups/126493104851075)
+- [![Shop](https://icongram.jgog.in/feather/shopping-bag.svg?colored&size=16)Shop](https://blueforcer.de/shop/)

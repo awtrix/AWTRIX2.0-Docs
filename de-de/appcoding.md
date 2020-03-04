@@ -120,15 +120,15 @@ Wird bei jedem App Update von Awtrix aufgerufen. Du musst eine URL für jeden Do
 **App_evalJobResponse**   
 Wird nach jedem angeforderten Download aufgerufen. Hier können die geruntergeladenen Daten verarbeitet werden.
 
-**App_genFrame**
+**App_genFrame**  
 Diese Sub wird während deine App läuft kontinuierlich aufgerufen. Das Interval setzt du mit App.Tick fest.
 Hier wird AWTRIX die Zeichenroutinen übergeben, die letzendlich auf der Matrix angezeigt wird. Berechnungen die nur einmal ausgeführt werden müssen sollten nicht hier hinzugefügt werden.
 
-**App_controllerButton**
+**App_controllerButton**  
 Wenn du ein Spiel erstellst, verwende diese Sub, um die Tastendrücke vom Webinterface oder dem Game-Controller zu erhalten.
 button definiert die ButtonID des Controllers, dir ist true, wenn er gedrückt wird.
 
-**App_controllerAxis**
+**App_controllerAxis**  
 Wenn du ein Spiel erstellst, verwenden diese Sub, um die Analogwerte des angeschlossenen Controllers zu erhalten.
 
 
