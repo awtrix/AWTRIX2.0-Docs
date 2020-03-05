@@ -136,6 +136,35 @@ Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 {"stopwatch":false} // Stoppt den Timer
 ```
 ___
+### yeelight
+Mit dieser Premium-Funktion kannst du auf einer Yeelight einen Effekt abspsielen.  
+Der erste String im Array benennt den Effekt, der zweite Parameter gibt an, wie oft dieser Effekt wiederholt wird. Du kannst dies auch in deiner Benachrichtigung JSON implementieren.
+
+``` JSON
+{"yeelight":["Alarm",10]}
+```
+Derzeit sind folgende Effekte verfügbar
+- Alarm
+- Birthday
+- Candle Flicker
+- Christmas
+- Disco
+- LSD
+- Pastel Flow
+- Police
+- Police2
+- Rainbow
+- Rave
+- RGB
+- Romance
+- Strobe
+- Sunrise
+- Traffic Light
+
+> **Bitte beachte**  
+Du kannst keinen Effekt spielen, während die Yeelight ausgeschaltet ist (von app etc, nicht vom Strom getrennt). Daher fragt awtrix nach dem Powerstate der Lampe und schaltet sie gegebenenfalls ein. Nach der Wiedergabe wird die Lampe wieder ausgeschaltet. Wenn das Licht vor dem api-Aufruf eingeschaltet ist, wird die Birne wieder den Zustand vor dem Beginn des Effekts annehmen.
+Dies hat jedoch ein Problem zur Folge: Wenn die Yeelight aus ist und ein Effekt ab gespielt wird, hat die Yeelight den Zustand "AN". Wenn du nun wieder einen Effekt aktiverst, während die Glühbirne noch einen Effekt abspielt, bleibt die Yeelight danach eingeschaltet, weil "AN" der zuletzt angefragte Zustand war.
+___
 
 ### appList
 
@@ -257,7 +286,8 @@ Zeigt eine idividuelle Benachrichtigung an
   - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
 - **soundfile (optional)**
   - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
-
+- **yeelight**
+  - Plays an effect on your Yeelight ([see here](/de-de/api?id=yeelight))
 
 ```JSON
 {
@@ -297,41 +327,7 @@ ___
 Mit dieser API kannst du eine temporäre App erstellen, die sich mit einer bestimmten **"Loop Lifetime"** in die AppLoop integriert.
 Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert sich mit jedem Anruf um 1. Wenn die Lebensdauer auf 0 sinkt, wird die temporäre App aus der AppLoop entfernt.
 Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit dem gleichen Namen erneut sendest.
-Der Aufbau ist der selbe wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
-
-#### **Parameter**  
-- **text**
-  - Anzuzeigender Text (String)
-- **name**
-  - Kennung der temporären App
-- **lifetime**
-  - Anzahl der AppLoops in der die temporäre App angezeigt werden soll
-- **scrollSpeed  (optional)**
-  - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
-- **icon (optional)**
-  - Icon ID aus der Online Datenbank (Ganzzahl)
-- **color (optional)**
-  - Benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
-- **moveIcon (optional)**
-  - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
-- **repeatIcon (optional)** 
-  - Wenn **moveIcon** aktiv ist, wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
-- **duration (optional)**
-  - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
-- **repeat (optional)**
-  - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
-- **rainbow (optional)**
-  - Zeigt den Text in Regenbogenfarben an. Überschreibt **color** (true/false).
-- **progress (optional)**
-  - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
-- **progressColor (optional)**
-  - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B]) 
-- **progressBackground (optional)**
-  - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
-- **soundfile (optional) (Nummer der gewünschten MP3)**
-  - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
-
-
+Der Aufbau und die Möglichen Befehle sind die selben wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
 
 ```JSON
 {
