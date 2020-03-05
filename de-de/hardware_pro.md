@@ -55,6 +55,15 @@ Solltest du Stiftleisten verlötet haben, kannst du jetzt schon das Mainboard, L
 
 !> Nutze für die Spannungsversorgung des Mainboards und der Matrix keine dünnen Kabel, da hier relativ hohe Ströme fließen und durch dünne kabel der Spannungsabfall zu hoch sein kann. Das kann zu Problemen führen.
 
+## AWTRIX Pro Matrix
+
+Diese Matrix ist vorrangig für AWTRIX entwickelt worden. Um Kosten bei der Produktion zu sparen wurde bei der Platine auf einen Aluminium Kern verzichtet.
+Stattdessen wurde die Rückseite großzügig mit Masseflächen versehen um die Wärme abzutransportieren. Dennoch ist die Matrix nicht für die volle LED Leistung ausgelegt.
+
+!> Steuere niemals für einen längeren Zeitraum und hoher Helligkeit alle 256 LEDs auf einmal an. Dies kann aufgrund der Hitzeentwicklung zu Schäden der Matrix führen.
+
+Die große Masseflächen wirken wie ein Bi-Metall, daruch kommt es im Reflow Ofen zu einer leichten Verformung der Platine. Dies wirkt sich jedeoch nicht auf die Funktionsweise aus, und wird durch die Verschraubung im Gehäuse wieder begradigt.
+
 ## Touch-Taster 
 
 !> Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. 
