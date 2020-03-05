@@ -62,7 +62,7 @@ Instead, the rear side was generously provided with ground planes to dissipate t
 
 !> Never drive all 256 LEDs at once for a long time at high brightness. This can cause damage to the matrix due to the heat development.
 
-The large ground plane acts like a bi-metal, which causes a slight deformation of the board in the reflow oven. This has no effect on the functionality of the LED and is straightened by the screw connection in the housing.
+The large ground plane acts like a bi-metal, which causes a slight deformation of the board in the reflow oven (Soldering process). This has no effect on the functionality of the LED and is straightened by the screw connection in the housing.
 
 
 ## Touch sensors 
