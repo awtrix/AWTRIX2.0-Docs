@@ -62,7 +62,7 @@ Stattdessen wurde die Rückseite großzügig mit Masseflächen versehen um die W
 
 !> Steuere niemals für einen längeren Zeitraum und hoher Helligkeit alle 256 LEDs auf einmal an. Dies kann aufgrund der Hitzeentwicklung zu Schäden der Matrix führen.
 
-Die große Masseflächen wirken wie ein Bi-Metall, daruch kommt es im Reflow Ofen zu einer leichten Verformung der Platine. Dies wirkt sich jedeoch nicht auf die Funktionsweise aus, und wird durch die Verschraubung im Gehäuse wieder begradigt.
+Die große Masseflächen wirken wie ein Bi-Metall, daruch kommt es im Reflow Ofen (Lötvorgang) zu einer leichten Verformung der Platine. Dies wirkt sich jedeoch nicht auf die Funktionsweise aus, und wird durch die Verschraubung im Gehäuse wieder begradigt.
 
 ## Touch-Taster 
 
