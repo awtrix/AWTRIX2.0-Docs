@@ -34,7 +34,7 @@ Hier kannst du die globale Textfarbe bestimmen.
 Trage entweder deine gewünschte Farbe im Format rgb(R,G,B) ein oder nutze den Colorpicker auf der rechten Seite
 
 **Brightness**  
-Hier wird die Helligkeit der Matrix festgelegt. Bitte bedenke: Je heller die Matrix, desto mehr Strom wird verbraucht und desto wärmer wird sie.
+Hier wird die Helligkeit der Matrix festgelegt (0-100%). Bitte bedenke: Je heller die Matrix, desto mehr Strom wird verbraucht und desto wärmer wird sie.
 
 !> Die Matrix kann bei höchster Helligkeitsstufe und komplett weißen Pixeln bis zu 75 Watt beanspruchen! Um eine übermäßige Hitzeentwicklung zu vermeiden, empfiehlt sich eine **maximale** Helligkeit von 75%.
 
@@ -98,6 +98,6 @@ Wenn du einen LDR (Light Dependent Resistor) an die Matrix angeschlossen hast, k
 - **Maximum Lux**
   Der maximale Helligkeitswert der vom LDR gemessen werden kann
 - **Minimum Brightness**
-  Die minimale Helligkeit die nach der Berechnung möglich ist
+  Die minimale Helligkeit die nach der Berechnung möglich ist (0-100%)
 - **Maximum Brightness**
-  Die maximale Helligkeit die nach der Berechnung möglich ist
+  Die maximale Helligkeit die nach der Berechnung möglich ist (0-100%)
