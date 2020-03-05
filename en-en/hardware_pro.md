@@ -55,6 +55,15 @@ If you have soldered pin headers, you can already mount the mainboard, speakers 
 
 !> Do not use thin cables for the power supply of the mainboard and the matrix, because relatively high currents flow here and the voltage drop can be too high due to thin cables. This can lead to problems.
 
+## AWTRIX Pro Matrix
+
+This matrix was developed primarily for AWTRIX. In order to save production costs, an aluminium core has been omitted from the circuit board.
+Instead, the rear side was generously provided with ground planes to dissipate the heat. However, the matrix is not designed for full LED power.
+
+!> Never drive all 256 LEDs at once for a long time at high brightness. This can cause damage to the matrix due to the heat development.
+
+The large ground plane acts like a bi-metal, which causes a slight deformation of the board in the reflow oven. This has no effect on the functionality of the LED and is straightened by the screw connection in the housing.
+
 
 ## Touch sensors 
 
