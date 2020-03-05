@@ -136,6 +136,35 @@ When the stopwatch reaches 1 hour, the icon is removed for more space.
 {"stopwatch":false} // Stops the timer
 ```
 ___
+### yeelight
+With this premium function you can play an effect on a Yeelight.  
+The first string in the array names the effect, the second parameter specifies how often this effect is repeated. You can also implement this in your notification JSON.
+
+``` JSON
+{"yeelight":["Alarm",10]}
+```
+The following effects are currently available
+- Alarm
+- Birthday
+- Candle Flicker
+- Christmas
+- Disco
+- LSD
+- Pastel Flow
+- Policy
+- policy2
+- Rainbow
+- Rave
+- RGB
+- Romance
+- Strobe
+- Sunrise
+- traffic light
+
+> **Please note**  
+You cannot play an effect while the Yeelight is switched off (from app etc, not disconnected from the power). Therefore awtrix asks for the powerstate of the lamp and turns it on if necessary. After playback the lamp will switched off again. If the light is switched on before the api call, the bulb will return to the state before the effect started.
+But this causes a problem: If the Yeelight is off and an effect is played, the Yeelight has the state "ON". If you now activate an effect again while the light bulb is still playing an effect, the Yeelight will remain on afterwards, because "ON" was the last requested state.
+___
 
 ### appList
 
@@ -257,6 +286,9 @@ Displays an individual notification
   - Determines the background color of the progress bar (array of integers [R,G,B])   
 - **soundfile (optional)**
   - Plays a specific file on the DFPlayer when the app starts. (Number of the desired MP3 as integer)
+- **yeelight**
+  - Plays an effect on your Yeelight ([see here](/en-en/api?id=yeelight))
+
 
 
 ```JSON
@@ -297,41 +329,7 @@ ___
 With this API you can create a temporary app that integrates with the AppLoop with a certain **"Loop Lifetime "**.
 This app is displayed at the end of each AppLoop and the lifetime decreases by 1 with each call. When the lifetime decreases to 0, the temporary app is removed from the AppLoop.
 You can update the temporary app at any time by resending the request with the same name.
-The structure is the same as for a notification, except that the parameters **name** and **lifetime** are mandatory.
-
-#### **parameters**  
-- **text**
-  - Text to be displayed (String)
-- **name**
-  - Identification of the temporary app
-- **lifetime**
-  - Number of AppLoops in which the temporary app should be displayed
-- **scrollSpeed (optional)**
-  - The scroll speed in milliseconds. Lower=Faster; default: 65ms (integer)  
-- **icon (optional)**
-  - Icon ID from the online database (integer)
-- **color (optional)**
-  - Custom text color (array of integers [R,G,B])
-- **moveIcon (optional)**
-  - Moves the icon with the text from the screen (true/false).
-- **repeatIcon (optional)** 
-  - If **moveIcon** is active, when using **repeat** the icon will be displayed again on subsequent repetitions.
-- **duration (optional)**
-  - Defines how long (in seconds) the notification should be displayed (integer) (Overridden by **repeat**)
-- **repeat (optional)**
-  - How often the text should be scrolled before switching to the next app. If the text needs to be scrolled up and the text length does not need to be scrolled up, the global app runtime is used to switch. (integer)
-- **rainbow (optional)**
-  - Displays the text in rainbow colors. Overwrites **color** (true/false).
-- **progress (optional)**
-  - Displays a progress bar below the text (0-100, integer)
-- **progressColor (optional)**
-  - Determines the color of the progress bar (array of integers [R,G,B]) 
-- **progressBackground (optional)**
-  - Determines the background color of the progress bar (array of integers [R,G,B])   
-- **soundfile (optional) (number of the desired MP3)**
-  - Plays a specific file on the DFPlayer when the app starts. (Number of the desired MP3 as integer)
-
-
+The structure and possible commands are the same as for a notification, except that the parameters **name** and **lifetime** are mandatory.
 
 ```JSON
 {
