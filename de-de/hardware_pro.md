@@ -8,6 +8,7 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 
 
 ## Was ist neu?
+- Kleinere Matrix (190 x 55 mm)
 - Drei Taster auf der Gehäuseoberseite
 - Helligkeitssensor im Gehäuse integriert
 - Raspberry Pi (Pi 3, Pi 4) optional im Gehäuse integrierbar
