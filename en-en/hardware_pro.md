@@ -8,6 +8,7 @@ The software and the new (white) mainboard are the same for both devices, so the
 
 
 ## What is new?
+- Smaller Matrix (190 x 55 mm)
 - Three buttons on the top of the case
 - Brightness sensor integrated in housing
 - Raspberry Pi (Pi 3, Pi 4) can be optionally integrated into the housing
