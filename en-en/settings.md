@@ -34,7 +34,7 @@ Here you can set the global text color.
 Either enter your desired color in the format rgb(R,G,B) or use the colorpicker on the right side
 
 **Brightness**  
-Here the brightness of the matrix is defined. Please note: The brighter the matrix, the more power is consumed and the warmer it becomes.
+Here the brightness of the matrix is defined (0-100%). Please note: The brighter the matrix, the more power is consumed and the warmer it becomes.
 
 !> The matrix can consume up to 75 watts at highest brightness level and completely white pixels! To avoid excessive heat development, a **maximum** brightness of 75% is recommended.
 
@@ -98,6 +98,6 @@ If you have connected an LDR (Light Dependent Resistor) to the matrix, you can s
 - **maximum lux**
   The maximum brightness value that can be measured by the LDR
 - **Minimum Brightness**
-  The minimum brightness that is possible after the calculation
+  The minimum brightness that is possible after the calculation (0-100%)
 - **Maximum Brightness**
-  The maximum brightness that is possible after the calculation
+  The maximum brightness that is possible after the calculation (0-100%)
