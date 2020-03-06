@@ -1,7 +1,9 @@
-The goal of the AWTRIX Cloud is to close the gap between your local instance and the services in the cloud, while ensuring the highest level of security and data protection. I have developed the AWTRIX Cloud with security in mind. When you activate the cloud component, your AWTRIX establishes a secure connection to the AWTRIX Cloud. No further configuration is required to make the instance accessible to the Internet. Moreover, no user names, passwords, email addresses or other private information are required, and the cloud server does not store any information about connections.
-
-The cloud connection is part of the premium functionality.
-
+With the AWTRIX Cloud, you can send API commands to your AWTRIX from outside.  
+  
+The goal of the AWTRIX Cloud is to close the gap between your local instance and the services on the Internet, while ensuring the highest level of security and data protection. I have developed the AWTRIX Cloud with security in mind. No further configuration is required to make the instance accessible to the Internet. Furthermore, no user names, passwords, e-mail addresses or other private information are required and the cloud server does not store any information about the connections.  
+  
+The cloud connection is part of the premium functionality.  
+  
 ## How it works
 
 When you enable the cloud functionality, AWTRIX connects to the cloud server (the server is completely self-written, I don't use third party cloud software). After successful connection, AWTRIX generates its own 12-digit token and sends it to the server for login. This connection is then assigned to the token. It is not possible to access other connections, as each one is instantiated as a separate thread.

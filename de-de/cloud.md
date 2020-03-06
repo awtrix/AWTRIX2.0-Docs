@@ -1,5 +1,7 @@
-Das Ziel der AWTRIX Cloud ist es, die Lücke zwischen deiner lokalen Instanz und den Diensten in der Cloud zu schließen und gleichzeitig ein Höchstmaß an Sicherheit und Datenschutz zu gewährleisten. Ich habe die AWTRIX Cloud unter dem Gesichtspunkt der Sicherheit entwickelt. Wenn du die Cloud-Komponente aktivierst, baut deine AWTRIX eine sichere Verbindung zur AWTRIX Cloud auf. Es ist keine weitere Konfiguration erforderlich um die Instanz dem Internet zugänglich zu machen. Außerdem sind keine Benutzernamen, Passwörter, E-Mail-Adressen oder andere private Informationen erforderlich und der Cloud-Server speichert keine Informationen über die Verbindungen.
-
+Mit der AWTRIX Cloud kannst du von Extern, API Befehle an deine AWTRIX senden.  
+  
+Das Ziel der AWTRIX Cloud ist es, die Lücke zwischen deiner lokalen Instanz und den Diensten im Internet zu schließen und gleichzeitig ein Höchstmaß an Sicherheit und Datenschutz zu gewährleisten. Ich habe die AWTRIX Cloud unter dem Gesichtspunkt der Sicherheit entwickelt. Es ist keine weitere Konfiguration erforderlich um die Instanz dem Internet zugänglich zu machen. Außerdem sind keine Benutzernamen, Passwörter, E-Mail-Adressen oder andere private Informationen erforderlich und der Cloud-Server speichert keine Informationen über die Verbindungen.  
+  
 Die Cloud-Verbindung ist Teil der Premium-Funktionalität.
 
 ## So funktioniert es
