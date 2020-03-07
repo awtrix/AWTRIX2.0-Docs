@@ -90,7 +90,7 @@ Plays an audio file loaded on the DF player's SD card.
 You need to create a folder "MP3" on your DFplayer SD card and move your mp3s into this folder.
 The mp3 must start with a 4-digit number, e.g. 0001.mp3 or 0001 - Testfile.mp3  
 AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 0101.  
-[Download default sounds](https://blueforcer.de/awtrix/beta/Soundfiles.zip)
+[Download default sounds](https://blueforcer.de/awtrix/Soundfiles.zip)
 
 #### **Parameters**
 - soundfile: Number of the desired MP3

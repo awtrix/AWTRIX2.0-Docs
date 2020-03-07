@@ -11,7 +11,7 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
    
 **2.** Entpacke das heruntergeladene Programm und starte es.
    
-**3.** Lade dir die aktuelle Firmware.bin Datei von [hier](https://blueforcer.de/awtrix/beta/firmware.bin) herunter.
+**3.** Lade dir die aktuelle Firmware.bin Datei von [hier](https://blueforcer.de/awtrix/stable/firmware.bin) herunter.
 
 **4.** Selle den richtigen Com-Port im unteren Bereich des Programms ein.
    
@@ -37,7 +37,7 @@ Wir benötigen auch Python auf unserem System, um dieses Skript mit dem serielle
 Im Terminal ändern wir den aktuellen Ordner in den Pfad des esptool-Ordners und geben diesen Befehl ein, um die Firmware herunterzuladen:
 
 ``` BASH
-sudo wget -h https://blueforcer.de/awtrix/beta/firmware.bin
+sudo wget -h https://blueforcer.de/awtrix/stable/firmware.bin
 ```
 Anschließend wird der Flashprozess gestartet
 

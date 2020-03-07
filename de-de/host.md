@@ -14,7 +14,7 @@ Dieses Tutorial beschreibt die Installation auf einem Linux-Rechner.
 Dieses kurze Beispiel zeigt, wie man die Java-Anwendung startet.
 Gehe zum nächsten Punkt für die Installation auf einer Linux-Maschine.
 
-Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/beta/awtrix.jar)
+Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/stable/awtrix.jar)
  herunterladen
 
  und starte es über die Kommandozeile oder das Terminal. 
@@ -29,7 +29,7 @@ Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/beta/awtrix.ja
 
 ## Linux Installer
 Gebe zur automatischen Installation folgenden Befehl in dein SSH Terminal ein  
- ```wget -N https://blueforcer.de/awtrix/awtrix.sh ; sudo sh awtrix.sh beta```
+ ```wget -N https://blueforcer.de/awtrix/awtrix.sh ; sudo sh awtrix.sh```
 
  
 ?> Kurz nach dem Start kann das Webinterface über http://awtrix_ip:7000 aufgerufen werden.

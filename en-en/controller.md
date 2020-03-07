@@ -11,7 +11,7 @@ This manual describes how to flash a finished .bin file to the ESP8266. Compilin
    
 **2.** Unzip the downloaded program and start it.
    
-**3.** Download the latest firmware.bin file from [here](https://blueforcer.de/awtrix/beta/firmware.bin).
+**3.** Download the latest firmware.bin file from [here](https://blueforcer.de/awtrix/stable/firmware.bin).
 
 **4.** Set the correct com port in the lower part of the program.
    
@@ -37,7 +37,7 @@ We also need Python on our system to run this script with the serial package (it
 In the terminal, we change the current folder to the path of the esptool folder and enter this command to download the firmware:
 
 ``` BASH
-sudo wget -h https://blueforcer.de/awtrix/beta/firmware.bin
+sudo wget -h https://blueforcer.de/awtrix/stable/firmware.bin
 ```
 The flash process is then started
 
