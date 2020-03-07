@@ -7,7 +7,7 @@ This manual describes how to flash a finished .bin file to the ESP8266. Compilin
 ### Flashing under Windwos
 ![](\assets\firmware\flashingTool.PNG)
 
-**1.** Download the Flashing Tool [here](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7_1.zip)
+**1.** Download the Flashing Tool [here](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip)
    
 **2.** Unzip the downloaded program and start it.
    
@@ -15,10 +15,10 @@ This manual describes how to flash a finished .bin file to the ESP8266. Compilin
 
 **4.** Set the correct com port in the lower part of the program.
    
-**5.** Clear your controller by pressing the ERASE button. After a short time FINISH should appear in the lower green field. (If there was another version of Awtrix on the controller before and the controller was not deleted, the controller will keep its settings. This leads to problems).
-   
-**6.** Store the path to the downloaded firmware.bin file in the upper part of the program. The address "0x000000" must be entered to the right of the path.
-   
+**5.** Store the path to the downloaded firmware.bin file in the upper part of the program. The address "0x000000" must be entered to the right of the path.
+
+**6.** Clear your controller by pressing the ERASE button. After a short time FINISH should appear in the lower green field. (If there was another version of Awtrix on the controller before and the controller was not deleted, the controller will keep its settings. This leads to problems).
+     
 **7.** Flash firmware by pressing the START button.
    
 **8.** Reset your controller.

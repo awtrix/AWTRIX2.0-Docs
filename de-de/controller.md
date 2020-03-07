@@ -7,7 +7,7 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 ### Flashen unter Windwos
 ![](\assets\firmware\flashingTool.PNG)
 
-**1.** Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.7_1.zip) herunter.
+**1.** Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip) herunter.
    
 **2.** Entpacke das heruntergeladene Programm und starte es.
    
@@ -15,9 +15,9 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 
 **4.** Selle den richtigen Com-Port im unteren Bereich des Programms ein.
    
-**5.** Lösche deinen Controller durch betätigen des ERASE Buttons. Nach kurzer Zeit sollte im unteren grünen Feld FINISH stehen. (Wenn bereits vorher eine andere Version von Awtrix auf dem Controller war und der Controller nicht gelöscht wurde, behält der Conotroller seine Einstellungen. Dies führt zu Problemen.)
-   
-**6.** Hinterlege den Pfad zu der heruntergladenen firmware.bin Datei im oberen Bereich des Programms. Rechts neben dem Pfad muss noch die Adresse "0x000000" eingetragen werden.
+**5.** Hinterlege den Pfad zu der heruntergladenen firmware.bin Datei im oberen Bereich des Programms. Rechts neben dem Pfad muss noch die Adresse "0x000000" eingetragen werden.
+
+**6.** Lösche deinen Controller durch betätigen des ERASE Buttons. Nach kurzer Zeit sollte im unteren grünen Feld FINISH stehen. (Wenn bereits vorher eine andere Version von Awtrix auf dem Controller war und der Controller nicht gelöscht wurde, behält der Conotroller seine Einstellungen. Dies führt zu Problemen.)
    
 **7.**  Firmware flashen durch betätigen des START Buttons.
    
