@@ -39,7 +39,7 @@ After saving, the 32-digit Cloud token is generated. Keep this token safe! Anyon
    4. then choose "Any new email in inbox" as trigger
    5. click on the blue "+THAT", search for "Webhooks" as action and choose "Make a web request".
    6. now you have to "build" your URL:
-    https://awtrix.blueforcer.de/cloud?mode=**notify**&token=**xxxx**
+    https://awtrix.blueforcer.de/cloud?mode=notify&token=xxxx
     Where "mode" represents the desired API endpoint (basics, notify or draw). Also replace the xxxx with your 32-digit Cloud Token
    7. select **POST** as method
    8. select **application/json** as content type
