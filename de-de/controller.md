@@ -94,12 +94,12 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 
 
 ## Bekannte Probleme
-- Es sind ESP versionen im Umlauf die anders geflasht werden müssen. Sollte dein WEMOS die eingetragene Host-IP beim Booten nicht durch die Matrix scrollen so flashe deinen Wemos erneut mit folgenden Einstellungen
+- Es sind ESP Versionen im Umlauf die anders geflasht werden müssen da derren Flashspeicher größer/kleiner sind. Sollte dein WEMOS die eingetragene Host-IP beim Booten nicht durch die Matrix scrollen so flashe deinen Wemos erneut mit folgenden Einstellungen
 <div align=center>
 <img width="400" src="de-de\assets\firmware\fix.jpg"/>
 </div>
 
-- Sollte andere Probleme auftreten kannst du versuchen deinen Wemos zurück zu setzen. Dabei werden alle gespeicherte Informationen gelöscht und du kannst ihn erneut über den Hotspot einrichten.
+- Sollten andere Probleme auftreten kannst du versuchen deinen Wemos zurück zu setzen. Dabei werden alle gespeicherte Informationen gelöscht und du kannst ihn erneut über den Hotspot einrichten.
   Gehe dazu wie folgt vor:
   - Resette den ESP
   - Warte 3-4s
