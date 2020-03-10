@@ -20,3 +20,6 @@ Auf der linken Seite findest du stets die Sidebar die dich zu allen Funktionen v
 
 Das Webinterface ist auch für Smartphones optimiert und kann sogar als Webapp auf deinen Homescreen installiert werden.
 Rufe dazu die Seite auf deinem Smartphone auf, öffne die Browsereinstellungen und Klicke "Zum Homescreen hinzufügen". AWTRIX sieht dann wie eine richtige App aus!
+
+
+> AWTRIX benötigt eine ständige Internetverbindung. Zum einen benötigen die meisten Apps Daten aus dem internet, zum anderen besteht eine Verbindung zum AWTRIX Cloud Server. Von hier bekommt AWTRIX alle Apps, Appupdates und die Icons.
