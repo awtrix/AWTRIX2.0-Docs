@@ -22,4 +22,4 @@ Das Webinterface ist auch für Smartphones optimiert und kann sogar als Webapp a
 Rufe dazu die Seite auf deinem Smartphone auf, öffne die Browsereinstellungen und Klicke "Zum Homescreen hinzufügen". AWTRIX sieht dann wie eine richtige App aus!
 
 
-> AWTRIX benötigt eine ständige Internetverbindung. Zum einen benötigen die meisten Apps Daten aus dem internet, zum anderen besteht eine Verbindung zum AWTRIX Cloud Server. Von hier bekommt AWTRIX alle Apps, Appupdates und die Icons.
+> AWTRIX benötigt eine ständige Internetverbindung. Zum einen benötigen die meisten Apps, Daten aus dem Internet, zum anderen besteht eine Verbindung zum AWTRIX Cloud Server. Von hier bekommt AWTRIX alle Apps, Appupdates und die Icons.
