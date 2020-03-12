@@ -225,7 +225,7 @@ ___
 ## Change settings
 
 All settings can be changed here
-The appropriate keys of the settings can be found in the file "datastore" in the order "config".
+The appropriate keys of the settings can be found in the file "Settings" in the order "config".
 Furthermore the settings can be read out in the same format [see here](http://localhost:3000/#/en-en/api?id=get-basic-information)
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
 > /api/v3/settings  
