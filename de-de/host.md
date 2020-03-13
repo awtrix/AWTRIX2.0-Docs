@@ -12,7 +12,7 @@ Dieses Tutorial beschreibt die Installation auf einem Linux-Rechner.
 
 ## Schnellstart
 Dieses kurze Beispiel zeigt, wie man die Java-Anwendung startet.
-Gehe zum nächsten Punkt für die Installation auf einer Linux-Maschine.
+Gehe zum nächsten Punkt für die Installation auf einer Linux-Maschine inkl. Autostart.
 
 Die aktuelle [AWTRIX Java-Anwendung](https://blueforcer.de/awtrix/stable/awtrix.jar)
  herunterladen
@@ -40,3 +40,6 @@ AWTRIX Stoppen
 ```sudo service awtrix stop```   
 AWTRIX Neustarten  
 ```sudo service awtrix restart``` 
+
+## Docker
+Emfgohlen: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)

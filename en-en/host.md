@@ -40,3 +40,7 @@ Stop AWTRIX
  ``Sudo service awtrix stop ``
 AWTRIX Restart  
 ``Sudo service awtrix restart`` 
+
+
+## Docker
+Recommended: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)
