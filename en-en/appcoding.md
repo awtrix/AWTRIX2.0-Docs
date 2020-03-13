@@ -1,6 +1,6 @@
 
   
-![B4J](assets/coding/code.png)
+![B4J](..\assets\/coding/code.png)
 
 ## Programming language  
 AWTRIX and its apps are written in B4X. 
@@ -23,7 +23,7 @@ Defined functions called by AWTRIX transfer the information to the matrix.
 For the first app it is better to start with the template [Download](https://github.com/awtrix/AWTRIX2.0-Apps/tree/master/templateApp)  
 After you have opened the Template.b4j with B4J, it should look like this:  
   
-![B4J](assets/coding/start.png)
+![B4J](..\assets\/coding/start.png)
 
 First you should give your app a unique name.  
 Prerequisites for naming:

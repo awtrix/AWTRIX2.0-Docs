@@ -1,6 +1,6 @@
 
   
-![B4J](assets/coding/code.png)
+![B4J](..\assets\/coding/code.png)
 
 ## Programmiersprache  
 AWTRIX und seine Apps sind in B4X geschrieben. 
@@ -23,7 +23,7 @@ Definierte Funktionen, die von AWTRIX aufgerufen werden, übertragen die Informa
 Für die erste App ist es besser, mit dem Template zu beginnen [Download](https://github.com/awtrix/AWTRIX2.0-Apps/tree/master/templateApp)  
 Nachdem du die Template.b4j mit B4J geöffnet hast, sollte das ganze so aussehen:  
   
-![B4J](assets/coding/start.png)
+![B4J](..\assets\/coding/start.png)
 
 Zuerst solltest du deiner App einen eindeutigen namen geben.  
 Vorraussetzungen der Namensgebung:
