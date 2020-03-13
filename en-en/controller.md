@@ -5,7 +5,7 @@ This manual describes how to flash a finished .bin file to the ESP8266. Compilin
 ## Flashing
 
 ### Flashing under Windwos
-![](\assets\firmware\flashingTool.PNG)
+![](..\assets\firmware\flashingTool.PNG)
 
 **1.** Download the Flashing Tool [here](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip)
    
@@ -58,7 +58,7 @@ If it does not appear after a few seconds, you may have a problem connecting ESP
 
 ## First Start
   <div align=center>
-  <img width="400" src="en-en\assets\firmware\wifiSearch.gif"/>
+  <img width="400" src="..\assets\firmware\wifiSearch.gif"/>
   </div>
 
 For a few seconds the controller will now search for a known WiFi network. 
@@ -66,7 +66,7 @@ For a few seconds the controller will now search for a known WiFi network.
 <br>
 
   <div align=center>
-  <img width="400" src="en-en\assets\firmware\hotspot.gif"/>
+  <img width="400" src="..\assets\firmware\hotspot.gif"/>
   </div>
 
 If no Wifi connection is configured yet, the text "Hotspot" will appear on the matrix. As the name says, the controller will now open a WLAN hotspot. With any WLAN device the controller can now be configured via the hotspot.
@@ -75,8 +75,8 @@ If no Wifi connection is configured yet, the text "Hotspot" will appear on the m
 3. if a web page does not open automatically, the settings page can be navigated to under the IP "**172.217.28.1** using any browser. This page looks like the following:
 
 <div align=center>
-<img width="200" src="en-en\assets\firmware\hotspotConfig1.jpg"/>
-<img width="200" src="en-en\assets\firmware\hotspotConfig2.jpg"/>
+<img width="200" src="..\assets\firmware\hotspotConfig1.jpg"/>
+<img width="200" src="..\assets\firmware\hotspotConfig2.jpg"/>
 </div>
 
 
@@ -96,7 +96,7 @@ If no Wifi connection is configured yet, the text "Hotspot" will appear on the m
 ## Known problems
 - There are ESP versions in circulation that need to be flashed differently. If your WEMOS does not scroll the host IP through the matrix at boot time, flash your WEMOS again with the following settings
 <div align=center>
-<img width="400" src="en-en\assets\firmware\fix.jpg"/>
+<img width="400" src="..\assets\firmware\fix.jpg"/>
 </div>
 
 - If other problems occur you can try to reset your Wemos. This will delete all your saved information and you can set it up again via the hotspot.

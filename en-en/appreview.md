@@ -6,7 +6,7 @@
 
 ### Export your project via the B4J IDE as ZIP:  
 
-![](\assets\zip.jpg)
+![](..\assets\zip.jpg)
 
 Write an email to review@blueforcer.de and attach your app package.
 

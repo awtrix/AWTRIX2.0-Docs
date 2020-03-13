@@ -1,4 +1,4 @@
-![AWTRIX Pro](\assets\awtrix_pro.jpg)
+![AWTRIX Pro](..\assets\awtrix_pro.jpg)
   <small><div align="center">
 (Abbildung: AWTRIX Pro)
 </div></small>

@@ -5,14 +5,14 @@ Here you can find all your installed apps.
   <br>
     <br>
   <div align=center>
-  <img width="800" src="en-en\assets\myapps.jpg"/>
+  <img width="800" src="..\assets\myapps.jpg"/>
   </div>
   
 
 
 ### Apps Menu
 
-  <img align="right" width="400" src="en-en\assets\app.jpg"/>
+  <img align="right" width="400" src="..\assets\app.jpg"/>
 
 Clicking on an app opens the menu with further settings:
 <br>
@@ -34,7 +34,7 @@ Deletes the app
 
 ### Settings
 
-![](\assets\appsettings.jpg)
+![](..\assets\appsettings.jpg)
 
 Most apps have 3 fields that have to be considered:
 

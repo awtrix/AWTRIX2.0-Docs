@@ -5,5 +5,5 @@ Es werden keine weiteren Einstellungen oder Informationen gesendet. Diese Inform
 !> Jeder normale Webseiten-Aufruf, jede E-Mail-Zustellung oder andere HTTP-Anfragen hinterlässt immer die IP-Adresse auf dem jeweiligen Server. Du kannst aber über den "Analytics"-Schalter in den Host-Einstellungen entscheiden, ob ich sie zur Auswertung und damit für diese Karte verwenden kann. 
 
   <div align=center>
-  <img width="800" src="de-de\assets\map.PNG"/>
+  <img width="800" src="..\assets\map.PNG"/>
   </div>

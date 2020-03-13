@@ -5,7 +5,7 @@ AWTRIXER behinhaltet massig funktionen die fast schon an Photoshop erinnern.
 !> Piskel und damit auch AWTRIXER sind nicht für mobile Geräte optimiert!
 
   <div align=center>
-  <img width="1000" src="de-de\assets\creator.gif"/>
+  <img width="1000" src="..\assets\creator.gif"/>
   </div>
 
   - Auf der linken Seite findest du alle Werkzeuge die du zum zeichnen benötigst. Fahre mit der Maus über die einzelnen Symbole um mehr informationen zu erhalten.

@@ -9,7 +9,7 @@ http:// [HOST-IP]:7000/
 
 AWTRIX welcomes you with a modern and easy to understand interface
 
-![](\assets\home.jpg)
+![](..\assets\home.jpg)
 
 
 On the main page you will find some important information like available app updates and if your matrix is connected to the host.

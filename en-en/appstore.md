@@ -3,7 +3,7 @@
 <br>
 <br>
 
-  <img align="right" width="400" src="en-en\assets\appstore.jpg"/>
+  <img align="right" width="400" src="..\assets\appstore.jpg"/>
   <div align=left>
 The integrated Appstore offers a variety of apps that you can download for free.
 Each app is displayed as a so-called card and provides information about the name, version number, description and creator of the app.
@@ -16,12 +16,12 @@ By clicking on the desired app you can start the download. This should only take
 <br>
 <br>
   <div align=center>
-  <img width="400" src="en-en\assets\appdownload.jpg"/>
+  <img width="400" src="..\assets\appdownload.jpg"/>
   </div>
 <br>
 Available app updates are shown first and get a green header. Click on the app to start the update.  
 <br>
 <br>
   <div align=center>
-  <img width="400" src="en-en\assets\appupdate.jpg"/>
+  <img width="400" src="..\assets\appupdate.jpg"/>
   </div>

@@ -10,5 +10,5 @@ Um ein Icon auf deiner Matrix anzusehen, klicke einfach darauf. Wenn du die Seit
 
   
   <div align=center>
-  <img width="800" src="de-de\assets\db.gif"/>
+  <img width="800" src="..\assets\db.gif"/>
   </div>

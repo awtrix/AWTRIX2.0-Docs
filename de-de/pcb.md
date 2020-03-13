@@ -13,3 +13,5 @@ Den Bestückungsplan dafür findest du hier:
 | **4**  | 1 | Capacitor (100nF)| KERKO 100N |  |
 | **5**  | 1 | pinheader male (1x3) |  MPE 087-1-036 | |
 | **6**  | 4 | pinheader male (1x8)  |  MPE 087-1-036 | | 
+
+

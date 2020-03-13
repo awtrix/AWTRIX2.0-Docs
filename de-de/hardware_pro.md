@@ -1,4 +1,4 @@
-![](\assets\awtrix_pro.jpg)
+![](..\assets\awtrix_pro.jpg)
 
 ## Awtrix PRO
 Du möchtest dein bisheriges Awtrix-Erlebnis nochmal auf ein ganz anderes Level bringen? Dann ist die Awtrix Pro genau das richtige. Neben der integrierten Soundausgabe kannst du deine Matrix nun auch per Touchsensoren auf der Gehäuseoberseite steuern. Die deutlich kompaktere Bauform und die Verwendung eines professionellen SLA-Drucks lässt die Matrix um ein vielfaches edler aussehen.
@@ -15,7 +15,7 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 - neues Mainboard im Gehäuse integriert
 - 3W Full-Range Lautsprecher im Gehäuse integriert
 
-![](\assets\pro\pro_inside.jpg)
+![](..\assets\pro\pro_inside.jpg)
 
 # Teileliste
 ## Allgemeiner Hinweis
@@ -49,7 +49,7 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Main
 
 Das Mainboard ist bereits beschriftet und die Bauteile können direkt an die Pads gelötet oder per Stiftleisten verbunden/gesteckt werden.
 
-![](\assets\pro\front.png)
+![](..\assets\pro\front.png)
 
 
 Solltest du Stiftleisten verlötet haben, kannst du jetzt schon das Mainboard, Lautsprecher und den Raspberry in das Gehäuse einbauen. Andernfalls solltest du erst alles zusammenlöten bevor du es einbaust. Die DC-Buchse solltest du auf alle Fälle vor dem Verlöten einbauen um die Gegenmutter anbringen zu können.
@@ -69,6 +69,9 @@ Die große Masseflächen wirken wie ein Bi-Metall, daruch kommt es im Reflow Ofe
 
 !> Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. 
 
+  <div align=center>
+  <img width="100" src="..\assets\touch.jpg"/>
+  </div>
 
 ## Serielle Verbindung oder USB-Verbindung zur Matrix
 

@@ -50,4 +50,4 @@ After saving, the 32-digit Cloud token is generated. Keep this token safe! Anyon
 
 Now, every time a new email arrives in the Gmail inbox, AWTRIX will display it on the matrix.
 
-![AWTRIX Pro](\assets\ifttt.png)
+![AWTRIX Pro](..\assets\ifttt.png)

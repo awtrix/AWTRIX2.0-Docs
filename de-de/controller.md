@@ -5,7 +5,7 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 ## Flashen
 
 ### Flashen unter Windwos
-![](\assets\firmware\flashingTool.PNG)
+![](..\assets\firmware\flashingTool.PNG)
 
 **1.** Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip) herunter.
    
@@ -58,7 +58,7 @@ Wenn es nach ein paar Sekunden nicht angezeigt wird, hast du möglicherweise ein
 
 ## Erster Start
   <div align=center>
-  <img width="400" src="de-de\assets\firmware\wifiSearch.gif"/>
+  <img width="400" src="..\assets\firmware\wifiSearch.gif"/>
   </div>
 
 Für ein paar Sekunden sucht der Controller nun nach einem bekannten WiFi Netzwerk. 
@@ -66,7 +66,7 @@ Für ein paar Sekunden sucht der Controller nun nach einem bekannten WiFi Netzwe
 <br>
 
   <div align=center>
-  <img width="400" src="de-de\assets\firmware\hotspot.gif"/>
+  <img width="400" src="..\assets\firmware\hotspot.gif"/>
   </div>
 
 Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" auf der Matrix. Wie der Name schon sagt, macht der Controller nun einen WLAN Hotspot auf. Mit einem beliebigen WLAN Gerät kann der Controller nun über den Hotspot konfiguriert werden.
@@ -75,8 +75,8 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 3. Wenn sich nicht automatisch eine Webseite öffnet, kann unter der IP "**172.217.28.1**  über einen beliebigen Browser auf die Einstellungsseite navigiert werden. Diese Seite sieht wie folgt aus:
 
 <div align=center>
-<img width="200" src="de-de\assets\firmware\hotspotConfig1.jpg"/>
-<img width="200" src="de-de\assets\firmware\hotspotConfig2.jpg"/>
+<img width="200" src="..\assets\firmware\hotspotConfig1.jpg"/>
+<img width="200" src="..\assets\firmware\hotspotConfig2.jpg"/>
 </div>
 
 
@@ -96,7 +96,7 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 ## Bekannte Probleme
 - Es sind ESP Versionen im Umlauf die anders geflasht werden müssen da derren Flashspeicher größer/kleiner sind. Sollte dein WEMOS die eingetragene Host-IP beim Booten nicht durch die Matrix scrollen so flashe deinen Wemos erneut mit folgenden Einstellungen
 <div align=center>
-<img width="400" src="de-de\assets\firmware\fix.jpg"/>
+<img width="400" src="..\assets\firmware\fix.jpg"/>
 </div>
 
 - Sollten andere Probleme auftreten kannst du versuchen deinen Wemos zurück zu setzen. Dabei werden alle gespeicherte Informationen gelöscht und du kannst ihn erneut über den Hotspot einrichten.
@@ -108,5 +108,5 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 
 <br>
   <div align=center>
-  <img width="400" src="de-de\assets\firmware\reset.jpg"/>
+  <img width="400" src="..\assets\firmware\reset.jpg"/>
   </div>

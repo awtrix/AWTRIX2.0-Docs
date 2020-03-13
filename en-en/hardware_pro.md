@@ -1,4 +1,4 @@
-![](\assets\awtrix_pro.jpg)
+![](..\assets\awtrix_pro.jpg)
 
 ## Awtrix PRO
 Would you like to take your previous Awtrix experience to a whole new level? Then the Awtrix Pro is exactly what you need. In addition to the integrated sound output, you can now control your matrix via touch sensors on the top of the case. The much more compact design and the use of a professional SLA print makes the matrix look much more elegant.
@@ -15,7 +15,7 @@ The software and the new (white) mainboard are the same for both devices, so the
 - new mainboard integrated in the housing
 - 3W full-range loudspeaker integrated in housing
 
-![](\assets\pro\pro_inside.jpg)
+![](..\assets\pro\pro_inside.jpg)
 
 # Parts list
 ## General note
@@ -49,7 +49,7 @@ The touch sensors are not listed here because they are part of the Awtrix mainbo
 
 The mainboard is already labeled and the components can be soldered directly to the pads or connected/plugged via pin headers.
 
-![](\assets\pro\front.png)
+![](..\assets\pro\front.png)
 
 
 If you have soldered pin headers, you can already mount the mainboard, speakers and the Raspberry into the case. Otherwise you should solder everything together before you install it. The DC jack should be installed before soldering to be able to mount the locknut.
@@ -69,6 +69,9 @@ The large ground plane acts like a bi-metal, which causes a slight deformation o
 ## Touch sensors 
 
 !> The touch sensors have two bridges on the small circuit board which can be closed with solder. This is absolutely necessary for the middle sensor, otherwise the Wemos will not start. To prevent this from happening the bridge A of the **middle touch sensors must be closed**. This will set the I/O pin to active low. 
+  <div align=center>
+  <img width="100" src="..\assets\touch.jpg"/>
+  </div>
 
 
 ## Serial connection or USB connection to the matrix

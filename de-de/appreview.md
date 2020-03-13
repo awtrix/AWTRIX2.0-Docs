@@ -6,7 +6,7 @@
 
 ### Exportiere dein Projekt über die B4J IDE als ZIP:  
 
-![](\assets\zip.jpg)
+![](..\assets\zip.jpg)
 
 Verfasse eine Email an review@blueforcer.de und lade dein App-Paket als Anhang hinzu.
 

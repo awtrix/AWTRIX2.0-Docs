@@ -1,4 +1,4 @@
-![](\assets\awtrix.jpeg)
+![](..\assets\awtrix.jpeg)
 
 # Parts list
 ## General note
@@ -60,12 +60,12 @@ The electronics can either be soldered ("freely wired") on a breadboard or on a 
 
 ## Basic version
 
-![Basissetup](\assets\pro\AWTRIX_Core_Steckplatine.jpg)
+![Basissetup](..\assets\pro\AWTRIX_Core_Steckplatine.jpg)
 
 ## Light sensor for brightness control (optional)
 The brightness sensor can be installed optionally. This ensures that, for example in a dark room, the matrix is not dazzled by dimming the brightness. On the other hand, if the room is very bright, the matrix is dimmed up so that the contents of the matrix can still be read.
 
-![ldr](\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
+![ldr](..\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
 
 ## DFPlayer Mini for sound output (optional)
 The DFPlayer is used for the output of sounds and can be used optionally. It stores mp3 files on a memory card, which is inserted into the micro SD slot of the player. This allows you to have your matrix speak to you or play sounds when you receive notifications, for example.  
@@ -75,7 +75,7 @@ AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 01
 [Download default sounds](https://blueforcer.de/awtrix/Soundfiles.zip)  
   
 
-![](\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
+![](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
 
 | Wemos | DFPlayer Mini | Function | Note |
 | ----- | ------------- | -------- | -------- |
@@ -87,7 +87,7 @@ AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 01
 ## Temperature and humidity sensor (optional)
 Optinally, Awtrix can work with two different indoor climate sensors. You can freely choose whether the BME280 or the Htu21d should be used. The measured values are sent to the server and can be displayed directly on the matrix using an app and can also be retrieved from a home automation server (ioBroker, FHEM, ...) via API from the Awtrix server.
 
-![](\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
+![](..\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
 
 | Wemos | BME280 | Htu21d | Function | Note |
 | --- | --- | --- | --- |--- |
@@ -100,7 +100,7 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 
 ## Touch sensors for operation (optional)
 
-![](\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
+![](..\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
 
 | Wemos | Button left | Button middle | Button right | Function | Note |
 | ----- | ------------- | ------------- | ------------- | -------- | -------- |
@@ -112,10 +112,16 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 
 !> The touch sensors have two bridges on the small circuit board which can be closed with solder. This is absolutely necessary for the middle sensor, otherwise the Wemos will not start. To prevent this from happening, the bridge A of the **middle touch sensor must be closed**. This will set the I/O pin to active low. Other touch sensors are not recommended, because they are not designed for the housing (different dimensions) and have no possibility to solder a bridge.
 
+  <div align=center>
+  <img width="100" src="..\assets\touch.jpg"/>
+  </div>
+
+![](..\assets\touch.jpg)
+
 ## Gesture sensor for operation (optional)
 The gesture sensor can be used optionally for easy operation of the matrix. Gestures like wiping with the hand from left to right or the other way around are possible.
 
-![](\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
+![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
 
 | Wemos | APDS-9960 | Function | Note |
 | --- | --- | --- | --- |
@@ -129,16 +135,17 @@ When using temperature and gesture sensor, the pins D1 & D3 of the Wemos D1 mini
 
 ## Serial connection or USB connection to the matrix
 
-If there are problems with the WiFi transfer between server and controller, there is the possibility to connect the server directly to the controller (Wemos D1 Mini) via serial.
+If there are problems with the WiFi transfer between host and controller, there is the possibility to connect the host directly to the controller (Wemos D1 Mini) via serial.
 
-On the controller side you have to check the Serial box in the hotspot menu. Furthermore, the Wemos still needs a connection to a network. Otherwise, the hotspot will be opened again and again and will not show anything else.
-The WiFi connection is used to update the controller.
+> The Wemos still requires a connection to a wifi network.
+The WiFi connection is used to update the controller and as a fallback if no data is transferred via serial.
 
-You can also use the **USB port** of the Pi (also for any other server platform). Simply connect the server to the Wemos D1 via microUSB cable.
+The **USB port** of the Pi can also be used (also for any other host platform). Simply connect the server to the Wemos D1 via microUSB cable.
 
 When using the **GPIO's** the Pi is connected to the Wemos as follows:
 
-![](\assets\pro\AWTRIX_raspi_V2_Steckplatine.jpg)
+
+![](..\assets\pro\AWTRIX_raspi_V2_Steckplatine.jpg)
 
 | Wemos | Raspberry Pin-No | Function |
 | ----- | ---------------- | -------- |
@@ -149,5 +156,9 @@ When using the **GPIO's** the Pi is connected to the Wemos as follows:
 
 !>Please pay attention to the Raspberry version. There can be differences here!
 
-By default, the serial interface must be enabled for the Raspberry. To do this, enter the following line in the /boot/config.txt  
-```enable_uart=1```
+By default, the serial interface must be enabled for the Raspberry. On the Raspberry 3 this can be done with the following commands:
+```
+ sudo raspi-config nonint do_serial 1
+ sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
+ sudo reboot
+```

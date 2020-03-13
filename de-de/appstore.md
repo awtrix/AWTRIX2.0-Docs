@@ -3,7 +3,7 @@
 <br>
 <br>
 
-  <img align="right"  width="400" src="de-de\assets\appstore.jpg"/>
+  <img align="right"  width="400" src="..\assets\appstore.jpg"/>
   <div align=left>
 Der integrierte Appstore bieten eine Vielzahl an Apps die du dir kostenlos herunterladen kannst.
 Jede App wird als eine sogenannte Card angezeigt und gibt Auskunft über den Namen, Versionsnummer, Beschreibung und Ersteller der App.
@@ -16,12 +16,12 @@ Durch einen Klick auf die gewünschte App lässt dich der Download starten. Dies
 <br>
 <br>
   <div align=center>
-  <img width="400" src="de-de\assets\appdownload.jpg"/>
+  <img width="400" src="..\assets\appdownload.jpg"/>
   </div>
 <br>
 Verfügbare App Updates werden als erstes angezeigt und erhalten einen grünen Header. Klicke auf die App um das Update zu starten.  
 <br>
 <br>
   <div align=center>
-  <img width="400" src="de-de\assets\appupdate.jpg"/>
+  <img width="400" src="..\assets\appupdate.jpg"/>
   </div>

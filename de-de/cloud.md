@@ -50,4 +50,4 @@ Nach dem speichern wird der 32-stellige Cloud-Token generiert. Verwahre diesen T
 
 Jetzt zeigt AWTRIX jedes Mal, wenn eine neue E-Mail im Gmail-Posteingang ankommt, diese auf der Matrix an.
 
-![AWTRIX Pro](\assets\ifttt.png)
+![AWTRIX Pro](..\assets\ifttt.png)

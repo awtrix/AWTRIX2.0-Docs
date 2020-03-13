@@ -10,5 +10,5 @@ To view an icon on your matrix, simply click on it. When you leave the page, AWT
 
   
   <div align=center>
-  <img width="800" src="de-de\assets\db.gif"/>
+  <img width="800" src="..\assets\db.gif"/>
   </div>
