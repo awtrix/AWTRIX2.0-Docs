@@ -2,7 +2,7 @@
 - **Hardware**
 - [AWTRIX Standard](en-en/hardware.md)
 - [AWTRIX Pro](en-en/hardware_pro.md)
-- [AWTRIX Platine](en-en/pcb.md)
+- [AWTRIX PCB](en-en/pcb.md)
 - **Software**
 - [Controller](en-en/controller.md)
 - [Host](en-en/host.md)
