@@ -10,6 +10,9 @@ After activation you will receive a token which you need for external control. W
 
 **Fritz!Box Call Monitor**  
 Anyone who owns a FritzBox from AVM can use this function to integrate the FritzBox into AWTRIX, so that, for example, information about an incoming call or the caller's telephone number is displayed.
+
+To activate the call monitor in the Fritz!Box, you must enter the following number on a connected telephone and call: ``#96*5*``  
+  
 Enter the IP address of the FritzBox and, if desired, set up the telephone book. If a telephone book is stored, AWTRIX will display the appropriate name when a call is received, otherwise the telephone number.   You can either export a phonebook from the FritzBox and [convert it to a JSON](http://www.utilities-online.info/xmltojson/) or, if that doesn't work, create your phonebook manually. You just have to use a new line for each number. The structure is very simple:
 ``` BASH
 01514875965=Blueforcer
