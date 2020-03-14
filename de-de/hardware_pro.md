@@ -17,8 +17,20 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 
 ![](..\assets\pro\pro_inside.jpg)
 
-# Teileliste
-## Allgemeiner Hinweis
+# Gehäuse
+
+Die nötigen Dateien zum 3D-Druck des Gehäuses findest du auf [Thingiverse](https://www.thingiverse.com/thing:4155357)
+
+Als Frontpanel ist eine 2mm dicke Plexiglasscheibe vorgesehen. Die passende DXF zum Fräsen findest du ebenfalls auf Thingiverse. Diese steht momentan noch nicht zum offiziellen Verkauf.
+  
+  <div align=center>
+  <img width="400" src="..\assets\pro\plexi.jpg"/>
+  </div>
+
+# Elektronik
+## Teileliste
+
+!> **Allgemeiner Hinweis**
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
 
 In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt ihr uns bei der Weiterentwicklung von Awtrix & Awtrix Pro.
@@ -45,12 +57,13 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Mainboard Bausatz sind und daher nicht gekauft werden müssen.
 
 
-# Elektronik
+# Mainboard
 
 Das Mainboard ist bereits beschriftet und die Bauteile können direkt an die Pads gelötet oder per Stiftleisten verbunden/gesteckt werden.
 
 ![](..\assets\pro\front.png)
 
+**Eine Ausführliche Anleitung zum Bestücken des Mainboards [findest du hier](/de-de/pcb.md)**
 
 Solltest du Stiftleisten verlötet haben, kannst du jetzt schon das Mainboard, Lautsprecher und den Raspberry in das Gehäuse einbauen. Andernfalls solltest du erst alles zusammenlöten bevor du es einbaust. Die DC-Buchse solltest du auf alle Fälle vor dem Verlöten einbauen um die Gegenmutter anbringen zu können.
 

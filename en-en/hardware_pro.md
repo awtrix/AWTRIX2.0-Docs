@@ -17,8 +17,20 @@ The software and the new (white) mainboard are the same for both devices, so the
 
 ![](..\assets\pro\pro_inside.jpg)
 
-# Parts list
-## General note
+# Case
+
+You can find the necessary files for 3D printing of the case on [Thingiverse](https://www.thingiverse.com/thing:4155357).
+
+A 2mm thick Plexiglas panel is provided as the front panel. You can find the matching DXF for milling on Thingiverse. This is not yet for official sale.
+  
+  <div align=center>
+  <img width="400" src="..\assets\pro\plexi.jpg"/>
+  </div>
+
+# Elecctronic
+## Parts list
+
+!> **General note**
 The availability of the articles changes daily. Therefore it may happen that some articles are no longer available under the link. However, the parts are available from many dealers. Just search on Amazon, Ebay or Aliexpress.
 
 In our shop you can buy the PCBs. You can order them either individually, i.e. without parts, or as a kit. With the purchase of this hardware (this is not mandatory) you support us in the further development of Awtrix & Awtrix Pro.
@@ -45,12 +57,13 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 The touch sensors are not listed here because they are part of the Awtrix mainboard kit and therefore do not need to be purchased.
 
 
-# Electronics
+# Mainboard
 
 The mainboard is already labeled and the components can be soldered directly to the pads or connected/plugged via pin headers.
 
 ![](..\assets\pro\front.png)
 
+**Detailed instructions on how to assemble the mainboard [can be found here](/en-en/pcb.md)**
 
 If you have soldered pin headers, you can already mount the mainboard, speakers and the Raspberry into the case. Otherwise you should solder everything together before you install it. The DC jack should be installed before soldering to be able to mount the locknut.
 
