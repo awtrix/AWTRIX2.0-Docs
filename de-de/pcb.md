@@ -17,9 +17,9 @@ Wenn du keine Lust auf eine fliegende Verdrahtung im Gehäuse hast, [kannst du e
 
 ### 1. Bauteile im Überblick
 ![B4J](../assets/manualPicture/mainboard/uebersicht.jpg)
-- Die Touch Sensoren sowie der DFPlayer sind optinale Teile.
+- Die Touch Sensoren sowie der DFPlayer sind optinale Teile und sind nicht zwingend zum Betrieb erforderlich.
 - Zum verlöten der Bauteile wird ein Lötkolben samt Lötzinn benötigt.
-- Beim Bestücken arbeitet man sich von der Reihenfolge von den kleinen zu den großen Bauteilen.
+- Beim Bestücken arbeitet man sich von den kleinen zu den großen Bauteilen vor.
 
 ### 2. Widerstände (R1, R2, R3)
 ![B4J](../assets/manualPicture/mainboard/widerstaende.jpg)
@@ -47,6 +47,7 @@ Richtig eingelötet sieht es wie folgt aus:
 
 ### 4. Kleiner Kondensator (C2)
 ![B4J](../assets/manualPicture/mainboard/kleinerKondensator.jpg)
+- Dieser Kondensator besitzt keine Polarität, daher ist es egal wie rum er eingebaut wird.
 - Kondensator biegen und einstecken.
 - Von oben auf einer Seite anlöten.
 - Andere Seite des Kodensators von unten festlöten.
