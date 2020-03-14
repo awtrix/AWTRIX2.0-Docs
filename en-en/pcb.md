@@ -18,9 +18,9 @@ You can find the assembly diagram here:
 
 ### 1. components at a glance
 [B4J](../assets/manualPicture/mainboard/overview.jpg)
-- The touch sensors and the DFPlayer are optical parts.
+- The touch sensors as well as the DFPlayer are optical parts and are not necessarily required for operation.
 - For soldering the components a soldering iron including solder is needed.
-- When assembling, one works from the order from the small to the large components.
+- When assembling you work your way from the small to the large components.
 
 ### 2. resistors (R1, R2, R3)
 [B4J](../assets/manualPicture/mainboard/resistors.jpg)
@@ -48,6 +48,7 @@ Correctly soldered it looks as follows:
 
 ### 4. small capacitor (C2)
 [B4J](../assets/manualPicture/mainboard/small capacitor.jpg)
+- This capacitor has no polarity, so it does not matter how it is installed.
 - Bend the capacitor and plug it in.
 - Solder on one side from above.
 - Solder the other side of the capacitor from below.
@@ -74,7 +75,7 @@ Correctly soldered it looks as follows:
 
 ### 7. large capacitor (C1)
 [B4J](../assets/manualPicture/mainboard/big capacitor.jpg)
-- **This capacitor must be installed FLAT. Otherwise it is too high for the Awtrix housing.
+- **This capacitor must be installed FLAT. Otherwise it is too high for the Awtrix  housing.
 - Capacitor has a white line on one side. This marks the negative pole.
 - Place the capacitor on the board. The negative pole of the capacitor must be inserted into the pin surrounded by a black area.
 - Bend the legs 90 degrees down.
