@@ -45,7 +45,7 @@ Wenn du keine Lust auf eine fliegende Verdrahtung im Gehäuse hast, [kannst du e
 Richtig eingelötet sieht es wie folgt aus:
 ![B4J](../assets/manualPicture/mainboard/dioden2.jpg)
 
-### 3. Kleiner Kondensator (C2)
+### 4. Kleiner Kondensator (C2)
 ![B4J](../assets/manualPicture/mainboard/kleinerKondensator.jpg)
 - Kondensator biegen und einstecken.
 - Von oben auf einer Seite anlöten.
@@ -53,7 +53,7 @@ Richtig eingelötet sieht es wie folgt aus:
 - Die erste Seite von unten nochmal nachlöten.
 - Beinchen des Kondensators kürzen.
 
-### 4. Siftleiste (1x 3-polig)
+### 5. Siftleiste (1x 3-polig)
 ![B4J](../assets/manualPicture/mainboard/stiftleiste3pol.jpg)
 - Einstecken, Platine umdrehen und so hinlegen das die Stiftleiste nicht heraus fällt.
 - Ersten Pin von unten festlöten - Ausrichtung der Stiftleiste erfolgt anschließend.
@@ -62,7 +62,7 @@ Richtig eingelötet sieht es wie folgt aus:
 - Die anderen Pins der Stiftleiste festlöten.
 - **Diese Stiftleiste ermöglicht es dir die Spannungsversorgung für deinen I2C-Bus variable zwischen 3,3V und 5V umzuschalten. Hierzu wird ein Jumper verwendet.**
 
-### 5. Buchsenleisten (4x 8-polig)
+### 6. Buchsenleisten (4x 8-polig)
 ![B4J](../assets/manualPicture/mainboard/buchsenleiste.jpg)
 - Einstecken, Platine umdrehen und so hinlegen das die Buchsenleiste nicht heraus fällt.
 - Ersten Pin von unten festlöten - Ausrichtung der Stiftleiste erfolgt anschließend.
@@ -71,7 +71,7 @@ Richtig eingelötet sieht es wie folgt aus:
 - Die anderen Pins der Buchsenleiste festlöten.
 - Nach dem gleichen Prinzip die weiteren drei Buchsenleisten einlöten
 
-### 6. Großer Kondensator (C1)
+### 7. Großer Kondensator (C1)
 ![B4J](../assets/manualPicture/mainboard/groesserKondensator.jpg)
 - **Dieser Kondensator muss FLACH eingebaut werden. Ansonsten ist er zu hoch für das Awtrix Gehäuse.**
 - Kondensator hat auf einer Seite einen weißen strich. Dieser kennzeichnet den Minus-Pol.
@@ -85,13 +85,13 @@ Richtig eingelötet sieht es wie folgt aus:
 Richtig eingelötet sieht es wie folgt aus:
 ![B4J](../assets/manualPicture/mainboard/groesserKondensator2.jpg)
 
-### 7. DFPlayer
+### 8. DFPlayer
 ![B4J](../assets/manualPicture/mainboard/dfPlayer.jpg)
 - Stiftleiste an DFPlayer einstecken. (Falls diese nicht ohnehin schon dran gelötet ist)
 - Zum Anlöten kann die Stiftleiste in die bereits eingelötete Buchsenleiste gesteckt werden.
 - DFPlayer auf die Stiftleiste, welche in der Buchsenleiste steckt, setzen und anlöten.
 
-### 6. Wemos D1 mini
+### 9. Wemos D1 mini
 ![B4J](../assets/manualPicture/mainboard/wemos.jpg)
 - Stiftleisten in den Wemos D1 mini stecken.
 - Stiftleiste muss dabei nach unten schauen während der Microcontroller sammt Antenne nach oben schauen muss.
@@ -101,5 +101,5 @@ Richtig eingelötet sieht es wie folgt aus:
 Richtig eingelötet sieht es wie folgt aus:
 ![B4J](../assets/manualPicture/mainboard/wemos2.jpg)
 
-### 7. FERTIG
+### 10. FERTIG
 - Die Komponenten die an das Mainboard angeschlossen werden können sind unter Awtrix Pro Zusammenbau in einer weiteren Bilderanleitung aufgeführt.
