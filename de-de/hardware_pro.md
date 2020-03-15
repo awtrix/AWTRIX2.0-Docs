@@ -21,10 +21,15 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 
 Die nötigen Dateien zum 3D-Druck des Gehäuses findest du auf [Thingiverse](https://www.thingiverse.com/thing:4155357)
 
-Als Frontpanel ist eine 2mm dicke Plexiglasscheibe vorgesehen. Die passende DXF zum Fräsen findest du ebenfalls auf Thingiverse. Diese steht momentan noch nicht zum offiziellen Verkauf.
+Als Frontpanel ist eine 2mm dicke Plexiglasscheibe vorgesehen. Die passende DXF zum Fräsen findest du ebenfalls auf Thingiverse. Diese steht momentan noch nicht zum offiziellen Verkauf. Zwischen der Scheibe und dem Matrixgrid wird ein Stück Papier als Diffusor geklemmt.
   
   <div align=center>
   <img width="400" src="..\assets\pro\plexi.jpg"/>
+  </div>
+
+Solltest du nicht dier Möglichkeit haben, dir solche ine platte zu fräsen. Gibt es ebenfalls auf Thiniverse einen Adapter Rahmen mit dem du ein Stück Papier als Diffusor einspannen kannst.
+  <div align=center>
+  <img width="400" src="..\assets\pro\adapter.jpg"/>
   </div>
 
 # Elektronik
@@ -37,22 +42,22 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 
 
 ### Bnötigte Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [Klicke hier](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | Pro Matrix               | [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
-| 3  | Awtrix Gehäuse           | [Klicke hier](https://www.thingiverse.com/thing:4155357) |
-| 4  | Wemos D1 mini            | [Klicke hier](https://de.aliexpress.com/item/32651747570.html) |
-| 5  | Netzteil (>3A)           | [Klicke hier](https://goo.gl/QLydM3) |
-| 6  | Strombuchse              | [Klicke hier](https://goo.gl/j4Xov7) |
+| Nr  |           Name           |                                    Link                                    |
+| --- | :----------------------: | :------------------------------------------------------------------------: |
+| 1   | Awtrix Mainboard Bausatz | [Klicke hier](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
+| 2   |        Pro Matrix        |      [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-matrix/)       |
+| 3   |      Awtrix Gehäuse      |          [Klicke hier](https://www.thingiverse.com/thing:4155357)          |
+| 4   |      Wemos D1 mini       |       [Klicke hier](https://de.aliexpress.com/item/32651747570.html)       |
+| 5   |      Netzteil (>3A)      |                    [Klicke hier](https://goo.gl/QLydM3)                    |
+| 6   |       Strombuchse        |                    [Klicke hier](https://goo.gl/j4Xov7)                    |
 
 
 ### Optionale Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [Klicke hier](https://de.aliexpress.com/item/32515315072.html) |
-| 2  | DF Mini Player           | [Klicke hier](https://de.aliexpress.com/item/32992229288.html) |
-| 4  | Lautsprecher             | [Klicke hier](https://de.aliexpress.com/item/32853811267.html) |
+| Nr  |      Name      |                              Link                              |
+| --- | :------------: | :------------------------------------------------------------: |
+| 1   |   LDR GL5528   | [Klicke hier](https://de.aliexpress.com/item/32515315072.html) |
+| 2   | DF Mini Player | [Klicke hier](https://de.aliexpress.com/item/32992229288.html) |
+| 4   |  Lautsprecher  | [Klicke hier](https://de.aliexpress.com/item/32853811267.html) |
 
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Mainboard Bausatz sind und daher nicht gekauft werden müssen.
 
@@ -61,7 +66,10 @@ Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Main
 
 Das Mainboard ist bereits beschriftet und die Bauteile können direkt an die Pads gelötet oder per Stiftleisten verbunden/gesteckt werden.
 
-![](..\assets\pro\front.png)
+
+  <div align=center>
+  <img width="400" src="..\assets\pro\front.png"/>
+  </div>
 
 **Eine Ausführliche Anleitung zum Bestücken des Mainboards [findest du hier](/de-de/pcb.md)**
 
@@ -97,11 +105,11 @@ Dazu wird der Pi wie folgt mit dem Mainboard verbunden:
 
 
 | Raspberry Pin-No | Mainboard (Raspberry Serial header) |
-| ---------------- | -------- |
-| 04 - 5V          | +5V) |
-| 06 - GND         | GND   |
-| 08 - TXD         | Rx |
-| 10 - RXD         | Tx  |
+| ---------------- | ----------------------------------- |
+| 04 - 5V          | +5V)                                |
+| 06 - GND         | GND                                 |
+| 08 - TXD         | Rx                                  |
+| 10 - RXD         | Tx                                  |
 
 !> **Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
 
@@ -124,7 +132,7 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen 
 
 # Bilderanleitung zum Zusammenbau
 
-Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korrekte Verkabelung entnimmst du bitte weilter oben.
+Diese Anleitung bezieht sich nicht auf den Einbau eines Raspberry Pis. Die korrekte Verkabelung entnimmst du bitte weilter oben.
 
 ## 1. Touch Sensoren
 - Der Widerstand der LED auf dem Touch Taster kann optional ausgelötet werden.
@@ -138,10 +146,12 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Kabel NICHT durch die Löcher des Touch Sensors stecken sondern nur von oben auflegen und anlöten. (schwarz = GND ; rot = 3,3V/VCC ; grün = Data/IO)
 - Beim Durchstecken tragen die Kabelenden auf der anderen Seite zu weit auf und verhindern ein optimales platzieren des Sensors im Gehäuse
 - Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
+ <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnLeft.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/btnLeft2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/btnLeft3.jpg"/>
+  </div>
 
-![PIC](../assets/manualPicture/case/btnLeft.jpg)
-![PIC](../assets/manualPicture/case/btnLeft2.jpg)
-![PIC](../assets/manualPicture/case/btnLeft3.jpg)
 
 ### 1.2 Mittlerer Touch Sensor (btn_middle)
 - 3 Kabel auf ca. 14cm Ablängen. Falls vorhanden, drei verschiedene Farben. 
@@ -151,8 +161,11 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - BRÜCKE A SCHLIEßEN! Ansonsten startet der Wemos D1 mini nicht mehr.
 - Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
 
-![PIC](../assets/manualPicture/case/btnMiddle.jpg)
-![PIC](../assets/manualPicture/case/btnMiddle2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnMiddle.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/btnMiddle2.jpg"/>
+  </div>
+
 
 ### 1.3 Rechter Touch Sensor (btn_right)
 - 3 Kabel auf ca. 14cm Ablängen. Falls vorhanden, drei verschiedene Farben. 
@@ -161,8 +174,10 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Beim Durchstecken tragen die Kabelenden auf der anderen Seite zu weit auf und verhindern ein optimales platzieren des Sensors im Gehäuse
 - Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
 
-![PIC](../assets/manualPicture/case/btnRight.jpg)
-![PIC](../assets/manualPicture/case/btnRight2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnRight.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/btnRight2.jpg"/>
+  </div>
 
 ## 2. LDR / Lichtsensor
 - 2 Kabel auf ca. 7cm Ablängen. Kann zwei mal die gleiche Farbe verwendet werden, da keine Polarität.
@@ -171,8 +186,11 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
 - Wie bereits erwähnt ist die Polarität des LDR´s nicht relevant. 
 
-![PIC](../assets/manualPicture/case/ldr.jpg)
-![PIC](../assets/manualPicture/case/ldr2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/ldr.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/ldr2.jpg"/>
+  </div>
+
 
 ## 3. Lautsprecher
 - Der von uns verwendete Lautpsrecher hat eine Polarität. Diese gilt es zu beachten.
@@ -182,9 +200,11 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Die Kabel werden auf dem Mainboard unter "Speaker" angelötet. Rotes Kabel an den rechteckigen Pin, schwarzes Kabel an den ovalen Pin. 
 - Den Lautsprecher kannst du einfach in die Aussparung stecken und muss daher auch nicht weiter fixiert werden.
 
-![PIC](../assets/manualPicture/case/speaker.jpg)
-![PIC](../assets/manualPicture/case/speaker2.jpg)
-![PIC](../assets/manualPicture/case/speaker3.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/speaker.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/speaker2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/speaker3.jpg"/>
+  </div>
 
 ## 4. DC-Buchse
 - Bei der DC-Buchse ist es besonders wichtig die Polarität zu beachten.
@@ -194,19 +214,22 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Nun können die anderen Enden an das Mainboard angeschlossen werden. (schwarz = GND ; rot = +5V)
 - Anschluss erneut überprüfen weil sonst die Matrix Schaden nehmen wird.
 
-![PIC](../assets/manualPicture/case/socket.jpg)
-![PIC](../assets/manualPicture/case/socket2.jpg)
-![PIC](../assets/manualPicture/case/socket3.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/socket.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/socket2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/socket3.jpg"/>
+  </div>
 
 ## 5. Matrix in Grid schrauben
 - Die Matrix wird mit 6 Schrauben (M3x4) mit dem Grid verschraubt.
 - Die Schrauben nur sehr leicht anziehen. Anderfalls kann die Matrix Schaden nehmen und die Plastikgewinde im Grid gehen kaputt.
 - Beim Einsetzen der Matrix in das Grid auf die Richtung achten. Für jeden Kondensator gibt es eine Aussparung im Grid. Hat man die Matrix richtig herum vor sich, sieht man links am Rand keine Kondensatoren während rechts am Rand Kondensatoren sitzen. Im Grid gibt es eine Seite wo außen keine Aussparungen sind. Diese müssen mit der Matrix übereinstimmen!
 
-![PIC](../assets/manualPicture/case/matrix2.jpg)
-![PIC](../assets/manualPicture/case/matrix3.jpg)
-![PIC](../assets/manualPicture/case/matrix4.jpg)
-
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/matrix2.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/matrix3.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/matrix4.jpg"/>
+  </div>
 
 ## 6. Matrix
 - 3 Kabel auf ca. 12cm Ablängen. Falls vorhanden, drei verschiedene Farben. (schwarz = GND ; rot = +5V ; grün = Data/data_in)
@@ -214,13 +237,17 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Anschließend die Kabel auf dem Mainboard bei der Bezeichnung "Matrix" anlöten. (schwarz = GND ; rot = +5V ; grün = Data)
 - Anschluss erneut überprüfen weil sonst die Matrix Schaden nehmen wird.
 
-![PIC](../assets/manualPicture/case/matrix.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/matrix.jpg"/>
+  </div>
 
 ## 7. Mainboard
 - Das Mainboard wird mit vier Schrauben (M3x4) im Gehäuse befestigt.
 - Die Schrauben nur sehr leicht anziehen. Anderfalls kann das Plastikgewinde im Grid kaputt gehen.
 
-![PIC](../assets/manualPicture/case/mainboard.jpg)
+  <div align=center>
+  <img width="400" src=".../assets/manualPicture/case/mainboard.jpg"/>
+  </div>
 
 ## 8. Grid ins Gehäuse einsetzen
 - Nun ist es Zeit das Gehäuse zu schließen und die Matrix in Betrieb zu nehmen.
@@ -228,17 +255,20 @@ Diese Anleitung bezieht sich nicht auf den einbau eines Raspberry Pis. Die korre
 - Leg dir das Gehäuse so hin, dass die Touch Taster und der LDR nach oben/von dir weg schauen.
 - Beim Einlegen des Grids in das Gehäuse müssen die Anschlusskabel der Matrix nun auf der linken Seite sein.
 
-![PIC](../assets/manualPicture/case/timeToFinish.jpg)
-![PIC](../assets/manualPicture/case/finish.jpg)
+  <div align=center>
+  <img width="400" src="./assets/manualPicture/case/timeToFinish.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/finish.jpg"/>
+  </div>
 
 ## 9. FERTIG
 - Hast du Fragen? Dann stelle diese bitte im Forum. Durch öffentliche Fragen profitieren ggf. noch weitere Nutzer.
 - Zeige uns deine fertige Matrix auf Facebook oder im Forum.
 - Viel Spaß mit deiner Matrix!
 
-![PIC](../assets/manualPicture/case/finish2.jpg)
 
-
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/finish2.jpg"/>
+  </div>
 
 
 

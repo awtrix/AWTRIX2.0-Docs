@@ -21,10 +21,16 @@ The software and the new (white) mainboard are the same for both devices, so the
 
 You can find the necessary files for 3D printing of the case on [Thingiverse](https://www.thingiverse.com/thing:4155357).
 
-A 2mm thick Plexiglas panel is provided as the front panel. You can find the matching DXF for milling on Thingiverse. This is not yet for official sale.
+A 2mm thick Acrylic panel is provided as the front panel. You can find the matching DXF for milling on Thingiverse. This is not yet for official sale. A piece of paper is clamped between the front panel and the matrix grid as a diffuser.
   
   <div align=center>
   <img width="400" src="..\assets\pro\plexi.jpg"/>
+  </div>
+
+Shouldn't you have the opportunity to mill such a flat. Also on Thiniverse there is an adapter frame with which you can clamp a piece of paper  
+
+  <div align=center>
+  <img width="400" src="..\assets\pro\adapter.jpg"/>
   </div>
 
 # Elecctronic
@@ -138,9 +144,11 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - When plugging through, the cable ends on the other side are too wide and prevent an optimal placement of the sensor in the housing
 - Solder the other ends to the mainboard. Put the cables through the holes provided for this - gives more stability.
 
-![PIC](../assets/manualPicture/case/btnLeft.jpg)
-![PIC](../assets/manualPicture/case/btnLeft2.jpg)
-![PIC](../assets/manualPicture/case/btnLeft3.jpg)
+ <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnLeft.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/btnLeft2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/btnLeft3.jpg"/>
+  </div>
 
 ### 1.2 Middle Touch Sensor (btn_middle)
 - Cut 3 cables to approx. 14cm length. If available, three different colours. 
@@ -150,8 +158,11 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - close the bridge! Otherwise the Wemos D1 mini will not start.
 - Solder the other ends to the mainboard. Put the cables through the holes provided here - gives more stability.
 
-![PIC](../assets/manualPicture/case/btnMiddle.jpg)
-![PIC](../assets/manualPicture/case/btnMiddle2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnMiddle.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/btnMiddle2.jpg"/>
+  </div>
+
 
 ### 1.3 Right Touch Sensor (btn_right)
 - Cut 3 cables to approx. 14cm length. If available, three different colours. 
@@ -160,8 +171,10 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - When plugging through, the cable ends on the other side are too wide and prevent an optimal placement of the sensor in the housing
 - Solder the other ends to the mainboard. Put the cables through the holes provided for this - gives more stability.
 
-![PIC](../assets/manualPicture/case/btnRight.jpg)
-![PIC](../assets/manualPicture/case/btnRight2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/btnRight.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/btnRight2.jpg"/>
+  </div>
 
 ## 2. LDR / light sensor
 - Cut 2 cables to approx. 7cm length. Can be used two times the same color, as there is no polarity.
@@ -170,8 +183,10 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - Solder the other ends to the mainboard. Here put the cables through the holes provided for it - gives more stability.
 - As already mentioned the polarity of the LDR is not relevant. 
 
-![PIC](../assets/manualPicture/case/ldr.jpg)
-![PIC](../assets/manualPicture/case/ldr2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/ldr.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/ldr2.jpg"/>
+  </div>
 
 ## 3. speaker
 - The speaker we use has a polarity. This must be observed.
@@ -181,9 +196,11 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - The cables are soldered on the mainboard under "Speaker". Red cable to the rectangular pin, black cable to the oval pin. 
 - You can simply put the speaker into the recess and therefore you don't have to fix it further.
 
-![PIC](../assets/manualPicture/case/speaker.jpg)
-![PIC](../assets/manualPicture/case/speaker2.jpg)
-![PIC](../assets/manualPicture/case/speaker3.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/speaker.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/speaker2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/speaker3.jpg"/>
+  </div>
 
 ## 4. DC jack
 - With the DC jack it is especially important to observe the polarity.
@@ -193,34 +210,40 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - Now the other ends can be connected to the mainboard. (black = GND ; red = +5V)
 - Check the connection again because otherwise the matrix will be damaged.
 
-![PIC](../assets/manualPicture/case/socket.jpg)
-![PIC](../assets/manualPicture/case/socket2.jpg)"
-[!PIC](../assets/manualPicture/case/socket3.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/socket.jpg"/>
+    <img width="400" src="../assets/manualPicture/case/socket2.jpg"/>
+      <img width="400" src="../assets/manualPicture/case/socket3.jpg"/>
+  </div>
 
 
 ## 5. Mounting Matrix
 - The matrix is screwed to the grid with 6 screws (M3x4).
 - Tighten the screws only very slightly. Otherwise the matrix can be damaged and the plastic threads in the grid can be broken.
 - Pay attention to the direction when inserting the matrix into the grid. For each capacitor there is a recess in the grid. If you have the matrix in front of you in the right direction, you will see no capacitors on the left side of the grid, while capacitors are on the right side. In the grid there is a side where there are no cutouts on the outside. These must correspond with the matrix!
-
-![PIC](../assets/manualPicture/case/matrix2.jpg)
-![PIC](../assets/manualPicture/case/matrix3.jpg)
-![PIC](../assets/manualPicture/case/matrix4.jpg)
-
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/matrix2.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/matrix3.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/matrix4.jpg"/>
+  </div>
 ## 6. Matrix
 - Cut 3 cables to approx. 12cm length. If available, three different colours. (black = GND ; red = +5V ; green = Data/data_in)
 - Solder cables to the matrix. It is especially important that the three contacts for connection are selected in which "data_in" occurs. (black = GND ; red = +5V ; green = data_in)
 - Then solder the cables on the mainboard at the label "Matrix". (black = GND ; red = +5V ; green = Data)
 - Check the connection again because otherwise the matrix will be damaged.
 
-![PIC](../assets/manualPicture/case/matrix.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/matrix.jpg"/>
+  </div>
 
 
 
 ## 7. motherboard
 - The mainboard is fixed in the case with four screws (M3x4).
 - Tighten the screws only very slightly. Otherwise the plastic thread in the grid can break.
-![PIC](../assets/manualPicture/case/mainboard.jpg)
+  <div align=center>
+  <img width="400" src=".../assets/manualPicture/case/mainboard.jpg"/>
+  </div>
 
 ## 8. insert grid into the housing
 - Now it's time to close the case and put the matrix into operation.
@@ -228,12 +251,16 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - Place the case so that the touch buttons and the LDR are looking up/away from you.
 - When inserting the grid into the case, the connection cables of the matrix must be on the left side.
 
-![PIC](../assets/manualPicture/case/timeToFinish.jpg)
-![PIC](../assets/manualPicture/case/finish.jpg)
+  <div align=center>
+  <img width="400" src="./assets/manualPicture/case/timeToFinish.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/finish.jpg"/>
+  </div>
 
 ## 9. FINISHED
 - Do you have any questions? Then please ask them in the forum. Other users may benefit from public questions.
 - Show us your finished matrix on Facebook or in the forum.
 - Have fun with your matrix!
 
-![PIC](../assets/manualPicture/case/finish2.jpg)
+  <div align=center>
+  <img width="400" src="../assets/manualPicture/case/finish2.jpg"/>
+  </div>
