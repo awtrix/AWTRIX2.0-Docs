@@ -130,7 +130,7 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen 
 
 
 
-# Bilderanleitung zum Zusammenbau
+# Zusammenbau
 
 Diese Anleitung bezieht sich nicht auf den Einbau eines Raspberry Pis. Die korrekte Verkabelung entnimmst du bitte weiter oben.
 
