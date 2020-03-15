@@ -127,7 +127,7 @@ You need to create a folder "MP3" on your DFplayer SD card and move your mp3s to
 AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 0101.  
 [Download default sounds](https://blueforcer.de/awtrix/Soundfiles.zip)
 
-# Picture instructions for assembly
+# Assembly
 
 These instructions do not refer to the installation of a Raspberry Pis. Please take the correct wiring from above.
 
