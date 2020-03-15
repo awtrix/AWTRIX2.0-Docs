@@ -123,7 +123,6 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen 
 # Zusammenbau
 
 Für den Zusammenbau sind lediglich maximal 14x **M3x4** Schrauben notwendig. Diese fixieren die Matrix, Mainboard und den Raspberry.
-
 - Die Matrix wird mit 6 Schrauben **handfest** in das Grid geschaubt. Hierbei ist unbedingt die Richtung zu beachten, da die Matrix nur in eine Richtung perfekt im Grid liegt (Äußere Kondensatoren müssen in die dementsprechenden Aussparungen)
 
 - Den Lautsprecher kannst du einfach in die Aussparung stecken und muss daher auch nicht weiter fixiert werden.
@@ -131,3 +130,133 @@ Für den Zusammenbau sind lediglich maximal 14x **M3x4** Schrauben notwendig. Di
 - Den LDR steckst du von Außen durch das Gehäuse bis er plan mit der Gehäuse Oberseite ist.
 
 - Die Touchsensoren passen theoretisch perfekt in die 3 Aufnahmen. Aufgrund von Drucktoleranzen kann es aber eventuell nötig sein, diese mit doppelseitigen Klebeband zu fixieren oder die Platinen leicht mit Schleifpapier an den Seiten zu glätten.
+
+# Bilderanleitung zum Zusammenbau
+
+## 1. Touch Sensoren
+- Der Widerstand der LED auf dem Touch Taster kann optional ausgelötet werden.
+- Bei hellem Gehäuse kann das Licht der LED sonst von außen gesehen werden.
+- Beim mittleren Taster leuchtet die LED, bei nicht entfernen des Widerstandes, dauerhaft.
+
+### 1.1 Linker Touch Sensor (btn_left)
+- 3 Kabel auf ca. 14cm Ablängen. Falls vorhanden, drei verschiedene Farben. 
+- Kabelenden auf beiden seiten ca. 2mm abisolieren, verdrillen und verzinnen.
+- Kabel NICHT durch die Löcher des Touch Sensors stecken sondern nur von oben auflegen und anlöten. (schwarz = GND ; rot = 3,3V/VCC ; grün = Data/IO)
+- Beim Durchstecken tragen die Kabelenden auf der anderen Seite zu weit auf und verhindern ein optimales platzieren des Sensors im Gehäuse
+- Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
+
+![B4J](../assets/manualPicture/case/btnLeft.jpg)
+![B4J](../assets/manualPicture/case/btnLeft2.jpg)
+![B4J](../assets/manualPicture/case/btnLeft3.jpg)
+
+### 1.2 Mittlerer Touch Sensor (btn_middle)
+- 3 Kabel auf ca. 14cm Ablängen. Falls vorhanden, drei verschiedene Farben. 
+- Kabelenden auf beiden seiten ca. 2mm abisolieren, verdrillen und verzinnen.
+- Kabel NICHT durch die Löcher des Touch Sensors stecken sondern nur von oben auflegen und anlöten. (schwarz = GND ; rot = 3,3V/VCC ; grün = Data/IO)
+- Beim Durchstecken tragen die Kabelenden auf der anderen Seite zu weit auf und verhindern ein optimales platzieren des Sensors im Gehäuse
+- BRÜCKE A SCHLIEßEN! Ansonsten startet der Wemos D1 mini nicht mehr.
+- Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
+
+![B4J](../assets/manualPicture/case/btnMiddle.jpg)
+![B4J](../assets/manualPicture/case/btnMiddle2.jpg)
+
+### 1.3 Rechter Touch Sensor (btn_right)
+- 3 Kabel auf ca. 14cm Ablängen. Falls vorhanden, drei verschiedene Farben. 
+- Kabelenden auf beiden seiten ca. 2mm abisolieren, verdrillen und verzinnen.
+- Kabel NICHT durch die Löcher des Touch Sensors stecken sondern nur von oben auflegen und anlöten. (schwarz = GND ; rot = 3,3V/VCC ; grün = Data/IO)
+- Beim Durchstecken tragen die Kabelenden auf der anderen Seite zu weit auf und verhindern ein optimales platzieren des Sensors im Gehäuse
+- Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
+
+![B4J](../assets/manualPicture/case/btnRight.jpg)
+![B4J](../assets/manualPicture/case/btnRight2.jpg)
+
+## 2. LDR / Lichtsensor
+- 2 Kabel auf ca. 7cm Ablängen. Kann zwei mal die gleiche Farbe verwendet werden, da keine Polarität.
+- Kabelenden auf beiden seiten ca. 2mm abisolieren, verdrillen und verzinnen.
+- Die Beinchen des LDR´s auf ca. 3-4mm kürzen und an die Kabel anlöten.
+- Die anderen Enden an das Mainboard anlöten. Hier die Kabel durch die dafür vorgesehenen Löcher stecken - gibt mehr stabilität.
+- Wie bereits erwähnt ist die Polarität des LDR´s nicht relevant. 
+
+![B4J](../assets/manualPicture/case/ldr.jpg)
+![B4J](../assets/manualPicture/case/ldr2.jpg)
+
+## 3. Lautsprecher
+- Der von uns verwendete Lautpsrecher hat eine Polarität. Diese gilt es zu beachten.
+- rotes Kabel auf ca. 11cm ablängen, schwarzes Kabel auf ca. 13cm ablängen. Kabellängen stimmt hier nur wenn der Lautsprecher exakt wie in dieser Anleitung eingebaut wird!
+- rotes Kabel am Plus des Lautsprechers anlöten
+- schwarzes Kabel am Minus des Lautsprechers anlöten
+- Die Kabel werden auf dem Mainboard unter "Speaker" angelötet. Rotes Kabel an den rechteckigen Pin, schwarzes Kabel an den ovalen Pin. 
+
+![B4J](../assets/manualPicture/case/speaker.jpg)
+![B4J](../assets/manualPicture/case/speaker2.jpg)
+![B4J](../assets/manualPicture/case/speaker3.jpg)
+
+## 4. DC-Buchse
+- Bei der DC-Buchse ist es besonders wichtig die Polarität zu beachten.
+- 2 Kabel auf ca. 8cm Ablängen. Zwei unterschiedliche Farben benutzen. (schwarz = GND ; rot = +5V)
+- Kabel an die DC-Buchse anlöten. Rot wird an den Mittelkontakt (+5V) gelötet, schwarz an den äußeren Kontakt (GND).
+- Anschließend die Buchse ins Gehäuse schrauben.
+- Nun können die anderen Enden an das Mainboard angeschlossen werden. (schwarz = GND ; rot = +5V)
+- Anschluss erneut überprüfen weil sonst die Matrix Schaden nehmen wird.
+
+![B4J](../assets/manualPicture/case/socket.jpg)
+![B4J](../assets/manualPicture/case/socket2.jpg)
+![B4J](../assets/manualPicture/case/socket3.jpg)
+
+## 5. Matrix in Grid schrauben
+- Die Matrix wird mit 6 Schrauben (M3x4) mit dem Grid verschraubt.
+- Die Schrauben nur sehr leicht anziehen. Anderfalls kann die Matrix Schaden nehmen und die Plastikgewinde im Grid gehen kaputt.
+- Beim Einsetzen der Matrix in das Grid auf die Richtung achten. Für jeden Kondensator gibt es eine Aussparung im Grid. Hat man die Matrix richtig herum vor sich, sieht man links am Rand keine Kondensatoren während rechts am Rand Kondensatoren sitzen. Im Grid gibt es eine Seite wo außen keine Aussparungen sind. Diese müssen mit der Matrix übereinstimmen!
+
+![B4J](../assets/manualPicture/case/matrix2.jpg)
+![B4J](../assets/manualPicture/case/matrix3.jpg)
+![B4J](../assets/manualPicture/case/matrix4.jpg)
+
+
+## 6. Matrix
+- 3 Kabel auf ca. 12cm Ablängen. Falls vorhanden, drei verschiedene Farben. (schwarz = GND ; rot = +5V ; grün = Data/data_in)
+- Kabel an die Matrix löten. Es ist besonders wichtig, dass die drei Kontakte zum anschließen gewählt werden in denen "data_in" vorkommt. (schwarz = GND ; rot = +5V ; grün = data_in)
+- Anschließend die Kabel auf dem Mainboard bei der Bezeichnung "Matrix" anlöten. (schwarz = GND ; rot = +5V ; grün = Data)
+- Anschluss erneut überprüfen weil sonst die Matrix Schaden nehmen wird.
+
+![B4J](../assets/manualPicture/case/matrix.jpg)
+
+## 7. Mainboard
+- Das Mainboard wird mit vier Schrauben (M3x4) im Gehäuse befestigt.
+- Die Schrauben nur sehr leicht anziehen. Anderfalls kann das Plastikgewinde im Grid kaputt gehen.
+
+![B4J](../assets/manualPicture/case/mainboard.jpg)
+
+## 8. Grid ins Gehäuse einsetzen
+- Nun ist es Zeit das Gehäuse zu schließen und die Matrix in Betrieb zu nehmen.
+- Sollte dein Wemos D1 mini an dieser Stelle noch nicht mit der Controller Software bespielt worden sein, dann tue dies bevor du das Gehäuse schließt!
+- Leg dir das Gehäuse so hin, dass die Touch Taster und der LDR nach oben/von dir weg schauen.
+- Beim Einlegen des Grids in das Gehäuse müssen die Anschlusskabel der Matrix nun auf der linken Seite sein.
+
+![B4J](../assets/manualPicture/case/timeToFinish.jpg)
+![B4J](../assets/manualPicture/case/finish.jpg)
+
+## 9. FERTIG
+- Hast du Fragen? Dann stelle diese bitte im Forum. Durch öffentliche Fragen profitieren ggf. noch weitere Nutzer.
+- Zeige uns deine fertige Matrix auf Facebook oder im Forum.
+- Viel Spaß mit deiner Matrix!
+
+![B4J](../assets/manualPicture/case/finish2.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
