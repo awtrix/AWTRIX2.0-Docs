@@ -226,6 +226,7 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
   <img width="400" src="../assets/manualPicture/case/matrix3.jpg"/>
   <img width="400" src="../assets/manualPicture/case/matrix4.jpg"/>
   </div>
+
 ## 6. Matrix
 - Cut 3 cables to approx. 12cm length. If available, three different colours. (black = GND ; red = +5V ; green = Data/data_in)
 - Solder cables to the matrix. It is especially important that the three contacts for connection are selected in which "data_in" occurs. (black = GND ; red = +5V ; green = data_in)
@@ -241,8 +242,9 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 ## 7. motherboard
 - The mainboard is fixed in the case with four screws (M3x4).
 - Tighten the screws only very slightly. Otherwise the plastic thread in the grid can break.
+  
   <div align=center>
-  <img width="400" src=".../assets/manualPicture/case/mainboard.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/mainboard.jpg"/>
   </div>
 
 ## 8. insert grid into the housing
@@ -252,7 +254,7 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 - When inserting the grid into the case, the connection cables of the matrix must be on the left side.
 
   <div align=center>
-  <img width="400" src="./assets/manualPicture/case/timeToFinish.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/timeToFinish.jpg"/>
   <img width="400" src="../assets/manualPicture/case/finish.jpg"/>
   </div>
 

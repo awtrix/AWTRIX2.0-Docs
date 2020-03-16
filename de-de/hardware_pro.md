@@ -243,10 +243,10 @@ Diese Anleitung bezieht sich nicht auf den Einbau eines Raspberry Pis. Die korre
 
 ## 7. Mainboard
 - Das Mainboard wird mit vier Schrauben (M3x4) im Gehäuse befestigt.
-- Die Schrauben nur sehr leicht anziehen. Anderfalls kann das Plastikgewinde im Grid kaputt gehen.
+- Die Schrauben nur sehr leicht anziehen. Anderfalls kann das Plastikgewinde im Gehäuse kaputt gehen.
 
   <div align=center>
-  <img width="400" src=".../assets/manualPicture/case/mainboard.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/mainboard.jpg"/>
   </div>
 
 ## 8. Grid ins Gehäuse einsetzen
@@ -256,7 +256,7 @@ Diese Anleitung bezieht sich nicht auf den Einbau eines Raspberry Pis. Die korre
 - Beim Einlegen des Grids in das Gehäuse müssen die Anschlusskabel der Matrix nun auf der linken Seite sein.
 
   <div align=center>
-  <img width="400" src="./assets/manualPicture/case/timeToFinish.jpg"/>
+  <img width="400" src="../assets/manualPicture/case/timeToFinish.jpg"/>
   <img width="400" src="../assets/manualPicture/case/finish.jpg"/>
   </div>
 
