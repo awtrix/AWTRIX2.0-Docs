@@ -4,24 +4,25 @@ This manual describes how to flash a finished .bin file to the ESP8266. Compilin
 
 ## Flashing
 
-### Flashing under Windwos
-![](..\assets\firmware\flashingTool.PNG)
+### Flashing with Windows
 
-**1.** Download the Flashing Tool [here](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip)
-   
-**2.** Unzip the downloaded program and start it.
-   
-**3.** Download the latest firmware.bin file from [here](https://blueforcer.de/awtrix/stable/firmware.bin).
 
-**4.** Set the correct com port in the lower part of the program.
+**1.** Download the Flashing Tool [here](https://blueforcer.de/downloads/ESP8266Flasher.exe)
    
-**5.** Store the path to the downloaded firmware.bin file in the upper part of the program. The address "0x000000" must be entered to the right of the path.
+**2.** Download the latest firmware [here](https://blueforcer.de/awtrix/stable/firmware.bin).
 
-**6.** Clear your controller by pressing the ERASE button. After a short time FINISH should appear in the lower green field. (If there was another version of Awtrix on the controller before and the controller was not deleted, the controller will keep its settings. This leads to problems).
-     
-**7.** Flash firmware by pressing the START button.
+**3.** Start the **ESP8266Flasher.exe** and open the firmware in the tab "Config" (click gear wheel to select the firmware)
+
+**4** Go back to the tab "Operation" and set the correct Com-Port if it was not detected automatically.
    
-**8.** Reset your controller.
+**5** Click on "Flash" and wait until the process is finished and a green check mark appears in the lower left corner.
+   
+**6.** Restart the controller.
+
+  <div align=center>
+  <img width="400" src="..\assets\firmware\flashingTool.jpg"/>
+    <img width="400" src="..\assets\firmware\flashingTool2.jpg"/>
+  </div>
 
 ### Flashing under Linux & MacOS
 
@@ -94,10 +95,15 @@ If no Wifi connection is configured yet, the text "Hotspot" will appear on the m
 
 
 ## Known problems
-- There are ESP versions in circulation that need to be flashed differently. If your WEMOS does not scroll the host IP through the matrix at boot time, flash your WEMOS again with the following settings
-<div align=center>
-<img width="400" src="..\assets\firmware\fix.jpg"/>
-</div>
 
 - If other problems occur you can try to reset your Wemos. This will delete all your saved information and you can set it up again via the hotspot.
-  To do this, proceed as follows
+  Proceed as follows:
+  - Reset the ESP.
+  - Wait 3-4s
+  - Reset the ESP again
+  - The matrix now shows **RESET** in red  
+
+<br>
+  <div align=center>
+  <img width="400" src="..\assets\firmware\reset.jpg"/>
+  </div>

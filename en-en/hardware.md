@@ -108,7 +108,7 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 | G | GND | GND | GND | Power supply (-) | |
 | D0 | I/O | - | - | Touch signal | |
 | D4 | - | I/O | - | Touch signal | **Solder bridge A** |
-| D5 | - | - | I/O | Touch signal | |
+| D8 | - | - | I/O | Touch signal | |
 
 !> The touch sensors have two bridges on the small circuit board which can be closed with solder. This is absolutely necessary for the middle sensor, otherwise the Wemos will not start. To prevent this from happening, the bridge A of the **middle touch sensor must be closed**. This will set the I/O pin to active low. Other touch sensors are not recommended, because they are not designed for the housing (different dimensions) and have no possibility to solder a bridge.
 
@@ -116,7 +116,6 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
   <img width="100" src="..\assets\touch.jpg"/>
   </div>
 
-![](..\assets\touch.jpg)
 
 ## Gesture sensor for operation (optional)
 The gesture sensor can be used optionally for easy operation of the matrix. Gestures like wiping with the hand from left to right or the other way around are possible.

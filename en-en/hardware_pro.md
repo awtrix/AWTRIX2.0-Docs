@@ -188,7 +188,7 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
     <img width="400" src="../assets/manualPicture/case/ldr2.jpg"/>
   </div>
 
-## 3. speaker
+## 3. Speaker
 - The speaker we use has a polarity. This must be observed.
 - Cut the red cable to about 11cm, cut the black cable to about 13cm. Cable lengths are only correct here if the speaker is installed exactly as described in this manual!
 - solder the red cable to the plus of the speaker
@@ -239,15 +239,15 @@ These instructions do not refer to the installation of a Raspberry Pis. Please t
 
 
 
-## 7. motherboard
+## 7. Motherboard
 - The mainboard is fixed in the case with four screws (M3x4).
-- Tighten the screws only very slightly. Otherwise the plastic thread in the grid can break.
+- Tighten the screws only very slightly. Otherwise the plastic thread in the case can break.
   
   <div align=center>
   <img width="400" src="../assets/manualPicture/case/mainboard.jpg"/>
   </div>
 
-## 8. insert grid into the housing
+## 8. Insert grid into the housing
 - Now it's time to close the case and put the matrix into operation.
 - If your Wemos D1 mini has not been recorded with the controller software at this point, do so before closing the case!
 - Place the case so that the touch buttons and the LDR are looking up/away from you.

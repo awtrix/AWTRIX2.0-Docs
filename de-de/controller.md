@@ -4,24 +4,26 @@ Hier in dieser Anleitung ist beschrieben, wie eine fertige .bin Datei auf den ES
 
 ## Flashen
 
-### Flashen unter Windwos
-![](..\assets\firmware\flashingTool.PNG)
+### Flashen unter Windows
 
-**1.** Lade dir das Flashing Tool [hier](https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.8.zip) herunter.
+**1.** Lade dir das Flashing Tool [hier](https://blueforcer.de/downloads/ESP8266Flasher.exe) herunter.
    
-**2.** Entpacke das heruntergeladene Programm und starte es.
-   
-**3.** Lade dir die aktuelle Firmware.bin Datei von [hier](https://blueforcer.de/awtrix/stable/firmware.bin) herunter.
+**2.** Lade dir die aktuelle Firmware [hier](https://blueforcer.de/awtrix/stable/firmware.bin) herunter.
 
-**4.** Selle den richtigen Com-Port im unteren Bereich des Programms ein.
-   
-**5.** Hinterlege den Pfad zu der heruntergladenen firmware.bin Datei im oberen Bereich des Programms. Rechts neben dem Pfad muss noch die Adresse "0x000000" eingetragen werden.
+**3.** Starte die **ESP8266Flasher.exe** und öffne die Firmware im Tab "Config" (Zahnrad klicken um die Firmware auszuwählen)
 
-**6.** Lösche deinen Controller durch betätigen des ERASE Buttons. Nach kurzer Zeit sollte im unteren grünen Feld FINISH stehen. (Wenn bereits vorher eine andere Version von Awtrix auf dem Controller war und der Controller nicht gelöscht wurde, behält der Conotroller seine Einstellungen. Dies führt zu Problemen.)
+**4.** Gehe zurück in den Tab "Operation" und stelle  den richtigen Com-Port ein falls dieser nicht automatisch erkannt wurde.
    
-**7.**  Firmware flashen durch betätigen des START Buttons.
+**5.** Klicke auf "Flash" uind warte bis der Vorgang abgeschlossen ist und in der unteren linken ecke ein grüner haken erscheint.
    
-**8.**  Resette deinen Controller.
+**6.** Starte den Controller neu.
+
+  <div align=center>
+  <img width="400" src="..\assets\firmware\flashingTool.jpg"/>
+    <img width="400" src="..\assets\firmware\flashingTool2.jpg"/>
+  </div>
+
+
 
 ### Flashen unter Linux & MacOS
 
@@ -94,10 +96,6 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 
 
 ## Bekannte Probleme
-- Es sind ESP Versionen im Umlauf die anders geflasht werden müssen da derren Flashspeicher größer/kleiner sind. Sollte dein WEMOS die eingetragene Host-IP beim Booten nicht durch die Matrix scrollen so flashe deinen Wemos erneut mit folgenden Einstellungen
-<div align=center>
-<img width="400" src="..\assets\firmware\fix.jpg"/>
-</div>
 
 - Sollten andere Probleme auftreten kannst du versuchen deinen Wemos zurück zu setzen. Dabei werden alle gespeicherte Informationen gelöscht und du kannst ihn erneut über den Hotspot einrichten.
   Gehe dazu wie folgt vor:
