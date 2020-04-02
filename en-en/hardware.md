@@ -15,7 +15,7 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | 3 | Awtrix housing | [click here](https://www.thingiverse.com/thing:2791276) |
 | 4 | Wemos D1 mini | [click here](https://de.aliexpress.com/item/32651747570.html) |
 | 5 | Power supply (>3A) | [click here](https://goo.gl/QLydM3) |
-| 6 | power jack | [click here](https://goo.gl/j4Xov7) |
+| 6 | Power jack | [click here](https://goo.gl/j4Xov7) |
 
 
 ### Optional components
@@ -38,11 +38,11 @@ The touch sensors are not listed here because they are part of the kit and there
 | 2 | Wemos D1 mini | [click here](https://de.aliexpress.com/item/32651747570.html) |
 | 3 | 32x8 Matrix | [click here](https://de.aliexpress.com/item/4000547842744.html) |
 | 4 | Power supply (>3A) | [click here](https://goo.gl/QLydM3) |
-| 5 | power jack              | [click here](https://goo.gl/j4Xov7) |
-| 6 | resistors (3x 1k) | [click here](https://www.conrad.de/de/p/yageo-mf0207fte52-1k-metallschicht-widerstand-1-k-axial-bedrahtet-0207-0-6-w-1-1-st-1417606.html) |
-| 7 | Shottky diodes (2x 1N4004)| [click here](https://www.conrad.de/de/p/diotec-si-gleichrichterdiode-1n4001-do-204al-50-v-1-a-162213.html) |
-| 8 | jumper | |
-| 9 | 1000uF 10V capacitor | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
+| 5 | Power jack              | [click here](https://goo.gl/j4Xov7) |
+| 6 | Resistors (3x 1k) | [click here](https://www.conrad.de/de/p/yageo-mf0207fte52-1k-metallschicht-widerstand-1-k-axial-bedrahtet-0207-0-6-w-1-1-st-1417606.html) |
+| 7 | Shottky Diodes (2x 1N4004)| [click here](https://www.conrad.de/de/p/diotec-si-gleichrichterdiode-1n4001-do-204al-50-v-1-a-162213.html) |
+| 8 | Jumper | |
+| 9 | 1000uF 10V Capacitor | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
 
 ### Optional components
 | No | Name | Link |
@@ -91,10 +91,10 @@ Optinally, Awtrix can work with two different indoor climate sensors. You can fr
 
 | Wemos | BME280 | Htu21d | Function | Note |
 | --- | --- | --- | --- |--- |
-| 3.3V | VCC | VCC | power supply (+) | not 5V compatible! |
+| 3.3V | VCC | VCC | Power supply (+) | not 5V compatible! |
 | GND | GND | GND | Power supply (-) | |
 | D3 | SDA | SDA |I2C Data | |
-| D1 | SCL | SCL |I2C Takt | |
+| D1 | SCL | SCL |I2C Clock | |
 
 When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 mini are used twice (I2C Bus).
 
@@ -124,10 +124,10 @@ The gesture sensor can be used optionally for easy operation of the matrix. Gest
 
 | Wemos | APDS-9960 | Function | Note |
 | --- | --- | --- | --- |
-| 3.3V | VCC | power supply (+) | not 5V compatible! |
+| 3.3V | VCC | Power supply (+) | not 5V compatible! |
 | GND | GND | Power supply (-) | |
 | D3 | SDA | I2C Data | |
-| D1 | SCL | I2C Takt | |
+| D1 | SCL | I2C Clock | |
 | D6 | INT | Interrupt |
 
 When using temperature and gesture sensor, the pins D1 & D3 of the Wemos D1 mini are used twice (bus).
