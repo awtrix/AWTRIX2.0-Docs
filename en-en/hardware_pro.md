@@ -51,6 +51,7 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | 4 | Wemos D1 mini | [Click here](https://de.aliexpress.com/item/32651747570.html) |
 | 5 | Power supply (>3A) | [Click here](https://goo.gl/QLydM3) |
 | 6 | power jack | [click here](https://goo.gl/j4Xov7) |
+| 7   |         M3x4             |   Maximum 14 pieces depending on the expansion tage                      |
 
 
 ### Optional components

@@ -51,7 +51,7 @@ This value specifies after how many seconds all apps update their data.
 Adjusts the volume of the connected DFPlayer.
 
 **Timezone Offset (UTC)**  
-This sets the difference to the UTC time zone.
+This sets the difference to the UTC time zone. Enter 0 to use the local time from your running operating system.
 
 ### Communication
 

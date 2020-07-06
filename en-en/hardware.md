@@ -118,7 +118,7 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 
 
 ## Gesture sensor for operation (optional)
-The gesture sensor can be used optionally for easy operation of the matrix. Gestures like wiping with the hand from left to right or the other way around are possible.
+The gesture sensor can be used optionally for easy operation of the matrix. Gestures like wiping with the hand from left to right or the other way around are possible. This function is no longer being developed.
 
 ![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
 

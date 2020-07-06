@@ -50,7 +50,7 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | 4   |      Wemos D1 mini       |       [Klicke hier](https://de.aliexpress.com/item/32651747570.html)       |
 | 5   |      Netzteil (>3A)      |                    [Klicke hier](https://goo.gl/QLydM3)                    |
 | 6   |       Strombuchse        |                    [Klicke hier](https://goo.gl/j4Xov7)                    |
-
+| 7   |         M3x4             |               Maximal 14 Stück je nach Ausbaustufe                         |
 
 ### Optionale Bauteile
 | Nr  |      Name      |                              Link                              |

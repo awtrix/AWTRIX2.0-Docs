@@ -116,7 +116,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
   </div>
 
 ## Gestensensor zur Bedienung (optional)
-Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich.
+Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich. Diese Funktion wird nicht weiterentwickelt.
 
 ![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
 

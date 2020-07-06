@@ -46,6 +46,8 @@ Diese Einstellungen sind bei allen Apps gleich und sind nicht speziell auf die e
   Diese Einstellung überschreibt die globale Anzeigedauer einer App.
 - **Update Interval:**  
   Diese Einstellung überschreibt das globale Update Intervall nachdem sich eine App die neuen Daten herunterlädt.
+- **Custom Color:**  
+Legt eine benutzerdefinierte Textfarbe für diese App fest (Hex-Farbe z.B. #8034eb)  
 - **Start Time:**    
   Diese Einstellung legt die Uhrzeit fest, ab wann die die App angezeigt wird.
 - **End Time:**

@@ -51,7 +51,7 @@ Dieser wert gibt an, nach wievielen Sekunden alle Apps ihre Daten aktualisieren.
 Stellt die Lautstärke des angeschlossenen DFPlayer ein.
 
 **Timezone Offset (UTC)**  
-Dies stellt die Differenz zur UTC Zeitzone ein.
+Dies stellt die Differenz zur UTC Zeitzone ein. Trage 0 ein, um die lokale Zeit des Betriebssystems zu nehmen.
 
 ### Communication
 

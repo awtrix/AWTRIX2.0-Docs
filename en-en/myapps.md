@@ -44,11 +44,13 @@ These settings are the same for all apps and are not specific to one app.
 
 - **Display Time:**  
   This setting overwrites the global display duration of an app.
-- Update Interval:**  
+- **Update Interval:**  
   This setting overwrites the global update interval after an app downloads the new data.
-- Start Time:**    
+- **Custom Color:**  
+  Sets a custom Textcolor for this App (Hex Color e.g #8034eb)  
+- **Start Time:**    
   This setting determines the time when the app is displayed.
-- End Time:**
+- **End Time:**
   This setting specifies the time after which the app is no longer displayed.
 
 #### App Settings
