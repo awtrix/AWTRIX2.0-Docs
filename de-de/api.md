@@ -257,6 +257,10 @@ Zeigt eine idividuelle Benachrichtigung an
 #### **Parameter**  
 - **text**
   - Anzuzeigender Text (String)
+- **multiColorText**
+  - Definiere ein Array von Textabschnitten mit einem RGB-Farbwert (Array  von Ganzzahlen [R,G,B]) .e.g: ```"multiColorText":[{"text":"Totally ","color":[0,255,0]},{"text":"Awesome","color":[255,0,0]}]```
+- **fallingText**
+  - Eine weitere Möglichkeit, langen Text anzuzeigen. Anstatt von rechts nach links zu scrollen, fällt jedes Wort von oben nach unten. Wenn ein Punkt oder Komma erkannt wird, wird die Anzeige zur besseren Übersicht für 1000 oder 500 Millisekunden pausiert. Icons werden hierbei ignoriert.
 - **force (optional)**
   - Legt fest, ob die angegebenen Benachrichtigung sofort oder nach der aktuellen App angezeigt werden soll (true/false).
   Wenn auf false gesetzt, wird die Benachrichtigung in eine Warteschlange einsortiert. Nach der aktuellen App zeigt AWTRIX nacheinander alle Benachrichtigungen an und löscht diese anschließend. Somit können mehrere Benachrichtigungen auf einmal gesendet werden. Wenn sich keine weiteren Benachrichtigungen in der Warteschlange befinden, wird AWTRIX wieder native Apps anzeigen.
@@ -264,6 +268,7 @@ Zeigt eine idividuelle Benachrichtigung an
   - Kennung der Benachrichtigung
 - **scrollSpeed (optional)**
   - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
+  - Steuert die Anzeigezeit in Millisekunden für jedes Wort bei Verwendung von **fallingText**. Standard: 400
 - **icon (optional)**
   - Icon ID aus der Online Datenbank (Ganzzahl)
 - **color (optional)**
@@ -278,6 +283,7 @@ Zeigt eine idividuelle Benachrichtigung an
   - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
   - Zeigt den Text in Regenbogenfarben an. Überschreibt **color** (true/false).
+  - Bei der Verwendung von **fallingText** wird jedes Wort in einer zufälligen Farbe angezeigt
 - **progress (optional)**
   - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
 - **progressColor (optional)**
@@ -288,6 +294,11 @@ Zeigt eine idividuelle Benachrichtigung an
   - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
 - **yeelight**
   - Plays an effect on your Yeelight ([see here](/de-de/api?id=yeelight))
+- **barchart**
+  - zeigt ein Balkendiagramme an: Sende deine Datenwerte als Array, z.B. ```"barchart":[20,50,80,100,50,20,60]```
+- **linechart**
+  - Wie Balkendiagramme kannst du auch Liniendiagramme. Sende deine Datenwerte als Array z.B. ```"linechart":[20,50,80,100,50,20,60]```
+
 
 ```JSON
 {

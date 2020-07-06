@@ -11,8 +11,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-            <link rel="stylesheet" href="main.css">
-            <link rel="stylesheet" href="prism-xonokai.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="prism-xonokai.css">
     <!-- Alternate Stylesheets -->
     <link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" title="Defaults">
     <link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="Simple Dark">
@@ -31,18 +31,20 @@
     <script src="https://browser.sentry-cdn.com/4.4.2/bundle.min.js" crossorigin="anonymous"></script>
     <script>
         // Sentry.io
-        Sentry.init({ dsn: 'https://60f8b01c2f0b461a87e5c48f88778039@sentry.io/1367220' });
+        Sentry.init({
+            dsn: 'https://60f8b01c2f0b461a87e5c48f88778039@sentry.io/1367220'
+        });
 
         // Docsify
         window.$docsify = {
             // GENERAL
             // -----------------------------------------------------------------
-            name       : 'AWTRIX',
-            repo       : 'https://github.com/awtrix',
-            coverpage  : 'coverpage.md',
+            name: 'AWTRIX',
+            repo: 'https://github.com/awtrix',
+            coverpage: 'coverpage.md',
             loadNavbar: 'navbar.md',
             mergeNavbar: false,
-            homepage   : 'introduction.md',
+            homepage: 'introduction.md',
             loadSidebar: 'sidebar.md',
             onlyCover: true,
             // NAVIGATION
@@ -50,12 +52,12 @@
             alias: {
                 '/.*/_navbar.md': '/navbar.md',
             },
-            auto2top   : true,
-            maxLevel   : 3,
+            auto2top: true,
+            maxLevel: 3,
             subMaxLevel: 2,
             'flexible-alerts': {
-      style: 'flat'
-    }
+                style: 'flat'
+            }
         };
     </script>
     <script src="main.js"></script>
@@ -73,5 +75,7 @@
     <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-prism@latest/dist/docsify-prism.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 </body>
+
 </html>

@@ -18,3 +18,12 @@ AWTRIXER behinhaltet massig funktionen die fast schon an Photoshop erinnern.
     - Mit Save kannst du dein Werk umbennenen, für spätere sessions abseichern oder in die Cloud hochladen.
     - Export, exportiert dein Icon als Bilddatei auf den PC. Diese können von AWTRIX aber nicht verwendet werden.
     - Mit Import kannst du vorhandene Grafiken oder Animationen importieren. Bitte beachte auch hier das AWTRIX nur 8x8 oder 32x8 arbeiten kann. Nutze ggf. die Resize Funktion während des importiertvorgangs.
+
+
+**Du hast auch die Möglichkeit, um Icons für den privaten Gebrauch lokal zu speichern**  
+Um sie zu verwenden, schreibst du einfach den Icon-Namen als ID (String statt Integer) in deine API-Anforderung
+Alle Icons werden in einer lesbaren Textdatei gespeichert (config->privatIcons), so dass du Icons manuell bearbeiten/ hinzufügen/entfernen kannst.
+AWTRIX erkennt keine Änderungen an dieser Datei. Um deine privaten Icons neu zu laden, führe einfach Reload-Icons vom Terminal auf der Hauptseite aus. Wenn du deine Icons über AWTRIXER speicherst, werden sie automatisch neu geladen.
+Wie die Community Icons können auch deine privaten Icons nicht zur Bearbeitung in AWTRIXER geladen werden. Benutze  "Speichern als .awtrixer-Datei", um dein Icon zu sichern.
+Deine privaten Icons werden nicht in der Icondatabase angezeigt.
+Trotz dieser Funktion ist es natürlich immer noch schön, Icons mit der Gemeinschaft zu teilen.

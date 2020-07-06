@@ -22,7 +22,6 @@ Gib hierzu die IP Adresse der Fritzbox an und richte, wenn gewünscht, noch das 
 usw..
 ``` 
 
- 
 
 **Pushover**  
 Hiermit kannst du über Pushover, Benachrichtigungen an AWTRIX senden. Die eingetragenen Logindaten verbleiben selbstverständlich lokal auf deiner AWTRIX.
@@ -35,3 +34,58 @@ Hier kannst du einen Alarm einstellen, der sich täglich widerholt. Neben einem 
 
 **Yeelight**
 Hier hast du die Möglichkeit eine Yeelight RGB Lampe mit AWTRIX zu verbinden. Dabei werden neben den normalen "Glühbirnen" auch Strips und Bedside Lamp unterstützt. Trage die IP Adresse der Yeelight ein nachdem du in der Yeelight App den LAN-Modus aktiviert hast. Du kannst nun verschiedene Effekte über die API abspielen. So kannst du z.b bei deinen wichtigen Benachrichtigungen neben Sounds auch Lichteffekte aktivieren.
+
+**E1.31**  
+Ermöglicht es dir, E1.31-Daten (wie Artnet) an deine AWTRIX zu senden. Mit xLight zum Beispiel müssen du einen neuen Controller mit 2 Universen mit je 384 Kanälen hinzufügen. Füge auch ein neues Matrix-Layout mit 8 Strings á 32 Strands und der Startposition oben links hinzu. Wenn du mit dem Senden von Daten beginnst, stoppt AWTRIX seinen normalen Betrieb und zeigt deine Daten an. 5s nachdem du das Senden von Daten gestoppt hast, kehrt AWTRIX zum normalen Betrieb zurück.
+
+**Alexa**  
+Dadurch wird eine Phillips Hue-Lampe emuliert, so dass du die Textfarbe, die Helligkeit und das Ein- und Ausschalten über Amazonen Alexa steuern kannst. (Der integrierte Emulationsserver benutzt Port 80, stelle sicher, dass er von keinem anderen Programm benutzt wird).
+
+**Python**  
+Du kannst einfache Python-Anwendungen für awtrix schreiben.
+AWTRIX verwendet dafür die Java ScriptEngine Nashorn zusammen mit jython.
+Platziere deine Python-Datei in den apps-Ordner und starte awtrix neu. Alle Python-Anwendungen werden wie normale native Anwendungen geladen.
+
+Beispiel für eine app.py:
+
+!> Alle Variablennamen und Funktionsnamen müssen genau so bleiben wie sie sind.
+
+```python
+import urllib, json
+
+Version = 1.0
+Author = "Blueforcer"
+Description = "AWTRIX app written in python"
+HowToSetup = "Example Text"
+Covericon = 1164
+Repeat=2
+MoveIcon=True
+CustomScreen=False #not working yet
+Settings = {"Prefix": "MissionName: "} #Usersettings
+
+#Dont modfiy this
+def init():	
+    return [Version,Author,Description,HowToSetup,Covericon,Repeat,MoveIcon,CustomScreen]
+
+def started():
+    print("App started")
+
+def running():
+    print("App running")
+
+def finished():
+    print("App finished")
+
+def getSettings():
+    return Settings   
+
+#This function is called when AWTRIX trigger all apps to do their downloads.
+#Unlike native apps you will need to return the iconID and Text wich should be show
+#You also will get a map of the Userettings to work with
+def getData(settings):
+    url = "https://api.spacexdata.com/v3/launches/next"
+    response = urllib.urlopen(url)
+    data = json.loads(response.read())
+    SpaceXMission = data["mission_name"]
+    return [1164,settings["Prefix"] + SpaceXMission]
+```    

@@ -3,11 +3,7 @@
 
 To view an icon on your matrix, simply click on it. When you leave the page, AWTRIX returns to normal mode.
 
-  Click on the first icon named **"New Icon "** to create a new icon. This link changes to AWTRIXER.
-
   > In the upper right corner you can search for icons by icon name.  
-
-
   
   <div align=center>
   <img width="800" src="..\assets\db.gif"/>

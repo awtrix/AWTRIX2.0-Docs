@@ -257,15 +257,22 @@ Displays an individual notification
 #### **Parameters**  
 - **text**
   - Text to be displayed (String)
+- **multiColorText**
+  - Define an Array of textareas with a given RGB color values (Array of Integer) .e.g: ```"multiColorText":[{"text":"Totally ","color":[0,255,0]},{"text":"Awesome","color":[255,0,0]}]```
+- **fallingText**
+  - Another way to display long text. Instead of scrolling from right to left, each word falls from top to bottom. If a dot or comma is detected, the diplay will pause for 1000 or 500 milliseconds for better experience. Icons are disabled.
 - **force (optional)**
   - Determines whether the specified notification should be displayed immediately or after the current app (true/false).
   If set to false, the notification is sorted into a queue. After the current app, AWTRIX displays all notifications one after the other and then deletes them. This allows several notifications to be sent at once. If there are no further notifications in the queue, AWTRIX will display native apps again.
 - **name (optional)**
   - Identification of the notification
 - **scrollSpeed (optional)**
-  - The scroll speed in milliseconds. Lower=Faster; default: 65ms (integer)  
+  - The scroll speed in milliseconds. Lower=Faster; default: 65ms (integer) 
+  - Controls the displaytime in milliseconds of each word with fallingText. default: 400
 - **icon (optional)**
   - Icon ID from the online database (integer)
+  - You can also show up to 4 Icons in your notification. Text is disabled with this function
+(jsonkeys: "icon","icon2","icon3","icon4")
 - **color (optional)**
   - Custom text color (array of integers [R,G,B])
 - **moveIcon (optional)**
@@ -278,6 +285,7 @@ Displays an individual notification
   - How often the text should be scrolled before switching to the next app. If the text needs to be scrolled up and the text length does not need to be scrolled up, the global app runtime is used to switch. (integer)
 - **rainbow (optional)**
   - Displays the text in rainbow colors. Overwrites **color** (true/false).
+  - While using fallingText each word will be displayed in a random color
 - **progress (optional)**
   - Displays a progress bar below the text (0-100, integer)
 - **progressColor (optional)**
@@ -288,7 +296,10 @@ Displays an individual notification
   - Plays a specific file on the DFPlayer when the app starts. (Number of the desired MP3 as integer)
 - **yeelight**
   - Plays an effect on your Yeelight ([see here](/en-en/api?id=yeelight))
-
+- **barchart**
+  - displays a barchart at the matrix : Send your data values as an Array e.g ```"barchart":[20,50,80,100,50,20,60]```
+- **linechart**
+  - Like barcharts you can also send linecharts send your data values as an Array e.g ```"linechart":[20,50,80,100,50,20,60]```
 
 
 ```JSON

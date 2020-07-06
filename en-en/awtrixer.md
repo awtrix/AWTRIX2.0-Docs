@@ -18,3 +18,13 @@ AWTRIXER contains a lot of functions that almost remind of Photoshop.
     - With Save you can rename your work, save it for later sessions or upload it to the cloud.
     - Export, exports your icon as an image file to the PC. However, these cannot be used by AWTRIX.
     - With Import, you can import existing graphics or animations. Please note that AWTRIX can only work in 8x8 or 32x8. If necessary, use the resize function during the import process.
+  
+  
+  
+**You have a also a saving option to save icons locally for private usage**  
+To use it, just write the iconname as ID (String instead of Integer) in your API request
+All Icons will be saved in a readable textfile (config->privatIcons), so you can edit/add/remove icons manually.
+AWTRIX does not recognize any change to that file. To reload your private Icons, simply execute reload icons from the terminal on the mainpage. While saving your Icons via AWTRIXER it will reload automatically.
+Like the community Icons youre not able to reload your Icons in AWTRIXER for editing. Use "Save as .awtrixer file" to backup your icon.
+Your private Icons will not be shown in the Icondatabase.
+Despite this feature it is of course still nice to share common icons with the community.

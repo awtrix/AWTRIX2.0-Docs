@@ -13,6 +13,7 @@
 - [Einstellungen](de-de/settings.md)
 - [Premium](de-de/premium.md)
 - [Cloud](de-de/cloud.md)
+- [Touchbuttons](de-de/touch.md)
 - **API**
 - [MQTT/REST](de-de/api.md)
 - **Extras**

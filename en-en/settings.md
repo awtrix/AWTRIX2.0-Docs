@@ -8,15 +8,15 @@ Various settings for the host and matrix can be made via the "Settings" sidebar.
 Displays a boot animation when the matrix is first connected.
 This uses the Draw API. The bootanimation.json is located in the folder "config" and can be changed as desired.
 
-**Switch Animation**  
-This activates a switch animation between the apps. The old app is dimmed down and the new one dimmed up.
-
 **Color Switch**  
 Another form of alternate animation. Here a colored bar deletes the active app from the matrix.
 
 **Uppercase Letters**  
 This function converts all texts to upper case.
-
+  
+**Rainbow Text**  
+This will fade every text in rainbow colors. Custom settings will be ignored. You can change the speed via the rainbowdivider
+  
 **Remove Accents**  
 Some languages use accents that the matrix cannot display. This function replaces them with readable characters.
 
@@ -31,7 +31,12 @@ P.S. Every normal web page request, e-mail transmission and icon downloads alway
 
 **Textcolor**  
 Here you can set the global text color.
-Either enter your desired color in the format rgb(R,G,B) or use the colorpicker on the right side
+
+**Switch Animation**  
+This changes the switch animation between the apps.
+
+**Language**
+Here you can change the language of the webinterface. This will not affect apps or API
 
 **Brightness**  
 Here the brightness of the matrix is defined (0-100%). Please note: The brighter the matrix, the more power is consumed and the warmer it becomes.
