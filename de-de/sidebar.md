@@ -15,7 +15,7 @@
 - [Cloud](de-de/cloud.md)
 - [Touchbuttons](de-de/touch.md)
 - **API**
-- [MQTT/REST](de-de/api.md)
+- [MQTT/HTTP](de-de/api.md)
 - **Extras**
 - [AWTRIX Map](de-de/map.md)
 - [Icon Database](de-de/icondb.md)

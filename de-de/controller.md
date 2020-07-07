@@ -88,9 +88,11 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
    
 !> **Der Controller braucht zwingend ein WLAN - ansonsten startet er nicht. Dies wird als fallback Verbindungsmethode und automatisches Update über den Host genutzt**
 
-6. Trage die **Host-IP** ein. Dieses ist die IP Adresse des Gerätes, auf dem die Host-Software läuft z.B ein Raspberry
+6. Trage die **Host-IP** ein. Dieses ist die IP Adresse des Gerätes, auf dem die Host-Software läuft z.B ein Raspberry. Hier wird **kein** http:// oder port mit angegeben!
    
-7. Sollte deine Matrix nur komische Pixel anzeigen, so ist die Anordnung der LEDs auf der Matrix anders. Dies kannst du beheben in dem du die Ansteuerung mit **MatrixType2** anpassen
+7. Als **Port** sollte 7001 stehen bleiben. Dieser Port wird zur Datenkommunikation genutzt und sollte nicht geändert werden. Dieser Port hat nichts mit dem Host-Webinterface unter Port 7000 zu tun!  
+     
+8. Sollte deine Matrix nur komische Pixel anzeigen, so ist die Anordnung der LEDs auf der Matrix anders. Dies kannst du beheben in dem du die Ansteuerung mit **MatrixType2** anpassen
 <br>
 <br>
 

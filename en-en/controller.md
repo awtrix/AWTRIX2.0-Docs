@@ -87,9 +87,11 @@ If no Wifi connection is configured yet, the text "Hotspot" will appear on the m
    
 !> **The controller needs a WLAN - otherwise it will not start. This is used as fallback connection method and automatic update via the host**
 
-6. enter the **host IP** This is the IP address of the instrument on which the host software is running e.g. a Raspberry
+6. enter the **host IP** This is the IP address of the device on which the host software is running e.g. a Raspberry. Here **no** http:// or port is specified!
    
-7. if your matrix only shows strange pixels, the arrangement of the LEDs on the matrix is different. You can fix this by adjusting the control with **MatrixType2
+7. 7001 should remain as **port**. This port is used for data communication and should not be changed. This port has nothing to do with the host web interface under port 7000!  
+   
+8. if your matrix only shows strange pixels, the arrangement of the LEDs on the matrix is different. You can fix this by adjusting the control with **MatrixType2
 <br>
 <br>
 

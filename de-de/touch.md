@@ -5,10 +5,10 @@ Wenn du  die drei Touchbuttons an deine AWTRIX angeschlossen hast, hast du einig
 - Während des normalen Betriebs kannst du mit der linken oder rechten Taste zwischen den Apps wechseln.
 - Einige Apps können durch Drücken der mittleren Taste gesteuert werden. z.B. **Toggl**
 - Wenn du die mittlere Taste gedrückt hälst, gelangst du in ein kleines Menü. Hier hast du folgende Optionen:
-    - Du können deine AWTRIX in den Standby-Modus versetzen (Matrix schaltet sich aus) 
-    - Ändern der Helligkeit
-    - Ändern der Lautstärke
-    - MQTT Befehle absetzen um z.b dein Smarthome zu steuern
+    - **SLEEP** Du kannst AWTRIX in den Standby-Modus versetzen (Matrix schaltet sich aus) 
+    - **BRIGHT** Ändern der Helligkeit
+    - **VOLUME** Ändern der Lautstärke
+    - **MQTT** MQTT Befehle absetzen um z.b dein Smarthome zu steuern
 - Du kannst das Menü verlassen, indem du die mittlere Taste gedrückt hälst.
 
 ### MQTT-Befehle über das MQTT-Menü senden:

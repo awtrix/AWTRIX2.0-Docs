@@ -5,10 +5,10 @@ If you connected the three touchbuttons to your AWTRIX, you have some nice featu
 - While in normal operation, you can switch between apps with left or right button.
 - Some apps can be controlled by pressing the middle button. e.g **Toggl**
 - If you hold the middle button you will enter a small menu. Here you have several options:
-    - You can put your AWTRIX into standby (Matrix will switch off) 
-    - Change the brightness
-    - Change the volume
-    - Control your smarthome via MQTT
+    - **SLEEP** You can put your AWTRIX into standby (Matrix will switch off) 
+    - **BRIGHT** Change the brightness
+    - **VOLUME** Change the volume
+    - **MQTT** Control your smarthome via MQTT
 - You can exit the menu by holding the middle button.
 
 ### Send MQTT commands via the MQTT menu:

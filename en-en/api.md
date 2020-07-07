@@ -4,8 +4,8 @@ AWTRIX offers a wide range of commands for external control.
 For MQTT you can connect AWTRIX to an existing MQTT broker.
 The default base topic (prefix) is **awtrix**.
 
-### REST
-For the REST API, the base endpoint is  
+### HTTP
+For the HTTP API, the base endpoint is  
 **http://[AWTRIX-SERVER_IP]:7000/api/v3**  
 
 e.g. for a simple test under Linux curl can be used to make an http request:  

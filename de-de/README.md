@@ -15,7 +15,7 @@ Natürlich schreit so ein Projekt danach, mit dem Einplatinenrechner Raspberry P
 Die Hardware lässt sich auch erweitern und um zusätzliche Funktionen ergänzen. Helligkeitssensoren zur automatischen Anpassung der Leuchtkraft, ein Modul zur Tonausgabe sowie eine Steuerung über kapazitive Taster seien hier genannt. Nach Zusammenbau der Komponenten und Einrichtung der Software erfolgt die weitere Steuerung über den integrierten Webserver. Dieser kommuniziert entweder über WLAN oder über die serielle Schnittstelle (USB oder TX/RX) mit dem ESP8266. Eine eigene Platine ist ebenfalls im [**Shop**](https://blueforcer.de/shop/) zu erwerben.
 
 Neben einfachen Funktionen wie Stoppuhr und Timer baut das Projekt hauptsächlich auf Apps auf, die es im integrierten App Store kostenlos zum Herunterladen gibt. Das können Wetterdaten, Facebook- oder Instagram-Likes oder auch Spiele wie Snake oder Pong sein. Letztere werden über die das Smartphone oder am Browser (optional mit angeschlossenem Gamepad) gesteuert. Auch die Einbindung in eine Heimautomatisierung wie FHEM, Home Assistant oder ähnliches ist möglich. Fehlt eine App, kann man sie einfach selbst schreiben und zur Veröffentlichung einreichen werden.
-Dank der sehr gut dokumentierten API und Schnittstellen für die IoT-Protokolle REST und MQTT lassen sich beliebige Informationen an die Matrix senden. Ob Temperatur, Luftfeuchtigkeit, Stromverbrauch oder einfach nur der Song, der gerade auf Spotify läuft – alles kein Problem. Und wem die lokale Ansteuerung aus dem Netzwerk noch nicht reicht, dem sei die Verbindung zur Awtrix-Cloud empfohlen, mit der **unter anderem** eine komplett anonyme Anbindung an den Verknüpfungsienst IFTTT und seine unzähligen Receipts möglich ist.
+Dank der sehr gut dokumentierten API und Schnittstellen für die Protokolle HTTP und MQTT lassen sich beliebige Informationen an die Matrix senden. Ob Temperatur, Luftfeuchtigkeit, Stromverbrauch oder einfach nur der Song, der gerade auf Spotify läuft – alles kein Problem. Und wem die lokale Ansteuerung aus dem Netzwerk noch nicht reicht, dem sei die Verbindung zur Awtrix-Cloud empfohlen, mit der **unter anderem** eine komplett anonyme Anbindung an den Verknüpfungsienst IFTTT und seine unzähligen Receipts möglich ist.
 
 Bei der Erstellung eigener Notifications hilft ein weiteres Feature: der Awtrixer. Mit diesem mächtigen integrierten Tool lassen sich Icons für die Awtrix herstellen und kann alternativ vorhandene Bilder von 8×8 Pixeln automatisch umwandeln lassen. Auch animierte Icons sind kein Problem. Selbsterstellte Icons werden mit der Community geteilt. Awtrixer ist im Host Webinterface erreichbar
 
@@ -23,7 +23,7 @@ Bei der Erstellung eigener Notifications hilft ein weiteres Feature: der Awtrixe
 **Die wichtigsten Funktionen von AWTRIX kurz und knapp**
 
 - Platformunabhängig
-- API Schnittstellen für MQTT und REST
+- API Schnittstellen für MQTT und HTTP
 - Anzeige von Notifications aus dem Smarthome oder andere externe Services
 - Zugriff auf die Icon Datenbank
 - Integrierter Appstore

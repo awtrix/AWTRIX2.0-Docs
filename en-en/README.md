@@ -15,7 +15,7 @@ Of course, such a project screams to run with the single-board computer Raspberr
 The hardware can also be expanded and additional functions added. Brightness sensors for automatic adjustment of the luminosity, a module for sound output and control via capacitive buttons are just a few examples. After assembling the components and setting up the software, further control is carried out via the integrated web server. This communicates with the ESP8266 either via WLAN or via the serial interface (USB or TX/RX). A separate board can also be purchased in the [**Shop**](https://blueforcer.de/shop/).
 
 In addition to simple functions such as stopwatch and timer, the project is mainly based on apps that are available for free download in the integrated App Store. These can be weather data, Facebook or Instagram Likes or even games like Snake or Pong. The latter are controlled via the smartphone or the browser (optionally with a connected gamepad). It is also possible to integrate them into a home automation system like FHEM, Home Assistant or similar. If an app is missing, you can simply write it yourself and submit it for publication.
-Thanks to the very well documented API and interfaces for the REST and MQTT IoT protocols, any information can be sent to the matrix. Whether temperature, humidity, power consumption or just the song currently running on Spotify - no problem. And if local control from the network is not enough, we recommend connecting to the Awtrix Cloud, which **among other things** allows a completely anonymous connection to the IFTTT link service and its countless receipts.
+Thanks to the very well documented API and interfaces for the HTTP and MQTT protocols, any information can be sent to the matrix. Whether temperature, humidity, power consumption or just the song currently running on Spotify - no problem. And if local control from the network is not enough, we recommend connecting to the Awtrix Cloud, which **among other things** allows a completely anonymous connection to the IFTTT link service and its countless receipts.
 
 For the creation of own notifications, another feature helps: the Awtrixer. With this powerful integrated tool you can create icons for the Awtrix and can alternatively convert existing 8×8 pixel images automatically. Even animated icons are no problem. Self-created icons are shared with the community. Awtrixer is available in the host web interface
 
@@ -23,7 +23,7 @@ For the creation of own notifications, another feature helps: the Awtrixer. With
 **The most important functions of AWTRIX in brief**
 
 - Platform independent
-- API interfaces for MQTT and REST
+- API interfaces for MQTT and HTTP
 - Display notifications from the Smarthome or other external services
 - Access to the icon database
 - Integrated Appstore
