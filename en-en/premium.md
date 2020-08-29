@@ -1,8 +1,14 @@
 
-This category offers great features that are only unlocked by purchasing a Premium Key. You can get this key in my [Shop](https://blueforcer.de/shop/).
-By purchasing a key you support me in the further development of AWTRIX and in paying my costs such as server rental, purchase of new components etc.
-These functions will be expanded regularly.
+## AWTRIX Premium
 
+This category offers great features that are only unlocked by purchasing a premium key. These functions will be expanded regularly. You can get this key in my [Shop](https://blueforcer.de/shop/).  
+By purchasing a key you support me in the further development of AWTRIX and in paying my costs such as server rental, purchase of new components etc.
+One Key is **per user** and can used on up to 3 different AWTRIX devices. If you need a 4th Awtrix with premium for your own use, just write me. We will surely find a solution.
+
+
+
+
+## Current available premium functions
 
 **AWTRIX Cloud**  
 Activates the connection to the AWTRIX Cloud. You can find further information about this [here](/en-en/cloud.md).  
@@ -38,58 +44,14 @@ Here you have the possibility to connect a Yeelight RGB lamp with AWTRIX. Beside
 Alows you to send E1.31 (like Artnet) data to your AWTRIX. With xLight for example you need to add a new Controller with 2 universes with 384 channels each. Also add a new matrix layout with 8 strings á 32 Strands and top left starting position. When you start to send data, AWTRIX will stop its normal operation and shows your data. 5s after you stop sending data, AWTRIX will return to normal operation.
 
 **Alexa**  
-This only emualtes a Phillips Hue lamp, so you can control the textolor, brightness and on/off via Amazons Alexa. (The integrated emulation server uses Port 80, make sure it is not used by any other programm).
-
-**Python**  
-You can write simple python apps for awtrix.
-AWTRIX uses the Java ScriptEngine Nashorn together with jython for that. Because the awtrix runnable jar contains the jython library, the file size is now 54mb.
-Place your python file in the apps folder and restart awtrix. all python apps will be loaded like regular native apps.
+This only emualtes a Phillips Hue lamp, so you can control the textcolor, brightness and on/off via Amazons Alexa. The integrated emulation server uses Port 80, make sure it is not used by any other programm. (tested with a Amazon Dot Gen3)
 
 
-!> Accessing a pythonscript will block awtrixs mainthread. That means if your python function contains heavy loops or other time-consuming things like downloads, Awtrix stops for that time. So keep your processings fast, otherwise unexpected side effects may occur.  
-All python apps will be loaded as a module. The python import system uses a cache, so if you change something in your python app, it will be not loaded since the module is already cached. Until i find a solution for that, you can rename your app as a workaround.
 
 
-Example of an app.py:
+## Troubleshooting
+- I get the message **Activation limit for license key reached (3/3)**. Either you really reached the limit and you need to deactivate the Premium function at your previously AWTRIX. This will also happen if you share the keys with others (wich is of course not allowed). For users who have been using AWTRIX for a long time, but have only just updated it, problems may occur because the way my license server works has changed. In this case write me your OrderID or Premium key to premium@blueforcer.de, I will delete all your previous activations, so that you can use the key again as usual. This is only necessary once. 
 
-!> All variable names and function names must remain exactly as they are
+- I get the message **Cannot activate premium. Invalid AWTRIX!**. This means that AWTRIX cannot be activated because your Hardware has been changed. AWTRIX creates a hardware specific file the first time it is activated. If you now copy your AWTRIX installation to another hardware platform, you will also copy the specific file, which still contains the hardwareID of your old platform, so the key you entered is invalid on the new platform. To fix this delete the premium.ax file from the awtrix installations directory and you can use the key again. This will of course reduce your available number of activations. You can deactivate your premium functionality on your old platform at any time, which will also increase the available activations. 
 
-```python
-import urllib, json
-
-Version = 1.0
-Author = "Blueforcer"
-Description = "AWTRIX app written in python"
-HowToSetup = "Example Text"
-Covericon = 1164
-Repeat=2
-MoveIcon=True
-CustomScreen=False #not working yet
-Settings = {"Prefix": "MissionName: "} #Usersettings
-
-#Dont modfiy this
-def init():	
-    return [Version,Author,Description,HowToSetup,Covericon,Repeat,MoveIcon,CustomScreen]
-
-def started():
-    print("App started")
-
-def running():
-    print("App running")
-
-def finished():
-    print("App finished")
-
-def getSettings():
-    return Settings   
-
-#This function is called when AWTRIX trigger all apps to do their downloads.
-#Unlike native apps you will need to return the iconID and Text wich should be show
-#You also will get a map of the Userettings to work with
-def getData(settings):
-    url = "https://api.spacexdata.com/v3/launches/next"
-    response = urllib.urlopen(url)
-    data = json.loads(response.read())
-    SpaceXMission = data["mission_name"]
-    return [1164,settings["Prefix"] + SpaceXMission]
-```    
+!> **Please note:** If you are using **Docker**, rebuilding the container will also change the hardware ID. Im currently working on a fix. To work around this until then, start the container in host mode or disable your premium account before each rebuild. After that you can enter the key again without using up your activations. When restarting a container this problem does not occur

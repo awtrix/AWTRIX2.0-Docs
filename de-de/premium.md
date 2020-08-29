@@ -1,8 +1,11 @@
 
-Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diesen erhälst du bei mir im [Shop](https://blueforcer.de/shop/).
-Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
-Diese Funktionen werden regelmäßig erweitert.
+## AWTRIX Premium
 
+Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diese Funktionen werden regelmäßig erweitert. Diesen erhälst du bei mir im [Shop](https://blueforcer.de/shop/).  
+Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
+Ein Schlüssel ist **pro Benutzer** und kann für bis zu 3 verschiedenen AWTRIX-Geräten verwendet werden. Wenn du eine 4. Awtrix mit Premium für deinen eigenen Gebrauch benötigst, schreib mir einfach. Wir werden sicher eine Lösung finden.
+
+## Derzeit verfügbare Premium-Funktionen
 
 **AWTRIX Cloud**  
 Aktiviert die Anbindung an die AWTRIX Cloud. Weitere Informationen dazu findest du [hier](/de-de/cloud.md).  
@@ -39,53 +42,13 @@ Hier hast du die Möglichkeit eine Yeelight RGB Lampe mit AWTRIX zu verbinden. D
 Ermöglicht es dir, E1.31-Daten (wie Artnet) an deine AWTRIX zu senden. Mit xLight zum Beispiel müssen du einen neuen Controller mit 2 Universen mit je 384 Kanälen hinzufügen. Füge auch ein neues Matrix-Layout mit 8 Strings á 32 Strands und der Startposition oben links hinzu. Wenn du mit dem Senden von Daten beginnst, stoppt AWTRIX seinen normalen Betrieb und zeigt deine Daten an. 5s nachdem du das Senden von Daten gestoppt hast, kehrt AWTRIX zum normalen Betrieb zurück.
 
 **Alexa**  
-Dadurch wird eine Phillips Hue-Lampe emuliert, so dass du die Textfarbe, die Helligkeit und das Ein- und Ausschalten über Amazonen Alexa steuern kannst. (Der integrierte Emulationsserver benutzt Port 80, stelle sicher, dass er von keinem anderen Programm benutzt wird).
+Dadurch wird eine Phillips Hue-Lampe emuliert, so dass du die Textfarbe, die Helligkeit und das Ein- und Ausschalten über Amazonen Alexa steuern kannst. Der integrierte Emulationsserver benutzt Port 80, stelle sicher, dass er von keinem anderen Programm benutzt wird (Getestet mit Amazon Alexa Dot gen3).
 
-**Python**  
-Du kannst einfache Python-Anwendungen für awtrix schreiben.
-AWTRIX verwendet dafür die Java ScriptEngine Nashorn zusammen mit jython.
-Platziere deine Python-Datei in den apps-Ordner und starte awtrix neu. Alle Python-Anwendungen werden wie normale native Anwendungen geladen.
 
-Beispiel für eine app.py:
 
-!> Alle Variablennamen und Funktionsnamen müssen genau so bleiben wie sie sind.
+## Fehlerbehebung
+- Ich erhalte die Meldung **Aktivierungslimit für Lizenzschlüssel erreicht (3/3)**. Entweder hast du das Limit wirklich erreicht und musst die Premium-Funktion bei deinem bisherigen AWTRIX deaktivieren. Dies geschieht auch, wenn du die Schlüssel mit anderen teilst (was natürlich nicht erlaubt ist). Bei Benutzern, die AWTRIX schon lange benutzen, es aber gerade erst aktualisiert haben, können Probleme auftreten, weil sich die Funktionsweise meines Lizenzservers geändert hat. In diesem Fall schreib mir deine OrderID oder deinen Premium-Schlüssel an premium@blueforcer.de, ich werde alle deine bisherigen Aktivierungen löschen, so dass du den Schlüssel wieder wie gewohnt verwenden kannst. Dies ist nur einmal erforderlich. 
 
-```python
-import urllib, json
+- Ich erhalte die Meldung **Premium kann nicht aktiviert werden. Ungültige AWTRIX!**. Dies bedeutet, dass AWTRIX nicht aktiviert werden kann, weil sich deine Hardware geändert hat. AWTRIX erstellt eine hardwarespezifische Datei, wenn Premium zum ersten Mal aktiviert wird. Wenn du jetzt deine AWTRIX-Installation auf eine andere Hardware-Plattform kopierst, kopierst du auch die spezifische Datei, die noch die Hardware-ID deiner alten Plattform enthält, so dass der von dir eingegebene Schlüssel auf der neuen Plattform ungültig ist. Um dies zu beheben, lösche die Datei **premium.ax** aus dem awtrix-Installationsverzeichnis und du kannst den Schlüssel wieder verwenden. Dies wird natürlich die Anzahl deiner verfügbaren Aktivierungen reduzieren. Du kannst deine Premium-Funktionalität auf deiner alten Plattform jederzeit deaktivieren, wodurch sich auch die Anzahl der verfügbaren Aktivierungen wieder erhöht. 
 
-Version = 1.0
-Author = "Blueforcer"
-Description = "AWTRIX app written in python"
-HowToSetup = "Example Text"
-Covericon = 1164
-Repeat=2
-MoveIcon=True
-CustomScreen=False #not working yet
-Settings = {"Prefix": "MissionName: "} #Usersettings
-
-#Dont modfiy this
-def init():	
-    return [Version,Author,Description,HowToSetup,Covericon,Repeat,MoveIcon,CustomScreen]
-
-def started():
-    print("App started")
-
-def running():
-    print("App running")
-
-def finished():
-    print("App finished")
-
-def getSettings():
-    return Settings   
-
-#This function is called when AWTRIX trigger all apps to do their downloads.
-#Unlike native apps you will need to return the iconID and Text wich should be show
-#You also will get a map of the Userettings to work with
-def getData(settings):
-    url = "https://api.spacexdata.com/v3/launches/next"
-    response = urllib.urlopen(url)
-    data = json.loads(response.read())
-    SpaceXMission = data["mission_name"]
-    return [1164,settings["Prefix"] + SpaceXMission]
-```    
+!> **Bitte beachten Sie:** Wenn du **Docker** verwendest, wird beim rebuilden des Containers auch die Hardware-ID geändert. Ich arbeite derzeit an einem Fix. Um dies bis dahin zu umgehen, starte den Container im Host-Modus oder deaktiviere deinen Premium-Account vor jedem rebuild. Danach kannst du den Schlüssel erneut eingeben, ohne deine Aktivierungen zu verbrauchen. Beim Neustart eines Containers tritt dieses Problem nicht auf.
