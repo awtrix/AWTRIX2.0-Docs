@@ -1,14 +1,15 @@
 
 ## AWTRIX Premium
 
-This category offers great features that are only unlocked by purchasing a premium key. These functions will be expanded regularly. You can get this key in my [Shop](https://blueforcer.de/shop/).  
-By purchasing a key you support me in the further development of AWTRIX and in paying my costs such as server rental, purchase of new components etc.
+This category offers great features that are only unlocked by purchasing a premium key. These functions will be expanded regularly. You can get this key in my [Shop](https://blueforcer.de/shop/).   
+By purchasing a key you support me in the further development of AWTRIX and in paying my costs such as server rental, purchase of new components etc.  
 One Key is **per user** and can used on up to 3 different AWTRIX devices. If you need a 4th Awtrix with premium for your own use, just write me. We will surely find a solution.
 
+?> [In your account](https://blueforcer.de/shop/mein-konto/license-keys/) you can view your previous activations at any time and delete them if necessary.
 
 
 
-## Current available premium functions
+## Currently available premium functions
 
 **AWTRIX Cloud**  
 Activates the connection to the AWTRIX Cloud. You can find further information about this [here](/en-en/cloud.md).  
@@ -50,8 +51,10 @@ This only emualtes a Phillips Hue lamp, so you can control the textcolor, bright
 
 
 ## Troubleshooting
-- I get the message **Activation limit for license key reached (3/3)**. Either you really reached the limit and you need to deactivate the Premium function at your previously AWTRIX. This will also happen if you share the keys with others (wich is of course not allowed). For users who have been using AWTRIX for a long time, but have only just updated it, problems may occur because the way my license server works has changed. In this case write me your OrderID or Premium key to premium@blueforcer.de, I will delete all your previous activations, so that you can use the key again as usual. This is only necessary once. 
+
+!> **Please note:** If you are using **Docker**, rebuilding the container will also change the hardware ID. Im currently working on a fix. To work around this until then, start the container in host mode or disable your premium account before each rebuild. After that you can enter the key again without using up your activations. When restarting a container this problem does not occur
+
+- I get the message **Activation limit for license key reached (3/3)**. Either you really reached the limit and you need to deactivate the Premium function at your previously AWTRIX. This will also happen if you share the keys with others (wich is of course not allowed). For users who have been using AWTRIX for a long time, but have only just updated it, problems may occur because the way my license server works has changed. In this case you can deactivate your activations under ["My Account"](https://blueforcer.de/shop/mein-konto/license-keys/). This is only necessary once. 
 
 - I get the message **Cannot activate premium. Invalid AWTRIX!**. This means that AWTRIX cannot be activated because your Hardware has been changed. AWTRIX creates a hardware specific file the first time it is activated. If you now copy your AWTRIX installation to another hardware platform, you will also copy the specific file, which still contains the hardwareID of your old platform, so the key you entered is invalid on the new platform. To fix this delete the premium.ax file from the awtrix installations directory and you can use the key again. This will of course reduce your available number of activations. You can deactivate your premium functionality on your old platform at any time, which will also increase the available activations. 
 
-!> **Please note:** If you are using **Docker**, rebuilding the container will also change the hardware ID. Im currently working on a fix. To work around this until then, start the container in host mode or disable your premium account before each rebuild. After that you can enter the key again without using up your activations. When restarting a container this problem does not occur

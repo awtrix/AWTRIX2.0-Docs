@@ -1,9 +1,12 @@
 
 ## AWTRIX Premium
 
-Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diese Funktionen werden regelmäßig erweitert. Diesen erhälst du bei mir im [Shop](https://blueforcer.de/shop/).  
-Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.
+Diese Kategorie bietet tolle Funktionen die nur durch den Kauf eines Premium Schlüssels freigeschaltet werden. Diese Funktionen werden regelmäßig erweitert. Diesen erhälst du bei mir im [Shop](https://blueforcer.de/shop/).    
+Durch den Kauf eines Schlüssels unterstützt du mich bei der weiteren Entwicklung von AWTRIX und beim bezahlen meiner anfallenden Kosten wie z.b Servermiete, Kauf von neuen Bauteilen usw.  
 Ein Schlüssel ist **pro Benutzer** und kann für bis zu 3 verschiedenen AWTRIX-Geräten verwendet werden. Wenn du eine 4. Awtrix mit Premium für deinen eigenen Gebrauch benötigst, schreib mir einfach. Wir werden sicher eine Lösung finden.
+
+
+?> Du kannst deine bisherigen Aktivierungen jederzeit [in deinem Konto](https://blueforcer.de/shop/mein-konto/license-keys/) einsehen und ggf. löschen
 
 ## Derzeit verfügbare Premium-Funktionen
 
@@ -47,8 +50,11 @@ Dadurch wird eine Phillips Hue-Lampe emuliert, so dass du die Textfarbe, die Hel
 
 
 ## Fehlerbehebung
-- Ich erhalte die Meldung **Aktivierungslimit für Lizenzschlüssel erreicht (3/3)**. Entweder hast du das Limit wirklich erreicht und musst die Premium-Funktion bei deinem bisherigen AWTRIX deaktivieren. Dies geschieht auch, wenn du die Schlüssel mit anderen teilst (was natürlich nicht erlaubt ist). Bei Benutzern, die AWTRIX schon lange benutzen, es aber gerade erst aktualisiert haben, können Probleme auftreten, weil sich die Funktionsweise meines Lizenzservers geändert hat. In diesem Fall schreib mir deine OrderID oder deinen Premium-Schlüssel an premium@blueforcer.de, ich werde alle deine bisherigen Aktivierungen löschen, so dass du den Schlüssel wieder wie gewohnt verwenden kannst. Dies ist nur einmal erforderlich. 
+
+
+!> **Bitte beachte:** Wenn du **Docker** verwendest, wird beim rebuilden des Containers auch die Hardware-ID geändert. Ich arbeite derzeit an einem Fix. Um dies bis dahin zu umgehen, starte den Container im Host-Modus oder deaktiviere deinen Premium-Account vor jedem rebuild. Danach kannst du den Schlüssel erneut eingeben, ohne deine Aktivierungen zu verbrauchen. Beim Neustart eines Containers tritt dieses Problem nicht auf.
+
+- Ich erhalte die Meldung **Aktivierungslimit für Lizenzschlüssel erreicht (3/3)**. Entweder hast du das Limit wirklich erreicht und musst die Premium-Funktion bei deinem bisherigen AWTRIX deaktivieren. Dies geschieht auch, wenn du die Schlüssel mit anderen teilst (was natürlich nicht erlaubt ist). Bei Benutzern, die AWTRIX schon lange benutzen, es aber gerade erst aktualisiert haben, können Probleme auftreten, weil sich die Funktionsweise meines Lizenzservers geändert hat. In diesem Fall kannst du deine Aktivierungen unter ["Mein Konto"](https://blueforcer.de/shop/mein-konto/license-keys/) deaktiveren, so dass du den Schlüssel wieder wie gewohnt verwenden kannst. Dies ist nur einmal erforderlich. 
 
 - Ich erhalte die Meldung **Premium kann nicht aktiviert werden. Ungültige AWTRIX!**. Dies bedeutet, dass AWTRIX nicht aktiviert werden kann, weil sich deine Hardware geändert hat. AWTRIX erstellt eine hardwarespezifische Datei, wenn Premium zum ersten Mal aktiviert wird. Wenn du jetzt deine AWTRIX-Installation auf eine andere Hardware-Plattform kopierst, kopierst du auch die spezifische Datei, die noch die Hardware-ID deiner alten Plattform enthält, so dass der von dir eingegebene Schlüssel auf der neuen Plattform ungültig ist. Um dies zu beheben, lösche die Datei **premium.ax** aus dem awtrix-Installationsverzeichnis und du kannst den Schlüssel wieder verwenden. Dies wird natürlich die Anzahl deiner verfügbaren Aktivierungen reduzieren. Du kannst deine Premium-Funktionalität auf deiner alten Plattform jederzeit deaktivieren, wodurch sich auch die Anzahl der verfügbaren Aktivierungen wieder erhöht. 
 
-!> **Bitte beachten Sie:** Wenn du **Docker** verwendest, wird beim rebuilden des Containers auch die Hardware-ID geändert. Ich arbeite derzeit an einem Fix. Um dies bis dahin zu umgehen, starte den Container im Host-Modus oder deaktiviere deinen Premium-Account vor jedem rebuild. Danach kannst du den Schlüssel erneut eingeben, ohne deine Aktivierungen zu verbrauchen. Beim Neustart eines Containers tritt dieses Problem nicht auf.
