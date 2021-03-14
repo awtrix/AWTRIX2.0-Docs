@@ -1,7 +1,7 @@
 ## AWTRIX Family
 
   <div align=center>
-  <img width="400" src="..\assets\family.jpg"/>
+  <img width="400" src="..\assets\family.JPG"/>
   </div>
 
 Hier findest du alle Informationen die du zum bau einer AWTRIX benötigst.
@@ -15,8 +15,8 @@ Die Gehäuse findest du auf https://www.thingiverse.com/thing:4749750 oder im Sh
 
 # Teileliste
 
-?> Alle Teile findest du auch anderso (Ausgenommen AWTRIX Mini Matrix und evtl. Acrylglas). Du musst nichts in meinem Shop kaufen um deine eigene AWTRIX zu bauen. Dies untersützt mich allerdings bei der Weiterentwicklung von AWTRIX.
-Falls du deinen eigenen Aufbau machen möchtest so findest du den Grundaufbau der Elektronik [hier](de-de/hardware.md)
+?> Alle Teile findest du auch anderwso (ausgenommen AWTRIX Mini Matrix und evtl. Acrylglas). Du musst nichts in meinem Shop kaufen um deine eigene AWTRIX zu bauen. Dies untersützt mich allerdings bei der Weiterentwicklung von AWTRIX.
+Falls du deinen eigenen Aufbau machen möchtest, so findest du den Grundaufbau der Elektronik [hier](de-de/hardware.md)
 
 ### Matrix
 |      Name      |                              Link                              |
