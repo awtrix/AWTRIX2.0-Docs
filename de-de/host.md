@@ -43,3 +43,7 @@ AWTRIX Neustarten
 
 ## Docker
 Emfgohlen: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)
+
+
+## Update
+Ersetze die awtrix.jar oder führe das setupscript erneut aus.

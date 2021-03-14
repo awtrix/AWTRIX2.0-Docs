@@ -57,6 +57,14 @@ Then everything is fine...
 If it does not appear after a few seconds, you may have a problem connecting ESP8266 to the UART.
 
 
+## Update
+You can update the firmware in three ways:  
+  
+- Flash the latest firmware.bin it with USB and a PC
+- Open the IP of the controller in a Browser and upload the firmware.bin
+- In Host webinterface go to Matrix status and click "Update Available"
+  
+  
 ## First Start
   <div align=center>
   <img width="400" src="..\assets\firmware\wifiSearch.gif"/>
@@ -96,14 +104,36 @@ If no Wifi connection is configured yet, the text "Hotspot" will appear on the m
 <br>
 
 
-## Known problems
+## Reset the Controller
 
-- If other problems occur you can try to reset your Wemos. This will delete all your saved information and you can set it up again via the hotspot.
-  Proceed as follows:
-  - Reset the ESP.
-  - Wait 3-4s
-  - Reset the ESP again
-  - The matrix now shows **RESET** in red  
+If other problems occur you can try to reset your Wemos. For example if you need to enter the Host-IP again. This will delete all your saved wifi information and you can set it up again via the hotspot. This doesnt belong to the HOST software.
+There are 4 ways to do this:
+
+**Fast and easy**
+- switch of your routers wifi
+- resatrt the controller
+- It will go into the hotspot mode if it doesnt find the wifi
+- Turn on your routers wiif again and proceed with the configuration
+
+**Directly via the Wemos reset button**
+  
+- Reset the ESP
+- Wait 3-4s
+- Reset the ESP again
+- The matrix now shows RESET in red
+  
+**Via the touch buttons**
+  
+- Switch off and on the matrix
+- While the matrix is showing "BOOT" hold the middle touch button
+- Wait until the reset countdown is over
+  
+**Via the PC**
+
+- Download the [ESP8266 download tool](https://www.espressif.com/en/support/download/other-tools)
+- Connect your Wemos to the PC, open the software and click erase
+
+
 
 <br>
   <div align=center>

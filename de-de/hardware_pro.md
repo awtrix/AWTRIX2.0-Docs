@@ -19,7 +19,7 @@ Die Software sowie das neue (weiße) Mainboard ist bei beiden Geräten gleich, w
 
 # Gehäuse
 
-Die nötigen Dateien zum 3D-Druck des Gehäuses findest du auf [Thingiverse](https://www.thingiverse.com/thing:4155357)
+Die nötigen Dateien zum 3D-Druck des Gehäuses findest du auf [Thingiverse](https://www.thingiverse.com/thing:4749750)
 
 Als Frontpanel ist eine 2mm dicke Plexiglasscheibe vorgesehen. Die passende DXF zum Fräsen findest du ebenfalls auf Thingiverse. Diese steht momentan noch nicht zum offiziellen Verkauf. Zwischen der Scheibe und dem Matrixgrid wird ein Stück Papier als Diffusor geklemmt.
   
@@ -46,8 +46,8 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 | --- | :----------------------: | :------------------------------------------------------------------------: |
 | 1   | Awtrix Mainboard Bausatz | [Klicke hier](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
 | 2   |        Pro Matrix        |      [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-matrix/)       |
-| 3   |      Awtrix Gehäuse      |          [Klicke hier](https://www.thingiverse.com/thing:4155357)          |
-| 4   |      Wemos D1 mini       |       [Klicke hier](https://de.aliexpress.com/item/32651747570.html)       |
+| 3   |      Awtrix Gehäuse      |          [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-gehaeuse/)          |
+| 4   |      Wemos D1 mini       |       [Klicke hier](https://blueforcer.de/produkt/wemos-d1-mini/)       |
 | 5   |      Netzteil (>3A)      |                    [Klicke hier](https://goo.gl/QLydM3)                    |
 | 6   |       Strombuchse        |                    [Klicke hier](https://goo.gl/j4Xov7)                    |
 | 7   |         M3x4             |               Maximal 14 Stück je nach Ausbaustufe                         |
@@ -55,9 +55,9 @@ In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln
 ### Optionale Bauteile
 | Nr  |      Name      |                              Link                              |
 | --- | :------------: | :------------------------------------------------------------: |
-| 1   |   LDR GL5528   | [Klicke hier](https://de.aliexpress.com/item/32515315072.html) |
-| 2   | DF Mini Player | [Klicke hier](https://de.aliexpress.com/item/32992229288.html) |
-| 4   |  Lautsprecher  | [Klicke hier](https://de.aliexpress.com/item/32853811267.html) |
+| 1   |   LDR GL5528   | [Klicke hier](https://blueforcer.de/produkt/ldr-5mm-helligkeitssensor/) |
+| 2   | DF Mini Player | [Klicke hier](https://blueforcer.de/produkt/dfplayer-mini-mp3-player-modul/) |
+| 4   |  Lautsprecher  | [Klicke hier](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 
 Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Awtrix Mainboard Bausatz sind und daher nicht gekauft werden müssen.
 
@@ -126,7 +126,7 @@ Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden
   
 Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.  
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.  
-[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundfiles.zip)
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundpack.zip)
 
 
 

@@ -19,7 +19,7 @@ The software and the new (white) mainboard are the same for both devices, so the
 
 # Case
 
-You can find the necessary files for 3D printing of the case on [Thingiverse](https://www.thingiverse.com/thing:4155357).
+You can find the necessary files for 3D printing of the case on [Thingiverse](https://www.thingiverse.com/thing:4749750).
 
 A 2mm thick Acrylic panel is provided as the front panel. You can find the matching DXF for milling on Thingiverse. This is not yet for official sale. A piece of paper is clamped between the front panel and the matrix grid as a diffuser.
   
@@ -46,10 +46,10 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
 | 1 | Awtrix Mainboard Kit | [Click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2 | Per Matrix | [Click here](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
-| 3 | Awtrix housing | [Click here](https://www.thingiverse.com/thing:4155357) |
-| 4 | Wemos D1 mini | [Click here](https://de.aliexpress.com/item/32651747570.html) |
-| 5 | Power supply (>3A) | [Click here](https://goo.gl/QLydM3) |
+| 2 | Pro Matrix | [Click here](https://blueforcer.de/produkt/awtrix-pro-matrix/) |
+| 3 | Awtrix Pro Case | [Click here](https://blueforcer.de/produkt/awtrix-pro-gehaeuse/) |
+| 4 | Wemos D1 mini | [Click here](https://blueforcer.de/produkt/wemos-d1-mini/) |
+| 5 | Power supply (>=3A) | [Click here](https://goo.gl/QLydM3) |
 | 6 | power jack | [click here](https://goo.gl/j4Xov7) |
 | 7   |         M3x4             |   Maximum 14 pieces depending on the expansion tage                      |
 
@@ -57,9 +57,9 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 ### Optional components
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
-| 1 | LDR GL5528 | [Click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2 | DF Mini Player | [Click here](https://de.aliexpress.com/item/32992229288.html) |
-| 4 | loudspeakers | [Click here](https://de.aliexpress.com/item/32853811267.html) |
+| 1 | LDR GL5528 | [Click here](https://blueforcer.de/produkt/ldr-5mm-helligkeitssensor/) |
+| 2 | DF Mini Player | [Click here](https://blueforcer.de/produkt/dfplayer-mini-mp3-player-modul/) |
+| 4 | Speaker | [Click here](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 
 The touch sensors are not listed here because they are part of the Awtrix mainboard kit and therefore do not need to be purchased.
 
@@ -126,7 +126,7 @@ The DFPlayer is used for the output of sounds and can be used optionally. It sto
   
 You need to create a folder "MP3" on your DFplayer SD card and move your mp3s to this folder. The mp3 must start with a 4-digit number, e.g. **0001.mp3** or **0001 - Testfile.mp3**.  
 AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 0101.  
-[Download default sounds](https://blueforcer.de/awtrix/Soundfiles.zip)
+[Download default sounds](https://blueforcer.de/awtrix/Soundpack.zip)
 
 # Assembly
 

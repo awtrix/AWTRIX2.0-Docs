@@ -1,62 +1,36 @@
 ![](..\assets\awtrix.jpeg)
 
+
+
 # Teileliste
 ## Allgemeiner Hinweis
+
+Hier findest du alle informationen zur elektronik von AWTRIX. Der Aufbau ist bei jeder AWTIRX (Big, Midi, Mini) der selbe.
+
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
 
-In unserem Shop gibt es die Leiterplatten zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt ihr uns bei der Weiterentwicklung von Awtrix & Awtrix Pro.
-
-## Aufbau mit Leiterplatte als Bausatz
-### Zwingend benötigte Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | 32x8 Matrix              | [click here](https://de.aliexpress.com/item/4000547842744.html) |
-| 3  | Awtrix Gehäuse       | [click here](https://www.thingiverse.com/thing:2791276) |
-| 4  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
-| 5  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
-| 6  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
-
-
-### Optionale Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
-| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
-| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
-| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
-
-Die Touchsensoren sind hier nicht mit aufgeführt, weil sie Teil des Bausatzes sind und daher nicht gekauft werden müssen.
+Im Shop gibt es das Mainboard zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt du mich bei der Weiterentwicklung von Awtrix.
 
 
 ## Aufbau mit Leiterplatte ohne Bausatz
-### Zwingend benötigte Bauteile
+
 | Nr | Name                     | Link                            |
 | -  |:------------------------:| :------------------------------:|
-| 1  | Awtrix Mainboard Bausatz | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2  | Wemos D1 mini            | [click here](https://de.aliexpress.com/item/32651747570.html) |
-| 3  | 32x8 Matrix               | [click here](https://de.aliexpress.com/item/4000547842744.html) |
+| 1  | Awtrix Mainboard         | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0/) |
+| 2  | Wemos D1 mini            | [click here](https://blueforcer.de/produkt/wemos-d1-mini/) |
+| 3  | 32x8 Matrix              | Je nach Version |
 | 4  | Netzteil (>3A)           | [click here](https://goo.gl/QLydM3) |
 | 5  | Strombuchse              | [click here](https://goo.gl/j4Xov7) |
 | 6  | Widerstände (3x 1k)      | [click here](https://www.conrad.de/de/p/yageo-mf0207fte52-1k-metallschicht-widerstand-1-k-axial-bedrahtet-0207-0-6-w-1-1-st-1417606.html) |
 | 7  | Shottkydioden (2x 1N4004)| [click here](https://www.conrad.de/de/p/diotec-si-gleichrichterdiode-1n4001-do-204al-50-v-1-a-162213.html) |
 | 8  | Jumper                   |  |
-| 9 | 1000uF 10V Kondensator   | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
+| 9 | 1000uF 10V Kondensator    | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
 
-### Optionale Bauteile
-| Nr | Name                     | Link                            |
-| -  |:------------------------:| :------------------------------:|
-| 1  | LDR GL5528               | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2  | DF Mini Player           | [click here](https://de.aliexpress.com/item/32992229288.html) |
-| 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
-| 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
-| 4  | Lautsprecher             | [click here](https://de.aliexpress.com/item/32853811267.html) |
-| 5  | Touch Taster (3x)        | [click here](https://de.aliexpress.com/item/4000032722881.html) |
+
 
 
 # Elektronik
-Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Leiterplatte.
+Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Mainboard.
 
 ## Basis Variante
 
@@ -72,7 +46,7 @@ Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden
   
 Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.  
 AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.  
-[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundfiles.zip)  
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundpack.zip)  
   
 
 ![](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
@@ -116,7 +90,8 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
   </div>
 
 ## Gestensensor zur Bedienung (optional)
-Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich. Diese Funktion wird nicht weiterentwickelt.
+**Diese Funktion wird nicht weiterentwickelt**  
+Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich. .
 
 ![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
 

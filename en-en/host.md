@@ -44,3 +44,6 @@ AWTRIX Restart
 
 ## Docker
 Recommended: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)
+  
+## Update
+Replace the awtrix.jar or run the setupscript again.

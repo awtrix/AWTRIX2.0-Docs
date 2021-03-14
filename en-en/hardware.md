@@ -12,8 +12,8 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | - |:------------------------:| :------------------------------:|
 | 1 | Awtrix Mainboard Kit | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
 | 2 | 32x8 Matrix | [click here](https://de.aliexpress.com/item/4000547842744.html) |
-| 3 | Awtrix housing | [click here](https://www.thingiverse.com/thing:2791276) |
-| 4 | Wemos D1 mini | [click here](https://de.aliexpress.com/item/32651747570.html) |
+| 3 | Awtrix housing | [click here](https://www.thingiverse.com/thing:4749750) |
+| 4 | Wemos D1 mini | [click here](https://blueforcer.de/produkt/wemos-d1-mini/) |
 | 5 | Power supply (>3A) | [click here](https://goo.gl/QLydM3) |
 | 6 | power jack | [click here](https://goo.gl/j4Xov7) |
 
@@ -21,11 +21,11 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 ### Optional components
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
-| 1 | LDR GL5528 | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2 | DF Mini Player | [click here](https://de.aliexpress.com/item/32992229288.html) |
+| 1 | LDR GL5528 | [click here](https://blueforcer.de/produkt/ldr-5mm-helligkeitssensor/) |
+| 2 | DF Mini Player | [click here](https://blueforcer.de/produkt/dfplayer-mini-mp3-player-modul/) |
 | 3.1| Htui21d |[click here](https://de.aliexpress.com/item/32969854972.html) |
 | 3.2| BME280 | [click here](https://de.aliexpress.com/item/32849462236.html) |
-| 4  | Speaker             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+| 4  | Speaker             | [click here](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 
 The touch sensors are not listed here because they are part of the kit and therefore do not need to be purchased.
 
@@ -34,8 +34,8 @@ The touch sensors are not listed here because they are part of the kit and there
 ### Mandatory components
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
-| 1 | Awtrix Mainboard Kit | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0-bausatz/) |
-| 2 | Wemos D1 mini | [click here](https://de.aliexpress.com/item/32651747570.html) |
+| 1 | Awtrix Mainboard | [click here](https://blueforcer.de/produkt/awtrix-mainboard-2-0) |
+| 2 | Wemos D1 mini | [click here](https://blueforcer.de/produkt/wemos-d1-mini/) |
 | 3 | 32x8 Matrix | [click here](https://de.aliexpress.com/item/4000547842744.html) |
 | 4 | Power supply (>3A) | [click here](https://goo.gl/QLydM3) |
 | 5 | power jack              | [click here](https://goo.gl/j4Xov7) |
@@ -47,11 +47,11 @@ The touch sensors are not listed here because they are part of the kit and there
 ### Optional components
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
-| 1 | LDR GL5528 | [click here](https://de.aliexpress.com/item/32515315072.html) |
-| 2 | DF Mini Player | [click here](https://de.aliexpress.com/item/32992229288.html) |
+| 1 | LDR GL5528 | [click here](https://blueforcer.de/produkt/ldr-5mm-helligkeitssensor/) |
+| 2 | DF Mini Player | [click here](https://blueforcer.de/produkt/dfplayer-mini-mp3-player-modul/) |
 | 3.1| Htui21d                  | [click here](https://de.aliexpress.com/item/32969854972.html) |
 | 3.2| BME280                   | [click here](https://de.aliexpress.com/item/32849462236.html) |
-| 4  | Speaker             | [click here](https://de.aliexpress.com/item/32853811267.html) |
+| 4  | Speaker             | [click here](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 | 5  | Touch sensors (3x)        | [click here](https://de.aliexpress.com/item/4000032722881.html) |
 
 
@@ -72,7 +72,7 @@ The DFPlayer is used for the output of sounds and can be used optionally. It sto
   
 You need to create a folder "MP3" on your DFplayer SD card and move your mp3s to this folder. The mp3 must start with a 4-digit number, e.g. **0001.mp3** or **0001 - Testfile.mp3**.  
 AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 0101.  
-[Download default sounds](https://blueforcer.de/awtrix/Soundfiles.zip)  
+[Download default sounds](https://blueforcer.de/awtrix/Soundpack.zip)  
   
 
 ![](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)

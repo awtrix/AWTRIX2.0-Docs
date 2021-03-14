@@ -57,6 +57,12 @@ Writing at 0x00000000... (0 %)
 Dann ist alles in Ordnung....
 Wenn es nach ein paar Sekunden nicht angezeigt wird, hast du möglicherweise ein Problem mit dem Anschluss des ESP8266 an den UART.
 
+## Update
+Du kannst die Firmware auf drei Arten aktualisieren:  
+  
+- Flashe die neueste firmware.bin per USB und einem PC
+- Öffnen die IP des Controllers in einem Browser und lade die firmware.bin hoch
+- Gehe im Host-Webinterface auf Matrix-Status und klicke auf "Update verfügbar".
 
 ## Erster Start
   <div align=center>
@@ -100,11 +106,16 @@ Wenn noch keine Wifi Verbindung konfiguriert ist kommt nun der Text "Hotspot" au
 ## Bekannte Probleme
 
 - Sollten andere Probleme auftreten kannst du versuchen deinen Wemos zurück zu setzen. Dabei werden alle gespeicherte Informationen gelöscht und du kannst ihn erneut über den Hotspot einrichten.
-  Gehe dazu wie folgt vor:
-  - Resette den ESP
-  - Warte 3-4s
-  - Resette den ESP nochmal
-  - Auf der Matrix steht nun in Rot **RESET**  
+  Dazu gibt es 3 wege:  
+    
+  **Über die Touchtaster**  
+  - Schalte die Matrix aus und wieder ein.
+  - Während die Matrix "BOOT" anzeigt, halte den mittleren Drucktaster gedrückt
+  - Warte, bis der Reset-Countdown abgelaufen ist
+      
+  **Über den PC**  
+  - Lade dir das [ESP8266 download tool](https://www.espressif.com/en/support/download/other-tools)  
+  - Schließe deinen Wemos an den PC an öffne die Software und klicke **erase**  
 
 <br>
   <div align=center>
