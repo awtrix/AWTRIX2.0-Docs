@@ -1,7 +1,7 @@
 [**Home**](en-en/)
 - **Hardware**
 - [AWTRIX Family](en-en/awtrix_family.md)
-- [AWTRIX Elektronik](en-en/hardware.md)
+- [AWTRIX Electronic](en-en/hardware.md)
 - [AWTRIX Mainboard](en-en/pcb.md)
 - **Software**
 - [Controller](en-en/controller.md)
