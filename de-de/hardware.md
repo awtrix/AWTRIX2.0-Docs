@@ -1,4 +1,4 @@
-![](../assets/awtrix.pjg)
+![](../assets/awtrix.jpg)
 
 # Teileliste
 ## Allgemeiner Hinweis
