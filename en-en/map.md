@@ -4,6 +4,6 @@ No further settings or information is sent. This information is not passed on to
 
 !> Every normal web page request, e-mail delivery or other HTTP requests always leaves the IP address on the respective server. But you can decide via the "Analytics"-button in the host settings if I can use it for evaluation and thus for this map. 
 
-  <div align=center>
-  <img width="800" src="..\assets\map.PNG"/>
-  </div>
+<div align=center>
+  <img width="800" src="../assets/map.png"/>
+</div>

@@ -1,4 +1,4 @@
-![](..\assets\awtrix.jpeg)
+![](../assets/awtrix.pjg)
 
 # Parts list
 ## General note
@@ -17,7 +17,6 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | 5 | Power supply (>3A) | [click here](https://goo.gl/QLydM3) |
 | 6 | power jack | [click here](https://goo.gl/j4Xov7) |
 
-
 ### Optional components
 | No | Name | Link |
 | - |:------------------------:| :------------------------------:|
@@ -28,7 +27,6 @@ In our shop you can buy the PCBs. You can order them either individually, i.e. w
 | 4  | Speaker             | [click here](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 
 The touch sensors are not listed here because they are part of the kit and therefore do not need to be purchased.
-
 
 ## Assembly with PCB without kit
 ### Mandatory components
@@ -54,28 +52,26 @@ The touch sensors are not listed here because they are part of the kit and there
 | 4  | Speaker             | [click here](https://blueforcer.de/produkt/awtrix-pro-lautsprecher) |
 | 5  | Touch sensors (3x)        | [click here](https://de.aliexpress.com/item/4000032722881.html) |
 
-
 # Electronics
 The electronics can either be soldered ("freely wired") on a breadboard or on a circuit board specially developed for Awtrix.
 
 ## Basic version
 
-![Basissetup](..\assets\pro\AWTRIX_Core_Steckplatine.jpg)
+![Basissetup](../assets/pro/AWTRIX_Core_Steckplatine.jpg)
 
 ## Light sensor for brightness control (optional)
 The brightness sensor can be installed optionally. This ensures that, for example in a dark room, the matrix is not dazzled by dimming the brightness. On the other hand, if the room is very bright, the matrix is dimmed up so that the contents of the matrix can still be read.
 
-![ldr](..\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
+![ldr](../assets/pro/AWTRIX_LDR_Steckplatine.jpg)
 
 ## DFPlayer Mini for sound output (optional)
-The DFPlayer is used for the output of sounds and can be used optionally. It stores mp3 files on a memory card, which is inserted into the micro SD slot of the player. This allows you to have your matrix speak to you or play sounds when you receive notifications, for example.  
-  
-You need to create a folder "MP3" on your DFplayer SD card and move your mp3s to this folder. The mp3 must start with a 4-digit number, e.g. **0001.mp3** or **0001 - Testfile.mp3**.  
-AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 0101.  
-[Download default sounds](https://blueforcer.de/awtrix/Soundpack.zip)  
-  
+The DFPlayer is used for the output of sounds and can be used optionally. It stores MP3 files on a memory card, which is inserted into the micro SD slot of the player. This allows you to have your matrix speak to you or play sounds when you receive notifications, for example.
 
-![](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
+You need to create a folder "MP3" on your DFplayer SD card and move your MP3s to this folder. The MP3 must start with a 4-digit number, e.g. **0001.mp3** or **0001 - Testfile.mp3**.
+AWTRIX uses the range 0001-0100 for internal purposes. Start with own MP3s at 0101.
+[Download default sounds](https://blueforcer.de/awtrix/Soundpack.zip)
+
+![](../assets/pro/AWTRIX_DFMini_Steckplatine.jpg)
 
 | Wemos | DFPlayer Mini | Function | Note |
 | ----- | ------------- | -------- | -------- |
@@ -85,9 +81,9 @@ AWTRIX uses the range 0001-0100 for internal purposes. Start with own mp3s at 01
 | D5 | RX | Receive | former D8 |
 
 ## Temperature and humidity sensor (optional)
-Optinally, Awtrix can work with two different indoor climate sensors. You can freely choose whether the BME280 or the Htu21d should be used. The measured values are sent to the server and can be displayed directly on the matrix using an app and can also be retrieved from a home automation server (ioBroker, FHEM, ...) via API from the Awtrix server.
+Optionally, Awtrix can work with two different indoor climate sensors. You can freely choose whether the BME280 or the Htu21d should be used. The measured values are sent to the server and can be displayed directly on the matrix using an app and can also be retrieved from a home automation server (ioBroker, FHEM, ...) via API from the Awtrix server.
 
-![](..\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Temp_Steckplatine.jpg)
 
 | Wemos | BME280 | Htu21d | Function | Note |
 | --- | --- | --- | --- |--- |
@@ -100,7 +96,7 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 
 ## Touch sensors for operation (optional)
 
-![](..\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Touch_Steckplatine.jpg)
 
 | Wemos | Button left | Button middle | Button right | Function | Note |
 | ----- | ------------- | ------------- | ------------- | -------- | -------- |
@@ -112,15 +108,14 @@ When using temperature and gesture sensors, the pins D1 & D3 of the Wemos D1 min
 
 !> The touch sensors have two bridges on the small circuit board which can be closed with solder. This is absolutely necessary for the middle sensor, otherwise the Wemos will not start. To prevent this from happening, the bridge A of the **middle touch sensor must be closed**. This will set the I/O pin to active low. Other touch sensors are not recommended, because they are not designed for the housing (different dimensions) and have no possibility to solder a bridge.
 
-  <div align=center>
-  <img width="100" src="..\assets\touch.jpg"/>
-  </div>
-
+<div align=center>
+  <img width="100" src="../assets/touch.jpg"/>
+</div>
 
 ## Gesture sensor for operation (optional)
 The gesture sensor can be used optionally for easy operation of the matrix. Gestures like wiping with the hand from left to right or the other way around are possible. This function is no longer being developed.
 
-![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Gesture_Steckplatine.jpg)
 
 | Wemos | APDS-9960 | Function | Note |
 | --- | --- | --- | --- |
@@ -143,8 +138,7 @@ The **USB port** of the Pi can also be used (also for any other host platform). 
 
 When using the **GPIO's** the Pi is connected to the Wemos as follows:
 
-
-![](..\assets\pro\AWTRIX_raspi_V2_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_raspi_V2_Steckplatine.jpg)
 
 | Wemos | Raspberry Pin-No | Function |
 | ----- | ---------------- | -------- |
@@ -156,8 +150,9 @@ When using the **GPIO's** the Pi is connected to the Wemos as follows:
 !>Please pay attention to the Raspberry version. There can be differences here!
 
 By default, the serial interface must be enabled for the Raspberry. On the Raspberry 3 this can be done with the following commands:
-```
- sudo raspi-config nonint do_serial 1
- sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
- sudo reboot
+
+```bash
+sudo raspi-config nonint do_serial 1
+sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
+sudo reboot
 ```
