@@ -223,7 +223,7 @@ ___
 
 Hiermit können alle Einstellungen geändert werden
 Die passenden Keys der Einstellungen sind in der Datei "Settings" im order "config" zu finden.
-Außerdem können die Einstellungen im selben format ausgelesen werden. [Siehe hier](http://localhost:3000/#/de-de/api?id=grundlegende-informationen-erhalten)
+Außerdem können die Einstellungen im selben format ausgelesen werden. [Siehe hier](/de-de/api?id=grundlegende-informationen-erhalten)
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
 > /api/v3/settings
 
