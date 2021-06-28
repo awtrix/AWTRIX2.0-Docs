@@ -5,31 +5,29 @@ Für MQTT kannst du AWTRIX mit einen bestehenden MQTT Broker verbinden.
 Das Basis-Topic (Prefix) ist hierbei standardmäßig **awtrix**.
 
 ### HTTP
-Für die HTTP-API ist der Basis-Endpunkt  
-**http://[AWTRIX-SERVER_IP]:7000/api/v3**  
+Für die HTTP-API ist der Basis-Endpunkt
+**http://[AWTRIX-SERVER_IP]:7000/api/v3**
 
-z.B. für einen einfachen Test unter Linux kann curl kann verwendet werden, um eine http-Anfrage zu stellen:  
-``` BASH
+z.B. für einen einfachen Test unter Linux kann curl kann verwendet werden, um eine http-Anfrage zu stellen:
+
+```bash
 curl -X POST --header 'Content-Type: application/json' -d '{"force":true,"text":"Awesome","icon":1,"color":[0,255,255],"count":2}' 'http://[HOST_IP]:7000/api/v3/notify'
 ```
-
-
 
 ## Basic Controls
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/basics  
+> /api/v3/basics
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/basics
-
 
 ___
 
 ### power
 Schaltet AWTRIX ein (true) oder aus (false).
 
-``` JSON
+```json
 {"power": true}
 ```
 ___
@@ -38,8 +36,7 @@ ___
 
 Wechsel zu einer definierten App
 
-
-``` JSON
+```json
 {"switchTo":"Facebook"}
 ```
 ___
@@ -48,8 +45,7 @@ ___
 
 Deaktiviert oder aktiviert eine App
 
-
-``` JSON
+```json
 {"disable":"Facebook"}
 {"enable":"Facebook"}
 ```
@@ -59,14 +55,14 @@ ___
 
 Steuert die Apploop
 
-#### **Parameter**  
+#### **Parameter**
 - app
   - "next" : nächste App
   - "back" : vorherige App
   - "pause" : Apploop pausieren (toggle)
   - "hold" : die aktuelle App ohne Umschalten halten (toggle)
 
-``` JSON
+```json
 {"app":"next"}
 ```
 ___
@@ -77,7 +73,7 @@ Zeigt eine Animation an, die aus der AWTRIX-Cloud heruntergeladen wird.
 Erwartet einen Animations name (Siehe [cloudAnimations](api?id=grundlegende-informationen-erhalten)).
 "random" spielt eine zufällige Animation ab.
 
-``` JSON
+```json
 {"showAnimation":"tetris"}
 {"showAnimation":"random"}
 ```
@@ -87,15 +83,15 @@ ___
 
 Spielt eine Audiodatei ab, die auf die SD-Karte des DF-Players geladen wurde.
 
-Du musst einen Ordner "MP3" auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben.
-Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.  
-AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigenen mp3s bei 0101.  
+Du musst einen Ordner "MP3" auf deiner DFplayer SD-Karte erstellen und deine MP3s in diesen Ordner verschieben.
+Die MP3 muss mit einer 4-stelligen Zahl beginnen, z.B. 0001.mp3 oder 0001 - Testfile.mp3.
+AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne  mit  eigenen MP3s bei 0101.
 [Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundpack.zip)
 
 #### **Parameter**
 - soundfile: Nummer der gewünschten MP3
 
-``` JSON
+```json
 {"soundfile": 101}
 ```
 
@@ -106,17 +102,17 @@ ___
 Startet einen Timer für die angegebene Zeitspanne und zeigt einen Alarm an, wenn die Zeit abgelaufen ist.
 
 #### **Parameter**
-- timer: Zeitspanne in ```"stunden:minuten:sekunden"```
+- timer: Zeitspanne in `"stunden:minuten:sekunden"`
 - color: Array von Ganzzahlen [R,G,B] (optional)
 - count: Wie oft soll der Timer blinken? (optional)
 - soundfile: Spielt beim Ablauf des Timers eine MP3 ab (optional)
 - text: Text, der angezeigt wird (statisch, bis zu 8 Zeichen) (optional)
 
-``` JSON
+```json
 {"timer":"00:00:10","soundfile":1,"color":[255,0,0],"count":10,"text":"AWTRIX"}
 ```
 
-``` JSON
+```json
 {"timer":"stop"} //löscht den Timer wieder
 ```
 ___
@@ -129,20 +125,22 @@ Wenn die Stoppuhr 1 Stunde erreicht, wird das Icon für mehr Platz entfernt.
 - stopwatch: Starten/Stoppen der Stoppuhr
 - icon: IconID
 
-``` JSON
+```json
 {"stopwatch":true, "icon":423}
 ```
-``` JSON
+
+```json
 {"stopwatch":false} // Stoppt den Timer
 ```
 ___
 ### yeelight
-Mit dieser Premium-Funktion kannst du auf einer Yeelight einen Effekt abspsielen.  
+Mit dieser Premium-Funktion kannst du auf einer Yeelight einen Effekt abspielen.
 Der erste String im Array benennt den Effekt, der zweite Parameter gibt an, wie oft dieser Effekt wiederholt wird. Du kannst dies auch in deiner Benachrichtigung JSON implementieren.
 
-``` JSON
+```json
 {"yeelight":["Alarm",10]}
 ```
+
 Derzeit sind folgende Effekte verfügbar
 - Alarm
 - Birthday
@@ -161,7 +159,7 @@ Derzeit sind folgende Effekte verfügbar
 - Sunrise
 - Traffic Light
 
-> **Bitte beachte**  
+> **Bitte beachte**
 Du kannst keinen Effekt spielen, während die Yeelight ausgeschaltet ist (von app etc, nicht vom Strom getrennt). Daher fragt awtrix nach dem Powerstate der Lampe und schaltet sie gegebenenfalls ein. Nach der Wiedergabe wird die Lampe wieder ausgeschaltet. Wenn das Licht vor dem api-Aufruf eingeschaltet ist, wird die Birne wieder den Zustand vor dem Beginn des Effekts annehmen.
 Dies hat jedoch ein Problem zur Folge: Wenn die Yeelight aus ist und ein Effekt ab gespielt wird, hat die Yeelight den Zustand "AN". Wenn du nun wieder einen Effekt aktiverst, während die Glühbirne noch einen Effekt abspielt, bleibt die Yeelight danach eingeschaltet, weil "AN" der zuletzt angefragte Zustand war.
 ___
@@ -174,22 +172,23 @@ Mit dieser API kannst du die Reihenfolge der Apps (AppLoop) anpassen.
 - appList: eine Liste der benutzerdefinierten Apploop (Array of String)
 - icon: iconID
 
-``` JSON
+```json
 {"appList":["Time","Facebook","Time","Instagram"]}
 ```
 
-``` JSON
+```json
 {"appList":"reset"} //setzt die Apploop zurück
 ```
+
 ___
 
 ## Grundlegende Informationen erhalten
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/basics  
+> /api/v3/basics
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/basics
-> MQTT anwortet auf dem Topic "[prefix]/response"
+> MQTT antwortet auf dem Topic "[prefix]/response"
 
 #### **Parameter**
 - get
@@ -199,36 +198,34 @@ ___
   - gibt alle verfügbaren Cloud Animationen zurück
 - **installedApps**
   - gibt alle installierten Apps zurück
-- **appList**  
+- **appList**
   - gibt die komplette App-Loop zurück
-- **settings**     
+- **settings**
   - gibt alle Einstellungen zurück
-- **version**       
+- **version**
   - gibt die AWTRIX-Version zurück
-- **uptime**         
+- **uptime**
   - gibt die Betriebszeit von AWTRIX zurück
 - **powerState**
   - gibt an ob AWTRIX an (true) oder ausgeschaltet (false) ist zurück
 - **log**
   - gibt das Protokoll zurück
-- **matrixInfo**     
+- **matrixInfo**
   - gibt alle Informationen der verbundenen Matrix zurück.
 
-``` JSON
+```json
 {"get":"installedApps"}
 ```
 
-
 ___
-
 
 ## Einstellungen ändern
 
 Hiermit können alle Einstellungen geändert werden
 Die passenden Keys der Einstellungen sind in der Datei "Settings" im order "config" zu finden.
-Außerdem können die Einstellungen im selben format ausgelesen werden [Siehe hier](http://localhost:3000/#/de-de/api?id=grundlegende-informationen-erhalten)
+Außerdem können die Einstellungen im selben format ausgelesen werden. [Siehe hier](/de-de/api?id=grundlegende-informationen-erhalten)
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/settings  
+> /api/v3/settings
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/settings
@@ -236,29 +233,28 @@ ___
 
 Eine oder mehrere Einstellungen vornehmen
 
-``` JSON
+```json
 {"Brightness":100}
 ```
 
 ___
 
-
 ## Benachrichtigungen
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/notify  
+> /api/v3/notify
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/notify
 
 
-Zeigt eine idividuelle Benachrichtigung an
+Zeigt eine individuelle Benachrichtigung an
 
-#### **Parameter**  
+#### **Parameter**
 - **text**
   - Anzuzeigender Text (String)
 - **multiColorText**
-  - Definiere ein Array von Textabschnitten mit einem RGB-Farbwert (Array  von Ganzzahlen [R,G,B]) .e.g: ```"multiColorText":[{"text":"Totally ","color":[0,255,0]},{"text":"Awesome","color":[255,0,0]}]```
+  - Definiere ein Array von Textabschnitten mit einem RGB-Farbwert (Array  von Ganzzahlen [R,G,B]) .e.g: `"multiColorText":[{"text":"Totally ","color":[0,255,0]},{"text":"Awesome","color":[255,0,0]}]`
 - **fallingText**
   - Eine weitere Möglichkeit, langen Text anzuzeigen. Anstatt von rechts nach links zu scrollen, fällt jedes Wort von oben nach unten. Wenn ein Punkt oder Komma erkannt wird, wird die Anzeige zur besseren Übersicht für 1000 oder 500 Millisekunden pausiert. Icons werden hierbei ignoriert.
 - **force (optional)**
@@ -267,7 +263,7 @@ Zeigt eine idividuelle Benachrichtigung an
 - **name (optional)**
   - Kennung der Benachrichtigung
 - **scrollSpeed (optional)**
-  - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)  
+  - Die Scrollgeschwindigkeit in Millisekunden. Niedriger=Schneller; Standard: 65ms (Ganzzahl)
   - Steuert die Anzeigezeit in Millisekunden für jedes Wort bei Verwendung von **fallingText**. Standard: 400
 - **icon (optional)**
   - Icon ID aus der Online Datenbank (Ganzzahl)
@@ -275,88 +271,85 @@ Zeigt eine idividuelle Benachrichtigung an
   - Benutzerdefinierte Textfarbe (Array von Ganzzahlen [R,G,B])
 - **moveIcon (optional)**
   - Verschiebt das Icon mit dem Text aus dem Bildschirm (true/false).
-- **repeatIcon (optional)** 
+- **repeatIcon (optional)**
   - Wenn **moveIcon** aktiv ist, wird bei Verwendung von **repeat** das Icon bei folgenden Wiederholungen erneut angezeigt.
 - **duration (optional)**
   - Definiert wie lange (in Sekunden) die Benachrichtigung angezeigt werden soll (Ganzzahl) (Wird von **repeat** überschrieben)
 - **repeat (optional)**
-  - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgeund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
+  - Wie oft der Text gescrollt werden soll, bevor zur nächsten App gewechselt wird. Wenn der Text aufgrund der Textlänge nicht gescrollt werden muss, wird die globale App Laufzeit verwendet, um zu wechseln. (Ganzzahl)
 - **rainbow (optional)**
   - Zeigt den Text in Regenbogenfarben an. Überschreibt **color** (true/false).
   - Bei der Verwendung von **fallingText** wird jedes Wort in einer zufälligen Farbe angezeigt
 - **progress (optional)**
   - Zeigt eine Fortschrittsanzeige unter dem Text an (0-100, Ganzzahl)
 - **progressColor (optional)**
-  - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B]) 
+  - Bestimmt die Farbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])
 - **progressBackground (optional)**
-  - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])   
+  - Bestimmt die Hintergrundfarbe der Fortschrittsanzeige (Array von Ganzzahlen [R,G,B])
 - **soundfile (optional)**
   - Spielt beim Start der App eine bestimmte Datei auf dem DFPlayer ab. (Nummer der gewünschten MP3 als Ganzzahl)
 - **yeelight**
   - Plays an effect on your Yeelight ([see here](/de-de/api?id=yeelight))
 - **barchart**
-  - zeigt ein Balkendiagramme an: Sende deine Datenwerte als Array, z.B. ```"barchart":[20,50,80,100,50,20,60]```
+  - zeigt ein Balkendiagramme an: Sende deine Datenwerte als Array, z.B. `"barchart":[20,50,80,100,50,20,60]`
 - **linechart**
-  - Wie Balkendiagramme kannst du auch Liniendiagramme. Sende deine Datenwerte als Array z.B. ```"linechart":[20,50,80,100,50,20,60]```
+  - Wie Balkendiagramme kannst du auch Liniendiagramme. Sende deine Datenwerte als Array z.B. `"linechart":[20,50,80,100,50,20,60]`
 
 
-```JSON
+```json
 {
-   "name":"TestNotification",
-   "force":true,
-   "icon":6,
-   "moveIcon":true,
-   "repeat":2,
-   "soundfile":1,
-   "text":"Totally Awesome",
-   "color":[
-      0,
-      255,
-      0
-   ]
+  "name":"TestNotification",
+  "force":true,
+  "icon":6,
+  "moveIcon":true,
+  "repeat":2,
+  "soundfile":1,
+  "text":"Totally Awesome",
+  "color":[
+    0,
+    255,
+    0
+  ]
 }
-
 ```
 
 Eine Benachrichtigung kann aus der Warteschlange entfernt werden
-```JSON
+```json
 {"remove":"TestNotification"}
 ```
 
 ___
 
-
 ## Temporäre App
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/temporaryapp  
+> /api/v3/temporaryapp
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/temporaryapp
-
 
 Mit dieser API kannst du eine temporäre App erstellen, die sich mit einer bestimmten **"Loop Lifetime"** in die AppLoop integriert.
 Diese App wird am Ende jeder AppLoop angezeigt und die Lebensdauer verringert sich mit jedem Anruf um 1. Wenn die Lebensdauer auf 0 sinkt, wird die temporäre App aus der AppLoop entfernt.
 Du kannst die temporäre App jederzeit aktualisieren, indem du die Anfrage mit dem gleichen Namen erneut sendest.
 Der Aufbau und die Möglichen Befehle sind die selben wie bei einer Benachrichtigung, nur das die Parameter **name** und **lifetime** pflicht sind.
 
-```JSON
+```json
 {
-   "name":"TestApp",
-   "lifetime":5,
-   "icon":6,
-   "text":"Totally Awesome",
-   "color":[
-      60,
-      255,
-      0
-   ]
+  "name":"TestApp",
+  "lifetime":5,
+  "icon":6,
+  "text":"Totally Awesome",
+  "color":[
+    60,
+    255,
+    0
+  ]
 }
-
 ```
 
 Eine temporäre App kann entfernt werden
-```JSON
+
+```json
 {"remove":"TestApp"}
 ```
 
@@ -365,7 +358,7 @@ ___
 ## Zeichnung
 
 > [!TIP|style:flat|label:HTTP Endpoint|iconVisibility:hidden]
-> /api/v3/draw  
+> /api/v3/draw
 
 > [!TIP|style:flat|label:MQTT Topic|iconVisibility:hidden]
 > awtrix/draw
@@ -377,25 +370,24 @@ Der Zeichenmodus beginnt mit dem ersten Befehl.
 
 Jeder Befehl füllt nur den Framebuffer. Du musst **show** ausführen, um schließlich die Daten auf der Matrix anzuzeigen.
 
-
 Das folgende Beispiel ist wie folgt aufgebaut:
- - Fülle den gesamten Bildschirm mit grauem Hintergrund.
- - Schreib  "Hello".
- - Zeigt die letzten beiden Befehle auf der Matrix an.
- - Warten 3 Sekunden vor dem nächsten Befehl.
- - Zeichne einen Kreis neben dem Text.
- - Und zeige es an
- - Weitere 3 Sekunden warten
- - Den gesamten Inhalt löschen
- - Zeichne eine Linie von der linken oberen Ecke zur unteren rechten Ecke.
- - Zeig die Linie auf der Matrix an.
- - 3 Sekunden warten
- - Alles zweimal wiederholen
- - Verlasse des Zeichenmodus
+- Fülle den gesamten Bildschirm mit grauem Hintergrund.
+- Schreib  "Hello".
+- Zeigt die letzten beiden Befehle auf der Matrix an.
+- Warten 3 Sekunden vor dem nächsten Befehl.
+- Zeichne einen Kreis neben dem Text.
+- Und zeige es an
+- Weitere 3 Sekunden warten
+- Den gesamten Inhalt löschen
+- Zeichne eine Linie von der linken oberen Ecke zur unteren rechten Ecke.
+- Zeig die Linie auf der Matrix an.
+- 3 Sekunden warten
+- Alles zweimal wiederholen
+- Verlasse des Zeichenmodus
 
-!> **Bitte beachte:** Du musst **exit** aufrufen, um den Zeichenmodus zu verlassen und in den Normalzustand zurückzukehren. Wenn du Wiederholung einstellst, wird der Exit-Befehl ignoriert und beendet automatisch den Zeichenmodus, wenn alle Wiederholungen abgeschlossen sind.  
+!> **Bitte beachte:** Du musst **exit** aufrufen, um den Zeichenmodus zu verlassen und in den Normalzustand zurückzukehren. Wenn du Wiederholung einstellst, wird der Exit-Befehl ignoriert und beendet automatisch den Zeichenmodus, wenn alle Wiederholungen abgeschlossen sind.
 
-``` JSON
+```json
 {
   "repeat":2,
   "draw": [
@@ -452,10 +444,9 @@ Das folgende Beispiel ist wie folgt aufgebaut:
 }
 ```
 
+#### **Possible commands**
 
- #### **Possible commands**
-
-?> Das erste Pixel (linke obere Ecke) hat die Koordinate[0,0], während das letzte (rechte untere Ecke)[31,7] hat.  
+?> Das erste Pixel (linke obere Ecke) hat die Koordinate[0,0], während das letzte (rechte untere Ecke)[31,7] hat.
 
 **<span style="color:blue">loop</span>** Wie oft die Zeichenroutinen wiederholt werden sollen (optional)
 

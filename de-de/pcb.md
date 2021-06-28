@@ -11,13 +11,13 @@ Wenn du keine Lust auf eine fliegende Verdrahtung im Gehäuse hast, [kannst du e
 | **3**  | 1 | Capacitor (1000uF)| M-A 1000U 16 | **Liegend verbauen** |
 | **4**  | 1 | Capacitor (100nF)| KERKO 100N |  |
 | **5**  | 1 | pinheader male (1x3) |  MPE 087-1-036 | |
-| **6**  | 4 | pinheader male (1x8)  |  MPE 087-1-036 | | 
+| **6**  | 4 | pinheader male (1x8)  |  MPE 087-1-036 | |
 
 ## Bilderanleitung zum Bestücken des Mainboards
 
 ### 1. Bauteile im Überblick
 ![B4J](../assets/manualPicture/mainboard/uebersicht.jpg)
-- Die Touch Sensoren sowie der DFPlayer sind optinale Teile und sind nicht zwingend zum Betrieb erforderlich.
+- Die Touch Sensoren sowie der DFPlayer sind optionale Teile und sind nicht zwingend zum Betrieb erforderlich.
 - Zum verlöten der Bauteile wird ein Lötkolben samt Lötzinn benötigt.
 - Beim Bestücken arbeitet man sich von den kleinen zu den großen Bauteilen vor.
 
@@ -50,11 +50,11 @@ Richtig eingelötet sieht es wie folgt aus:
 - Dieser Kondensator besitzt keine Polarität, daher ist es egal wie rum er eingebaut wird.
 - Kondensator biegen und einstecken.
 - Von oben auf einer Seite anlöten.
-- Andere Seite des Kodensators von unten festlöten.
+- Andere Seite des Kondensators von unten festlöten.
 - Die erste Seite von unten nochmal nachlöten.
 - Beinchen des Kondensators kürzen.
 
-### 5. Siftleiste (1x 3-polig)
+### 5. Stiftleiste (1x 3-polig)
 ![B4J](../assets/manualPicture/mainboard/stiftleiste3pol.jpg)
 - Einstecken, Platine umdrehen und so hinlegen das die Stiftleiste nicht heraus fällt.
 - Ersten Pin von unten festlöten - Ausrichtung der Stiftleiste erfolgt anschließend.
@@ -95,7 +95,7 @@ Richtig eingelötet sieht es wie folgt aus:
 ### 9. Wemos D1 mini
 ![B4J](../assets/manualPicture/mainboard/wemos.jpg)
 - Stiftleisten in den Wemos D1 mini stecken.
-- Stiftleiste muss dabei nach unten schauen während der Microcontroller sammt Antenne nach oben schauen muss.
+- Stiftleiste muss dabei nach unten schauen während der Microcontroller samt Antenne nach oben schauen muss.
 - Zum Anlöten kann die Stiftleiste in die bereits eingelötete Buchsenleiste gesteckt werden.
 - Wemos D1 mini auf die Stiftleiste, welche in der Buchsenleiste steckt, setzen und anlöten.
 

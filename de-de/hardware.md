@@ -1,6 +1,4 @@
-![](..\assets\awtrix.jpeg)
-
-
+![](../assets/awtrix.jpg)
 
 # Teileliste
 ## Allgemeiner Hinweis
@@ -10,7 +8,6 @@ Hier findest du alle informationen zur elektronik von AWTRIX. Der Aufbau ist bei
 Die Verfügbarkeit der Artikel ändert sich täglich. Daher kann es vorkommen, dass einige Artikel unter dem Link nicht mehr zu finden sind. Allerdings gibt es die Teile von vielen Händlern. Einfach auf Amazon, Ebay oder Aliexpress suchen.
 
 Im Shop gibt es das Mainboard zu kaufen. Diese sind entweder einzeln, also ohne Bauteile, oder als Bausatz bestellbar. Mit dem Kauf dieser Hardware (diese ist nicht zwingend notwendig) unterstützt du mich bei der Weiterentwicklung von Awtrix.
-
 
 ## Aufbau mit Leiterplatte ohne Bausatz
 
@@ -26,30 +23,27 @@ Im Shop gibt es das Mainboard zu kaufen. Diese sind entweder einzeln, also ohne 
 | 8  | Jumper                   |  |
 | 9 | 1000uF 10V Kondensator    | [click here](https://www.conrad.de/de/p/panasonic-eca-1ahg102-elektrolyt-kondensator-radial-bedrahtet-5-mm-1000-f-10-v-20-10-mm-1-st-1475892.html) |
 
-
-
-
 # Elektronik
 Die Elektronik kann entweder auf eine Lochrasterplatine gelötet ("frei verdrahtet") werden oder auf der extra für Awtrix entwickelten Mainboard.
 
 ## Basis Variante
 
-![Basissetup](..\assets\pro\AWTRIX_Core_Steckplatine.jpg)
+![Basissetup](../assets/pro/AWTRIX_Core_Steckplatine.jpg)
 
 ## Lichtsensor zur Helligkeitsregelung (optional)
-Der Helligkeitssensor kann optinal eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet. Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
+Der Helligkeitssensor kann optional eingebaut werden. Dieser sorgt dafür, dass beispielsweise in einem dunklen Raum, durch herunter dimmen der Helligkeit, die Matrix nicht blendet. Anders herum wird die Matrix bei einer hohen Helligkeit im Raum hoch gedimmt, damit man den Inhalt der Matrix noch lesen kann.
 
-![ldr](..\assets\pro\AWTRIX_LDR_Steckplatine.jpg)
+![ldr](../assets/pro/AWTRIX_LDR_Steckplatine.jpg)
 
 ## DFPlayer Mini zur Soundausgabe (optional)
-Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden mp3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht oder Töne bei Benachrichtigungen abspielt.  
-  
-Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine mp3s in diesen Ordner verschieben. Die mp3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.  
-AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen mp3s bei 0101.  
-[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundpack.zip)  
-  
+Der DFPlayer dient zur Ausgabe von Sounds und ist optional verwendbar. Es werden MP3 Dateien auf einer Speicherkarte gespeichert, welche in das Micro-SD Fach des Players eingesteckt wird. Dies ermöglicht es dir, dass deine Matrix beispielsweise mit dir spricht oder Töne bei Benachrichtigungen abspielt.
 
-![](..\assets\pro\AWTRIX_DFMini_Steckplatine.jpg)
+Du musst einen Ordner “MP3” auf deiner DFplayer SD-Karte erstellen und deine MP3s in diesen Ordner verschieben. Die MP3 muss mit einer 4-stelligen Zahl beginnen, z.B. **0001.mp3** oder **0001 - Testfile.mp3**.
+AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen MP3s bei 0101.
+[Standardsounds herunterladen](https://blueforcer.de/awtrix/Soundpack.zip)
+
+
+![](../assets/pro/AWTRIX_DFMini_Steckplatine.jpg)
 
 | Wemos | DFPlayer Mini | Funktion | Hinweis  |
 | ----- | ------------- | -------- | -------- |
@@ -59,9 +53,9 @@ AWTRIX verwendet den Bereich 0001-0100 für interne Zwecke. Beginne mit eigenen 
 | D5    | RX            | Receive (empfangen)  | früher D8 |
 
 ## Temperatur- und Luftfeuchtigkeitssensor (optional)
-Optinal kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei kann frei gewählt werden ob der BME280 oder der Htu21d zum Einsatz kommen soll. Die gemessenen Werte werden dem Server geschickt und können zum Einen mittels App direkt auf der Matrix angezeigt werden und zum Anderen von einem Hausautomationsserver (ioBroker, FHEM, ...) mittels API vom Awtrix Server abgerufen werden.
+Optional kann Awtrix mit zwei verschiedenen Raumklimasensoren arbeiten. Hierbei kann frei gewählt werden ob der BME280 oder der Htu21d zum Einsatz kommen soll. Die gemessenen Werte werden dem Server geschickt und können zum Einen mittels App direkt auf der Matrix angezeigt werden und zum Anderen von einem Hausautomationsserver (ioBroker, FHEM, ...) mittels API vom Awtrix Server abgerufen werden.
 
-![](..\assets\pro\AWTRIX_Temp_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Temp_Steckplatine.jpg)
 
 | Wemos | BME280 | Htu21d | Funktion | Hinweis  |
 | --- | --- | --- | --- |--- |
@@ -74,7 +68,7 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 
 ## Touch-Taster zur Bedienung (optional)
 
-![](..\assets\pro\AWTRIX_Touch_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Touch_Steckplatine.jpg)
 
 | Wemos | Taster links | Taster mitte | Taster rechts |Funktion | Hinweis  |
 | ----- | ------------- | ------------- | ------------- | -------- | -------- |
@@ -85,15 +79,16 @@ Bei Verwendung von Temperatur- und Gestensensor werden die Pins D1 & D3 des Wemo
 | D8    | -  | -  | I/O            | Tastsignal  |  |
 
 !> Die Touch Sensoren haben auf der kleinen Leiterplatte zwei Brücken die mann mit Lötzinn verschließen kann. Dies wird beim mittleren Sensor zwingend benötigt, da der Wemos ansonsten nicht mehr startet. Um dies zu verhindern muss beim **mittleren Touch Taster die Brücke A geschlossen** werden. Dadurch wird der I/O Pin auf Active Low gestellt. Andere Touch Sensoren werden nicht empfohlen, da sie erstens nicht fürs Gehäuse vorgesehen sind (andere Maße) und zweitens keine Möglichkeit besitzen eine Brücke einzulöten.
-  <div align=center>
-  <img width="100" src="..\assets\touch.jpg"/>
-  </div>
+
+<div align=center>
+  <img width="100" src="../assets/touch.jpg"/>
+</div>
 
 ## Gestensensor zur Bedienung (optional)
-**Diese Funktion wird nicht weiterentwickelt**  
-Der Gestensensor kann optinal zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich. .
+**Diese Funktion wird nicht weiterentwickelt**
+Der Gestensensor kann optional zur einfachen Bedienung der Matrix benutzt werden. Gesten wie mit der Hand von links nach rechts wischen oder anders herum sind hier möglich. .
 
-![](..\assets\pro\AWTRIX_Gesture_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_Gesture_Steckplatine.jpg)
 
 | Wemos | APDS-9960 | Funktion | Hinweis  |
 | --- | --- | --- | --- |
@@ -114,9 +109,9 @@ Die WiFi Verbindung wird verwendet, um den Controller auch weiterhin updaten zu 
 
 Es kann auch der **USB-Port** des Pi's verwendet werden (auch für jede andere Serverplattform). Dazu muss man einfach den Server per microUSB-Kabel an den Wemos D1 anschließen.
 
-Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
+Bei Verwendung der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
 
-![](..\assets\pro\AWTRIX_raspi_V2_Steckplatine.jpg)
+![](../assets/pro/AWTRIX_raspi_V2_Steckplatine.jpg)
 
 | Wemos | Raspberry Pin-No | Funktion |
 | ----- | ---------------- | -------- |
@@ -128,8 +123,9 @@ Bei Verwenudng der **GPIO's** wird der Pi wie folgt mit dem Wemos verbunden:
 !> **Bitte zwingend auf die Raspberry Version achten. Hier kann es unterschiede geben!**
 
 Standardmäßig muss beim Raspberry die serielle Schnittstelle freigeschaltet werden. Beim Raspberry 3 kann man das über folgende Befehle machen:
-```
- sudo raspi-config nonint do_serial 1
- sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
- sudo reboot
+
+```bash
+sudo raspi-config nonint do_serial 1
+sudo raspi-config nonint set_config_var enable_uart 1 /boot/config.txt
+sudo reboot
 ```

@@ -1,7 +1,7 @@
 [**Home**](en-en/)
 - **Hardware**
 - [AWTRIX Family](en-en/awtrix_family.md)
-- [AWTRIX Elektronik](en-en/hardware.md)
+- [AWTRIX Electronic](en-en/hardware.md)
 - [AWTRIX Mainboard](en-en/pcb.md)
 - **Software**
 - [Controller](en-en/controller.md)
@@ -24,8 +24,8 @@
 - [Programming](en-en/appcoding.md)
 - [Publishing](en-en/appreview.md)
 - **Links**
-- [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16)Github](https://github.com/awtrix)
-- [![Forum](https://icongram.jgog.in/devicon/bootstrap-plain.svg?color=808080&size=16)Forum](https://forum.blueforcer.de)
-- [![Instagram](https://icongram.jgog.in/feather/instagram.svg?colored&size=16)Instagram](https://instagram.com/awtrix2.0)
-- [![Facebook](https://icongram.jgog.in/simple/facebook.svg?color=808080&size=16)Facebook](https://www.facebook.com/groups/126493104851075)
-- [![Shop](https://icongram.jgog.in/feather/shopping-bag.svg?colored&size=16)Shop](https://blueforcer.de/shop/)
+- [![Github](https://awtrixdocs.blueforcer.de/assets/icons/github.svg)Github](https://github.com/awtrix)
+- [![Discord](https://awtrixdocs.blueforcer.de/assets/icons/discord.svg)Discord](https://discord.com/invite/EhzeZDyspzs)
+- [![Instagram](https://awtrixdocs.blueforcer.de/assets/icons/instagram.svg)Instagram](https://instagram.com/awtrix2.0)
+- [![Facebook](https://awtrixdocs.blueforcer.de/assets/icons/facebook.svg)Facebook](https://www.facebook.com/groups/126493104851075)
+- [![Shop](https://awtrixdocs.blueforcer.de/assets/icons/shop.svg)Shop](https://blueforcer.de/shop/)

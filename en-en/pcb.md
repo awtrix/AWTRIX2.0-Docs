@@ -2,7 +2,6 @@ If you don't want to have a flying lead in the case, [you can buy a suitable boa
 
 You can find the assembly diagram here:
 
-
 ![B4J](../assets/pcb.jpg)
 
 | No | piece | name | part number (reichelt.de) | comment
@@ -12,7 +11,7 @@ You can find the assembly diagram here:
 | **3** | 1 | Capacitor (1000uF)| M-A 1000U 16 | **Horizontal installation** |
 | **4** | 1 | Capacitor (100nF)| KERKO 100N |
 | **5** | 1 | pinheader male (1x3) | MPE 087-1-036 |
-| **6** | 4 | pinheader male (1x8) | MPE 087-1-036 | 
+| **6** | 4 | pinheader male (1x8) | MPE 087-1-036 |
 
 ## Pictorial instructions for assembling the mainboard
 
@@ -75,7 +74,7 @@ Correctly soldered it looks as follows:
 
 ### 7. large capacitor (C1)
 ![B4J](../assets/manualPicture/mainboard/groesserKondensator.jpg)
-- **This capacitor must be installed FLAT. Otherwise it is too high for the Awtrix  housing.
+- **This capacitor must be installed FLAT. Otherwise it is too high for the Awtrix housing.
 - Capacitor has a white line on one side. This marks the negative pole.
 - Place the capacitor on the board. The negative pole of the capacitor must be inserted into the pin surrounded by a black area.
 - Bend the legs 90 degrees down.
@@ -102,5 +101,6 @@ Correctly soldered it looks as follows:
 
 Correctly soldered in, it looks as follows:
 ![B4J](../assets/manualPicture/mainboard/wemos2.jpg)
+
 ### 10. DONE
 - The components that can be connected to the mainboard are listed under Awtrix Pro assembly in another picture guide.
