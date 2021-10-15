@@ -110,7 +110,7 @@ If other problems occur you can try to reset your Wemos. For example if you need
 There are 4 ways to do this:
 
 **Fast and easy**
-- switch of your routers wifi
+- switch off your routers wifi
 - resatrt the controller
 - It will go into the hotspot mode if it doesnt find the wifi
 - Turn on your routers wiif again and proceed with the configuration
