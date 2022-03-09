@@ -20,7 +20,7 @@ AWTRIX Apps are Java libraries that can be loaded at runtime.
 Defined functions called by AWTRIX transfer the information to the matrix.
 
 ## First Steps
-For the first app it is better to start with the template [Download](https://github.com/awtrix/AWTRIX2.0-Apps/tree/master/templateApp)  
+For the first app it is better to start with the template [Download](https://github.com/awtrix/AWTRIX2.0-Apps/tree/master/Template)  
 After you have opened the Template.b4j with B4J, it should look like this:  
   
 ![B4J](..\assets\/coding/start.png)
