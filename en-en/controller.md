@@ -127,7 +127,14 @@ There are 4 ways to do this:
 - Switch off and on the matrix
 - While the matrix is showing "BOOT" hold the middle touch button
 - Wait until the reset countdown is over
-  
+
+**Via existing Awtrix Controller**
+
+- Connect to Awtrix controller
+- In Home > Terminal
+- Send `reset controller` command
+- Press Execute command
+
 **Via the PC**
 
 - Download the [ESP8266 download tool](https://www.espressif.com/en/support/download/other-tools)
