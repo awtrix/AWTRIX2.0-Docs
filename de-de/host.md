@@ -42,7 +42,7 @@ AWTRIX Neustarten
 ```sudo service awtrix restart``` 
 
 ## Docker
-Emfgohlen: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)
+Empfohlen: [Dockerhub](https://hub.docker.com/r/whyet/awtrix2)
 
 
 ## Update
