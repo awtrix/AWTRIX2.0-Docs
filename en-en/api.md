@@ -403,13 +403,13 @@ The following example is structured as follows:
   "draw": [
     {
       "type": "fill",
-      "color." [100,100,100]
+      "color": [100,100,100]
     },
     {
       "type": "text",
       "string": "Hello",
       "position": [0,0],
-      "color." [255,0,0]
+      "color": [255,0,0]
     },
     {
       "type": "show"
@@ -422,7 +422,7 @@ The following example is structured as follows:
       "type": "circle",
       "radius": 3,
       "position": [24,3],
-      "color." [255,0,255]
+      "color": [255,0,255]
     },
     {
       "type": "show"
@@ -436,9 +436,9 @@ The following example is structured as follows:
     },
     {
       "type": "line",
-      "start." [0,0],
-      "end." [31,7],
-      "color." [255,255,255]
+      "start": [0,0],
+      "end": [31,7],
+      "color": [255,255,255]
     },
     {
       "type": "show"
